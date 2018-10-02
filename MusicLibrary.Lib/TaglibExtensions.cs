@@ -27,7 +27,7 @@ namespace MusicLibrary.Lib
             return best_frames;
         }
 
-        public static Dictionary<string,string> GetAllComments(this Tag tag, string language) {
+        public static Dictionary<string,string> GetAllComments(this Tag tag,string language) {
             var comments = new Dictionary<string, string>();
             foreach (var frame in tag.GetAllCommentFrames(language)) {
                 comments.Add(frame.Description, frame.Text);
@@ -35,9 +35,13 @@ namespace MusicLibrary.Lib
             return comments;
         }
 
+        public static Dictionary<string, string> GetAllComments(this Tag tag) => tag.GetAllComments(Tag.Language);
+
         public static string GetComment(this Tag tag, string description, string language) {
             CommentsFrame f = CommentsFrame.GetPreferred(tag, description, language);
             return (f != null) && (f.Description == description) ? f.ToString() : null;
         }
+
+        public static string GetComment(this Tag tag, string description) => tag.GetComment(description, Tag.Language);
     }
 }
