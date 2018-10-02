@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicLibrary.Lib", "MusicLibrary.Lib\MusicLibrary.Lib.csproj", "{49AE38CD-36B1-49BA-84F2-B3549D5B3FDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicLibrary.Lib", "MusicLibrary.Lib\MusicLibrary.Lib.csproj", "{49AE38CD-36B1-49BA-84F2-B3549D5B3FDE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "taglib-sharp", "..\..\External\taglib-sharp\src\taglib-sharp.csproj", "{0894271F-8210-40A7-8DB3-BB189B5091FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicLibrary.Test", "MusicLibrary.Test\MusicLibrary.Test.csproj", "{31BF065A-CDB6-44A5-98CB-6C8A9B84429D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{49AE38CD-36B1-49BA-84F2-B3549D5B3FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49AE38CD-36B1-49BA-84F2-B3549D5B3FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49AE38CD-36B1-49BA-84F2-B3549D5B3FDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0894271F-8210-40A7-8DB3-BB189B5091FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0894271F-8210-40A7-8DB3-BB189B5091FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0894271F-8210-40A7-8DB3-BB189B5091FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0894271F-8210-40A7-8DB3-BB189B5091FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31BF065A-CDB6-44A5-98CB-6C8A9B84429D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31BF065A-CDB6-44A5-98CB-6C8A9B84429D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31BF065A-CDB6-44A5-98CB-6C8A9B84429D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31BF065A-CDB6-44A5-98CB-6C8A9B84429D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
