@@ -20,8 +20,10 @@ namespace MusicLibrary.Lib
         public string AlbumTitle => Tag.Album;
         public string[] AlbumArtistNames => Tag.AlbumArtists;
         public uint BeatsPerMinute => Tag.BeatsPerMinute;
-
         public Dictionary<string,string> Comments { get; }
+        public string[] Genres => Tag.Genres;
+        public string Grouping => Tag.Grouping;
+        public List<TrackRating> Ratings { get; }
   
         public MediaMonkeyTags MediaMonkey { get; }
 
@@ -34,9 +36,11 @@ namespace MusicLibrary.Lib
             var id3v2 = track.GetTag(TagTypes.Id3v2) as TagLib.Id3v2.Tag;
             if (id3v2 != null) {
                 Comments = id3v2.GetAllComments(TagLib.Id3v2.Tag.Language);
+                Ratings = id3v2.GetAllRatings();
             }
             else {
                 Comments = new Dictionary<string, string>();
+                Ratings = new List<TrackRating>();
             }
 
             MediaMonkey = new MediaMonkeyTags(this);

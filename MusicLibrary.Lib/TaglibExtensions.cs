@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 using TagLib.Id3v2;
 
@@ -43,5 +44,24 @@ namespace MusicLibrary.Lib
         }
 
         public static string GetComment(this Tag tag, string description) => tag.GetComment(description, Tag.Language);
+
+        public static List<PopularimeterFrame> GetAllRatingsFrames(this Tag tag, params string[] users) {
+            var ratings = new List<PopularimeterFrame>();
+
+            PopularimeterFrame popm;
+            foreach (Frame frame in tag) {
+                popm = frame as PopularimeterFrame;
+
+                if (popm != null && ((users.Length == 0) || users.Contains(popm.User))) {
+                    ratings.Add(popm);
+                }
+            }
+
+            return ratings;
+        }
+
+        public static List<TrackRating> GetAllRatings(this Tag tag, params string[] users) {
+            return tag.GetAllRatingsFrames(users).Select<PopularimeterFrame, TrackRating>((f) => new TrackRating(f.User, f.Rating, f.PlayCount)).ToList();
+        }
     }
 }
