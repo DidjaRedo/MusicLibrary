@@ -6,7 +6,7 @@ namespace MusicLibrary.Lib
 {
     public class Dances {
 
-        protected Dictionary<string, Dance> _dances = new Dictionary<string, Dance>();
+        protected Dictionary<string, Dance> _dances = new Dictionary<string, Dance>(StringComparer.InvariantCultureIgnoreCase);
 
         protected Dances() {
             foreach (var dance in All) {
@@ -19,7 +19,15 @@ namespace MusicLibrary.Lib
             }
         }
 
-        public Dance this[string name] => _dances[name];
+        public Dance this[string name] {
+            get {
+                Dance dance = null;
+                if (_dances.TryGetValue(name, out dance)) {
+                    return dance;
+                }
+                return null;
+            }
+        }
 
         public static readonly Dance Waltz = new Dance(
             new string[] {"Waltz", "Slow Waltz", "WAL"},
@@ -112,7 +120,7 @@ namespace MusicLibrary.Lib
         );
 
         public static readonly Dance Hustle = new Dance(
-            new string[] { "Hustle", "Hustle", "HUS" },
+            new string[] { "Hustle", "HUS" },
             new Dance.TempoRange() { Category = Dance.DanceCategory.Rhythm, MinBpm = 28 * 4, MaxBpm = 30 * 4 },
             new Dance.TempoRange() { Category = Dance.DanceCategory.Social, MinBpm = 28 * 4, MaxBpm = 31 * 4 }
         );

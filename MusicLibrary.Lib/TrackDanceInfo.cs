@@ -15,7 +15,7 @@ namespace MusicLibrary.Lib
             Any = Beginner|Intermediate|Advanced
         }
 
-        public TrackDanceInfo(Dance dance, Dance.DanceCategories categories, DanceDifficulty difficulty = DanceDifficulty.Any, uint? rating = null) {
+        public TrackDanceInfo(Dance dance, Dance.DanceCategories categories, uint? rating = null, DanceDifficulty difficulty = DanceDifficulty.Any) {
             Dance = dance;
             Categories = categories;
             Difficulty = difficulty;
@@ -28,5 +28,10 @@ namespace MusicLibrary.Lib
         public uint? RawRating { get; }
         public double? PercentRating => (RawRating.HasValue ? (double?)((double)RawRating.Value / (double)255) : null);
         public double? FiveStarRating => (RawRating.HasValue ? ((double?)Math.Round(PercentRating.Value * 10.0) / 2.0) : null);
+
+        public override string ToString() {
+            var rating = (FiveStarRating.HasValue ? $"@{FiveStarRating.Value.ToString()}" : String.Empty);
+            return $"{Dance}({Categories}){rating}";
+        }
     }
 }

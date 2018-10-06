@@ -12,20 +12,21 @@ namespace MusicLibrary.Lib
     /// Mostly very thin wrapper around a TagLib Tag that pulls out common
     /// values and adds some semantics to others
     /// </remarks>
-    public class Track
-    {
+    public class Track {
         public uint TrackNumber => Tag.Track;
         public string Title => Tag.Title;
         public string[] ArtistNames => Tag.Performers;
         public string AlbumTitle => Tag.Album;
         public string[] AlbumArtistNames => Tag.AlbumArtists;
         public uint BeatsPerMinute => Tag.BeatsPerMinute;
-        public Dictionary<string,string> Comments { get; }
+        public Dictionary<string, string> Comments { get; }
         public string[] Genres => Tag.Genres;
         public string Grouping => Tag.Grouping;
+        public TrackRating Rating => (Ratings.Count > 0) ? Ratings[0] : null;
         public List<TrackRating> Ratings { get; }
   
         public MediaMonkeyTags MediaMonkey { get; }
+        public TrackDances Dances { get; }
 
         public TagLib.Tag Tag;
 
@@ -44,6 +45,11 @@ namespace MusicLibrary.Lib
             }
 
             MediaMonkey = new MediaMonkeyTags(this);
+            Dances = new TrackDances(this);
+        }
+
+        public override string ToString() {
+            return $"{TrackNumber:D02} - {String.Join(";", ArtistNames)} - {Title}";
         }
     }
 }

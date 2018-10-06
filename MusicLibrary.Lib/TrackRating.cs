@@ -10,12 +10,14 @@ namespace MusicLibrary.Lib
             Rater = rater;
             RawRating = rating;
             PlayCount = playCount;
+            Dance = Dances.ByName[rater];
         }
 
         public string Rater { get; }
         public uint RawRating { get; }
         public double PercentRating => ((double)RawRating / (double)255);
         public double FiveStarRating => Math.Round(PercentRating * 10.0) / 2.0;
+        public Dance Dance { get; }
         public ulong PlayCount { get; }
     }
 }

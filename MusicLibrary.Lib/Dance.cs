@@ -60,6 +60,10 @@ namespace MusicLibrary.Lib
 
         }
 
+        public override string ToString() {
+            return Name;
+        }
+
         public struct TempoRange {
             public DanceCategory Category;
             public int MinBpm { get; set; }
