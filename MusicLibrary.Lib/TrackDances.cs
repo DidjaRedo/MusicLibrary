@@ -7,7 +7,7 @@ namespace MusicLibrary.Lib
 {
     public class TrackDances
     {
-        public TrackDances(Track track) {
+        public TrackDances(ITrack track) {
             Track = track;
             _dances = InferDances(track);
         }
@@ -15,7 +15,7 @@ namespace MusicLibrary.Lib
         protected List<TrackDanceInfo> _dances;
         public IReadOnlyList<TrackDanceInfo> Dances => _dances.AsReadOnly();
 
-        protected static List<TrackDanceInfo> InferDances(Track track) {
+        protected static List<TrackDanceInfo> InferDances(ITrack track) {
             var dances = new List<Dance>();
             var genres = track.Genres.Select<string, string>((g) => g.ToLowerInvariant()).ToList();
             bool isBallroom = (genres.RemoveAll((s) => s.Equals("ballroom")) > 0);
@@ -54,7 +54,7 @@ namespace MusicLibrary.Lib
             }).ToList();
         }
 
-        protected Track Track { get; }
+        protected ITrack Track { get; }
 
         public override string ToString() {
             return String.Join("|", Dances.Select<TrackDanceInfo, string>((d) => d.ToString()));

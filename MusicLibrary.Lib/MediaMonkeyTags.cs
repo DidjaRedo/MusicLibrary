@@ -6,8 +6,8 @@ namespace MusicLibrary.Lib
 {
     public class MediaMonkeyTags
     {
-        private Track _track;
-        public MediaMonkeyTags(Track track) {
+        private ITrack _track;
+        public MediaMonkeyTags(ITrack track) {
             _track = track;
         }
 

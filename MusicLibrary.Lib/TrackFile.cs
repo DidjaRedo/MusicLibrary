@@ -12,7 +12,8 @@ namespace MusicLibrary.Lib
     /// Mostly very thin wrapper around a TagLib Tag that pulls out common
     /// values and adds some semantics to others
     /// </remarks>
-    public class Track {
+    public class TrackFile : ITrack
+    {
         public uint TrackNumber => Tag.Track;
         public string Title => Tag.Title;
         public string[] ArtistNames => Tag.Performers;
@@ -30,7 +31,7 @@ namespace MusicLibrary.Lib
 
         public TagLib.Tag Tag;
 
-        public Track(string path) {
+        public TrackFile(string path) {
             var track = TagLib.File.Create(path);
             Tag = track.Tag;
 
