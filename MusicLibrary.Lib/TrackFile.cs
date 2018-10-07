@@ -27,7 +27,6 @@ namespace MusicLibrary.Lib
         public List<TrackRating> Ratings { get; }
   
         public MediaMonkeyTags MediaMonkey { get; }
-        public TrackDances Dances { get; }
 
         public TagLib.Tag Tag;
 
@@ -46,7 +45,6 @@ namespace MusicLibrary.Lib
             }
 
             MediaMonkey = new MediaMonkeyTags(this);
-            Dances = new TrackDances(this);
         }
 
         public override string ToString() {
