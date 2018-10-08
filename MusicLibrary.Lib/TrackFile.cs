@@ -25,6 +25,7 @@ namespace MusicLibrary.Lib
         public Dictionary<string, string> Comments { get; }
         public string[] Genres => Tag.Genres;
         public string Grouping => Tag.Grouping;
+        public string Path { get; }
         public TrackRating Rating => (Ratings.Count > 0) ? Ratings[0] : null;
         public List<TrackRating> Ratings { get; }
   
@@ -32,8 +33,14 @@ namespace MusicLibrary.Lib
 
         [JsonIgnore] public TagLib.Tag Tag;
 
-        public TrackFile(string path) {
+        public TrackFile(string path, string root = null) {
             var track = TagLib.File.Create(path);
+            if (String.IsNullOrEmpty(root) || (!System.IO.Path.IsPathRooted(path)) || !path.StartsWith(root)) {
+                Path = path;
+            }
+            else {
+                Path = path.Remove(0, root.Length + 1);
+            }
             Tag = track.Tag;
 
             var id3v2 = track.GetTag(TagTypes.Id3v2) as TagLib.Id3v2.Tag;
@@ -47,6 +54,18 @@ namespace MusicLibrary.Lib
             }
 
             MediaMonkey = new MediaMonkeyTags(this);
+        }
+
+        public static TrackFile TryCreate(string path, string root = null) {
+            TrackFile track = null;
+
+            try {
+                track = new TrackFile(path, root);
+            }
+            catch {
+            };
+
+            return track;
         }
 
         public override string ToString() {

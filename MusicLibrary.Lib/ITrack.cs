@@ -14,7 +14,7 @@ namespace MusicLibrary.Lib
         string Grouping { get; }
 
         MediaMonkeyTags MediaMonkey { get; }
-
+        string Path { get; }
         TrackRating Rating { get; }
 
         List<TrackRating> Ratings { get; }

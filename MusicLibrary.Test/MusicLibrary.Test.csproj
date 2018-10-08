@@ -14,18 +14,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="data\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\MusicLibrary.Lib\MusicLibrary.Lib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="data\03 - Domino - Business Of Love.mp3">
+    <None Update="data\Music\Various Artists\PAPC Foxtrot 1\03 - Domino - Business Of Love.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="data\13 - Premium Standard - A Wink &amp; A Smile.mp3">
+    <None Update="data\Music\Various Artists\Quest - Foxtrot Z\13 - Premium Standard - A Wink &amp; A Smile.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
