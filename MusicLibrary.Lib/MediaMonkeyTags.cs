@@ -17,5 +17,20 @@ namespace MusicLibrary.Lib
         public string Custom3 => _track.Comments["Songs-DB_Custom3"];
         public string Custom4 => _track.Comments["Songs-DB_Custom4"];
         public string Custom5 => _track.Comments["Songs-DB_Custom5"];
+
+        public override bool Equals(object obj) {
+            var other = obj as MediaMonkeyTags;
+            return (other != null) && (GetHashCode() == other.GetHashCode());
+        }
+
+        public override int GetHashCode() {
+            var hash = Occasion.GetHashCode();
+            hash ^= Custom1.GetHashCode();
+            hash ^= Custom2.GetHashCode();
+            hash ^= Custom3.GetHashCode();
+            hash ^= Custom4.GetHashCode();
+            hash ^= Custom5.GetHashCode();
+            return hash;
+        }
     }
 }

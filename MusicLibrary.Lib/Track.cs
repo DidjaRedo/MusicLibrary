@@ -37,5 +37,9 @@ namespace MusicLibrary.Lib
 
         public TrackRating Rating => (Ratings.Count > 0) ? Ratings[0] : null;
         public MediaMonkeyTags MediaMonkey { get; }
+
+        public override string ToString() {
+            return $"{TrackNumber:D02} - {String.Join(";", ArtistNames)} - {Title}";
+        }
     }
 }

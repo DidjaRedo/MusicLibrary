@@ -28,5 +28,18 @@ namespace MusicLibrary.Lib
         public double PercentRating => ((double)RawRating / (double)255);
         public double FiveStarRating => Math.Round(PercentRating * 10.0) / 2.0;
         public Dance Dance { get; }
+
+        public override bool Equals(object obj) {
+            var other = obj as TrackRating;
+            return (other != null) && (GetHashCode() == other.GetHashCode());
+        }
+
+        public override int GetHashCode() {
+            var hash = Rater.GetHashCode();
+            hash ^= RawRating.GetHashCode();
+            hash ^= PlayCount.GetHashCode();
+            hash ^= Dance?.Name.GetHashCode() ?? 0;
+            return hash;
+        }
     }
 }

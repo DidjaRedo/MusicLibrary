@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
+using Newtonsoft.Json;
 using TagLib;
 
 namespace MusicLibrary.Lib
@@ -12,6 +13,7 @@ namespace MusicLibrary.Lib
     /// Mostly very thin wrapper around a TagLib Tag that pulls out common
     /// values and adds some semantics to others
     /// </remarks>
+    [JsonObject(MemberSerialization.OptOut)]
     public class TrackFile : ITrack
     {
         public uint TrackNumber => Tag.Track;
@@ -28,7 +30,7 @@ namespace MusicLibrary.Lib
   
         public MediaMonkeyTags MediaMonkey { get; }
 
-        public TagLib.Tag Tag;
+        [JsonIgnore] public TagLib.Tag Tag;
 
         public TrackFile(string path) {
             var track = TagLib.File.Create(path);

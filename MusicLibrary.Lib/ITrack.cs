@@ -3,7 +3,6 @@ using Newtonsoft.Json;
 
 namespace MusicLibrary.Lib
 {
-    [JsonObject(MemberSerialization.OptOut)]
     public interface ITrack
     {
         string[] AlbumArtistNames { get; }
@@ -14,10 +13,8 @@ namespace MusicLibrary.Lib
         string[] Genres { get; }
         string Grouping { get; }
 
-        [JsonIgnore]
         MediaMonkeyTags MediaMonkey { get; }
 
-        [JsonIgnore]
         TrackRating Rating { get; }
 
         List<TrackRating> Ratings { get; }
