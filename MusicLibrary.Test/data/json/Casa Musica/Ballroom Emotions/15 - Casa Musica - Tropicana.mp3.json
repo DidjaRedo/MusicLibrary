@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 15,
+  "Title": "Tropicana",
+  "ArtistNames": [
+    "Casa Musica"
+  ],
+  "AlbumTitle": "Ballroom Emotions",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 102,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Standard"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Casa Musica\\Ballroom Emotions\\15 - Casa Musica - Tropicana.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

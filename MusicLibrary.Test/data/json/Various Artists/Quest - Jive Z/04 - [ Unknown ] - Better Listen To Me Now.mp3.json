@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 4,
+  "Title": "Better Listen To Me Now",
+  "ArtistNames": [
+    "[ Unknown ]"
+  ],
+  "AlbumTitle": "Quest - Jive Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Jive",
+    "Latin",
+    "Swing"
+  ],
+  "Grouping": "Jive",
+  "Path": "Various Artists\\Quest - Jive Z\\04 - [ Unknown ] - Better Listen To Me Now.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

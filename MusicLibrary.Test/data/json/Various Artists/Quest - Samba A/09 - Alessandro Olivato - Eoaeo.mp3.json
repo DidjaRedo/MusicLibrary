@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 9,
+  "Title": "Eoaeo",
+  "ArtistNames": [
+    "Alessandro Olivato"
+  ],
+  "AlbumTitle": "Quest - Samba A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 102,
+  "Comments": {
+    "": "Originally from \"Latin Mega Hits\" (Casa Musica)",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Latin"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\Quest - Samba A\\09 - Alessandro Olivato - Eoaeo.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

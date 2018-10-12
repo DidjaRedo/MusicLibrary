@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 6,
+  "Title": "Let's Get Loud (Miami Mix)",
+  "ArtistNames": [
+    "Estefan ",
+    " Santander"
+  ],
+  "AlbumTitle": "Quest - Cha-Cha Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Latin"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\Quest - Cha-Cha Z\\06 - Estefan - Santander - Let's Get Loud (Miami Mix).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

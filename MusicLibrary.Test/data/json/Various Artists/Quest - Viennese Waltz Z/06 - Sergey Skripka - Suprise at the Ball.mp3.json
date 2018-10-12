@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 6,
+  "Title": "Suprise at the Ball",
+  "ArtistNames": [
+    "Sergey Skripka"
+  ],
+  "AlbumTitle": "Quest - Viennese Waltz Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Viennese Waltz",
+    "Standard"
+  ],
+  "Grouping": "Viennese Waltz",
+  "Path": "Various Artists\\Quest - Viennese Waltz Z\\06 - Sergey Skripka - Suprise at the Ball.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 3,
+  "Title": "The First Noel",
+  "ArtistNames": [
+    "Toby Keith"
+  ],
+  "AlbumTitle": "PAPC Xmas Waltz 1x",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 91,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth",
+    "Christmas",
+    "Weihnachtsmusik"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\PAPC Xmas Waltz 1x\\03 - Toby Keith - The First Noel.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

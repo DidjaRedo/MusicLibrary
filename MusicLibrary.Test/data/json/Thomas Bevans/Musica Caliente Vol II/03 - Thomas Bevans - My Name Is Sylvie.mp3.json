@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 3,
+  "Title": "My Name Is Sylvie",
+  "ArtistNames": [
+    "Thomas Bevans"
+  ],
+  "AlbumTitle": "Musica Caliente Vol II",
+  "AlbumArtistNames": [
+    "Thomas Bevans"
+  ],
+  "BeatsPerMinute": 120,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Latin"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Thomas Bevans\\Musica Caliente Vol II\\03 - Thomas Bevans - My Name Is Sylvie.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

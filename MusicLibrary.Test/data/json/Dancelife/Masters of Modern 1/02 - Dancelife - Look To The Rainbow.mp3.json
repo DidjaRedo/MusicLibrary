@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 2,
+  "Title": "Look To The Rainbow",
+  "ArtistNames": [
+    "Dancelife"
+  ],
+  "AlbumTitle": "Masters of Modern 1",
+  "AlbumArtistNames": [
+    "Dancelife"
+  ],
+  "BeatsPerMinute": 90,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Dancelife\\Masters of Modern 1\\02 - Dancelife - Look To The Rainbow.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

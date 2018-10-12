@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 7,
+  "Title": "Mattinata",
+  "ArtistNames": [
+    "Tanzorchester Alfred Hause"
+  ],
+  "AlbumTitle": "PAPC Waltz 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 92,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Social"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\PAPC Waltz 1\\07 - Tanzorchester Alfred Hause - Mattinata.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 10,
+  "Title": "Drifting Dreaming",
+  "ArtistNames": [
+    "[Unknown Artist]"
+  ],
+  "AlbumTitle": "Quest - Waltz Z Adult Open",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\Quest - Waltz Z Adult Open\\10 - [Unknown Artist] - Drifting Dreaming.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

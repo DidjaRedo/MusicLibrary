@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 1,
+  "Title": "Paris Se Regarde",
+  "ArtistNames": [
+    "Chantal Lebrun"
+  ],
+  "AlbumTitle": "Quest - Viennese Waltz Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Viennese Waltz",
+    "Standard"
+  ],
+  "Grouping": "Viennese Waltz",
+  "Path": "Various Artists\\Quest - Viennese Waltz Z\\01 - Chantal Lebrun - Paris Se Regarde.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

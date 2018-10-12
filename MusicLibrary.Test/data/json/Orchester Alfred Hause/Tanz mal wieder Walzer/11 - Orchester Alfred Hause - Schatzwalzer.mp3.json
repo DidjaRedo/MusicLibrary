@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 11,
+  "Title": "Schatzwalzer",
+  "ArtistNames": [
+    "Orchester Alfred Hause"
+  ],
+  "AlbumTitle": "Tanz mal wieder Walzer",
+  "AlbumArtistNames": [
+    "Orchester Alfred Hause"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Viennese Waltz",
+    "Standard"
+  ],
+  "Grouping": "Viennese Waltz",
+  "Path": "Orchester Alfred Hause\\Tanz mal wieder Walzer\\11 - Orchester Alfred Hause - Schatzwalzer.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 64,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 64,
+      "PlayCount": 0
+    }
+  ]
+}

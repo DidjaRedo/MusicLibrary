@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 5,
+  "Title": "O Tu O Nada",
+  "ArtistNames": [
+    "Lupita D'Alessio"
+  ],
+  "AlbumTitle": "PAPC Misc X1a",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Nightclub Two-Step",
+    "Social"
+  ],
+  "Grouping": "Nightclub Two-Step",
+  "Path": "Various Artists\\PAPC Misc X1a\\05 - Lupita D'Alessio - O Tu O Nada.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

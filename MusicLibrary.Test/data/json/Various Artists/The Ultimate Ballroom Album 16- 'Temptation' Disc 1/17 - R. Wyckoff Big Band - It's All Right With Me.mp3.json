@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 17,
+  "Title": "It's All Right With Me",
+  "ArtistNames": [
+    "R. Wyckoff Big Band"
+  ],
+  "AlbumTitle": "The Ultimate Ballroom Album 16: \"Temptation\" Disc 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 100,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Standard"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Various Artists\\The Ultimate Ballroom Album 16- 'Temptation' Disc 1\\17 - R. Wyckoff Big Band - It's All Right With Me.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

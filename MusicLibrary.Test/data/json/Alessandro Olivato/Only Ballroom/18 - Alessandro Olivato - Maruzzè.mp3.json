@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 18,
+  "Title": "Maruzzè",
+  "ArtistNames": [
+    "Alessandro Olivato"
+  ],
+  "AlbumTitle": "Only Ballroom",
+  "AlbumArtistNames": [
+    "Alessandro Olivato"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Standard"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Alessandro Olivato\\Only Ballroom\\18 - Alessandro Olivato - Maruzzè.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

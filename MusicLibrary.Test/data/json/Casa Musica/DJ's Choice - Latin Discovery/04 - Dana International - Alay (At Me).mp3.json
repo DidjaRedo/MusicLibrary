@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 4,
+  "Title": "Alay (At Me)",
+  "ArtistNames": [
+    "Dana International"
+  ],
+  "AlbumTitle": "DJ's Choice - Latin Discovery",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 102,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Latin"
+  ],
+  "Grouping": "Samba",
+  "Path": "Casa Musica\\DJ's Choice - Latin Discovery\\04 - Dana International - Alay (At Me).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

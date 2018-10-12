@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 16,
+  "Title": "I Hadn't Anyone Till You",
+  "ArtistNames": [
+    "Dancelife Studio Orchestra"
+  ],
+  "AlbumTitle": "Quest - Foxtrot A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Quest - Foxtrot A\\16 - Dancelife Studio Orchestra - I Hadn't Anyone Till You.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 1,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 1,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 23,
+  "Title": "Feste de um Povo",
+  "ArtistNames": [
+    "Ricky Martin"
+  ],
+  "AlbumTitle": "PAPC Karen 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Social"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\PAPC Karen 1\\23 - Ricky Martin - Feste de um Povo.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

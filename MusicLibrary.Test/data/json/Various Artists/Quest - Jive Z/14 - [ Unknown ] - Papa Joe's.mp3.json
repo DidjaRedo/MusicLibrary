@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 14,
+  "Title": "Papa Joe's",
+  "ArtistNames": [
+    "[ Unknown ]"
+  ],
+  "AlbumTitle": "Quest - Jive Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Jive",
+    "Latin",
+    "Swing"
+  ],
+  "Grouping": "Jive",
+  "Path": "Various Artists\\Quest - Jive Z\\14 - [ Unknown ] - Papa Joe's.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

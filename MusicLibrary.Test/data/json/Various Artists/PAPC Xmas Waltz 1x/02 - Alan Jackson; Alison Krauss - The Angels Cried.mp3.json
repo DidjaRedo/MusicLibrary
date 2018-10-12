@@ -1,0 +1,36 @@
+{
+  "TrackNumber": 2,
+  "Title": "The Angels Cried",
+  "ArtistNames": [
+    "Alan Jackson",
+    "Alison Krauss"
+  ],
+  "AlbumTitle": "PAPC Xmas Waltz 1x",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 92,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth",
+    "Christmas",
+    "Weihnachtsmusik"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\PAPC Xmas Waltz 1x\\02 - Alan Jackson; Alison Krauss - The Angels Cried.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

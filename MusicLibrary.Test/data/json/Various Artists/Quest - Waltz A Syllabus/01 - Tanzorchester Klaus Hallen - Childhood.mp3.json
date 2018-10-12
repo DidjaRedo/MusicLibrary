@@ -1,0 +1,37 @@
+{
+  "TrackNumber": 1,
+  "Title": "Childhood",
+  "ArtistNames": [
+    "Tanzorchester Klaus Hallen"
+  ],
+  "AlbumTitle": "Quest - Waltz A Syllabus",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "": "Feedback: Intro",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth",
+    "To Edit"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\Quest - Waltz A Syllabus\\01 - Tanzorchester Klaus Hallen - Childhood.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 1,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 1,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 17,
+  "Title": "Juke Box",
+  "ArtistNames": [
+    "Sugar Ray"
+  ],
+  "AlbumTitle": "Casa Musica Presents 34: The Best Part 16",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 116,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Casa Musica\\Casa Musica Presents 34- The Best Part 16\\17 - Sugar Ray - Juke Box.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

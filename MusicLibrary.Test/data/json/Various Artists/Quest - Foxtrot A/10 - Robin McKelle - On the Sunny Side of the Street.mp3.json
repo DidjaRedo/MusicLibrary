@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 10,
+  "Title": "On the Sunny Side of the Street",
+  "ArtistNames": [
+    "Robin McKelle"
+  ],
+  "AlbumTitle": "Quest - Foxtrot A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 116,
+  "Comments": {
+    "": "Originally from \"The Ultimate Ballroom Album 14 - L'Italiano\"",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Quest - Foxtrot A\\10 - Robin McKelle - On the Sunny Side of the Street.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

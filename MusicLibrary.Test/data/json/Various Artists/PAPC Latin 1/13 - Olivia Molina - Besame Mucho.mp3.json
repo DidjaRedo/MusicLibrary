@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 13,
+  "Title": "Besame Mucho",
+  "ArtistNames": [
+    "Olivia Molina"
+  ],
+  "AlbumTitle": "PAPC Latin 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 100,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Bolero",
+    "Social"
+  ],
+  "Grouping": "Bolero",
+  "Path": "Various Artists\\PAPC Latin 1\\13 - Olivia Molina - Besame Mucho.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

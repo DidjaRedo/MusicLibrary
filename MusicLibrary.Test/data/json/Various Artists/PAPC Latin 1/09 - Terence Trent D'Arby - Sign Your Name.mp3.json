@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 9,
+  "Title": "Sign Your Name",
+  "ArtistNames": [
+    "Terence Trent D'Arby"
+  ],
+  "AlbumTitle": "PAPC Latin 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 110,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Rumba",
+    "Social"
+  ],
+  "Grouping": "Rumba",
+  "Path": "Various Artists\\PAPC Latin 1\\09 - Terence Trent D'Arby - Sign Your Name.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

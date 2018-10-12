@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 2,
+  "Title": "Breakdown Dead Ahead",
+  "ArtistNames": [
+    "Boz Scaggs"
+  ],
+  "AlbumTitle": "PAPC E.C. Swing 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 145,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "EC Swing",
+    "Swing",
+    "Social"
+  ],
+  "Grouping": "E.C. Swing",
+  "Path": "Various Artists\\PAPC E.C. Swing 1\\02 - Boz Scaggs - Breakdown Dead Ahead.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

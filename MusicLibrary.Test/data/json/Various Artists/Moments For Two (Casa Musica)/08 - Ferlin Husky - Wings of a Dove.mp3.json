@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 8,
+  "Title": "Wings of a Dove",
+  "ArtistNames": [
+    "Ferlin Husky"
+  ],
+  "AlbumTitle": "Moments For Two (Casa Musica)",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 177,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Viennese Waltz",
+    "Standard"
+  ],
+  "Grouping": "Viennese Waltz",
+  "Path": "Various Artists\\Moments For Two (Casa Musica)\\08 - Ferlin Husky - Wings of a Dove.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

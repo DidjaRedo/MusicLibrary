@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 9,
+  "Title": "I Remember You",
+  "ArtistNames": [
+    "Dancelife"
+  ],
+  "AlbumTitle": "Masters of Modern 1",
+  "AlbumArtistNames": [
+    "Dancelife"
+  ],
+  "BeatsPerMinute": 116,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Dancelife\\Masters of Modern 1\\09 - Dancelife - I Remember You.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

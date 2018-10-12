@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 16,
+  "Title": "Grim Grinning Ghosts (from \"The Haunted Mansion\")",
+  "ArtistNames": [
+    "Big Band Batty Bernie"
+  ],
+  "AlbumTitle": "Quest - Quickstep A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 200,
+  "Comments": {
+    "": "Originally from \"Ballroom Passion\" (Casa Musica)",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Standard"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Various Artists\\Quest - Quickstep A\\16 - Big Band Batty Bernie - Grim Grinning Ghosts (from 'The Haunted Mansion').mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

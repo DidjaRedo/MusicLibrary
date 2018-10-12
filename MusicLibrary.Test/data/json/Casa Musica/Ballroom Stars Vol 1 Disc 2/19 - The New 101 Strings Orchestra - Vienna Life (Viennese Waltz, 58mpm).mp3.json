@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 19,
+  "Title": "Vienna Life (Viennese Waltz, 58mpm)",
+  "ArtistNames": [
+    "The New 101 Strings Orchestra"
+  ],
+  "AlbumTitle": "Ballroom Stars Vol 1 Disc 2",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 174,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Viennese Waltz",
+    "Standard"
+  ],
+  "Grouping": "Viennese Waltz",
+  "Path": "Casa Musica\\Ballroom Stars Vol 1 Disc 2\\19 - The New 101 Strings Orchestra - Vienna Life (Viennese Waltz, 58mpm).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

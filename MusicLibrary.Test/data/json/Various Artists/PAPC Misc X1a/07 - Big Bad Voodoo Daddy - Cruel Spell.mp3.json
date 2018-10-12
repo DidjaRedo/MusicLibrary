@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 7,
+  "Title": "Cruel Spell",
+  "ArtistNames": [
+    "Big Bad Voodoo Daddy"
+  ],
+  "AlbumTitle": "PAPC Misc X1a",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 126,
+  "Comments": {
+    "Songs-DB_Custom1": "dup"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Social"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\PAPC Misc X1a\\07 - Big Bad Voodoo Daddy - Cruel Spell.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

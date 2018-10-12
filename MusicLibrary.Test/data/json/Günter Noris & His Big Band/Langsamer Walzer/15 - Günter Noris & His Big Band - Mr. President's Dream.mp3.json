@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 15,
+  "Title": "Mr. President's Dream",
+  "ArtistNames": [
+    "Günter Noris & His Big Band"
+  ],
+  "AlbumTitle": "Langsamer Walzer",
+  "AlbumArtistNames": [
+    "Günter Noris & His Big Band"
+  ],
+  "BeatsPerMinute": 87,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Günter Noris & His Big Band\\Langsamer Walzer\\15 - Günter Noris & His Big Band - Mr. President's Dream.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

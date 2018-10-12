@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 4,
+  "Title": "Crush On You",
+  "ArtistNames": [
+    "Casa Musica"
+  ],
+  "AlbumTitle": "Quest - American Foxtrot",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Smooth"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Quest - American Foxtrot\\04 - Casa Musica - Crush On You.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

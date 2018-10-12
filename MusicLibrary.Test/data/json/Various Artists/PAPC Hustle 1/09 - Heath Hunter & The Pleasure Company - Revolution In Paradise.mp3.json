@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 9,
+  "Title": "Revolution In Paradise",
+  "ArtistNames": [
+    "Heath Hunter & The Pleasure Company"
+  ],
+  "AlbumTitle": "PAPC Hustle 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Hustle",
+    "Social"
+  ],
+  "Grouping": "Hustle",
+  "Path": "Various Artists\\PAPC Hustle 1\\09 - Heath Hunter & The Pleasure Company - Revolution In Paradise.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

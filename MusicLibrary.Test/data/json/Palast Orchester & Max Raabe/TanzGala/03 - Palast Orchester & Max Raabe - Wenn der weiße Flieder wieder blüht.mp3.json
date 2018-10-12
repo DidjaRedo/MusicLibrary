@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 3,
+  "Title": "Wenn der weiße Flieder wieder blüht",
+  "ArtistNames": [
+    "Palast Orchester & Max Raabe"
+  ],
+  "AlbumTitle": "TanzGala",
+  "AlbumArtistNames": [
+    "Palast Orchester & Max Raabe"
+  ],
+  "BeatsPerMinute": 200,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Standard"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Palast Orchester & Max Raabe\\TanzGala\\03 - Palast Orchester & Max Raabe - Wenn der weiße Flieder wieder blüht.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

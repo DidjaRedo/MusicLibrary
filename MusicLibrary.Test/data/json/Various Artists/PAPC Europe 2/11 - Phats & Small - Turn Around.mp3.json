@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 11,
+  "Title": "Turn Around",
+  "ArtistNames": [
+    "Phats & Small"
+  ],
+  "AlbumTitle": "PAPC Europe 2",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Hustle",
+    "Social"
+  ],
+  "Grouping": "Hustle",
+  "Path": "Various Artists\\PAPC Europe 2\\11 - Phats & Small - Turn Around.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

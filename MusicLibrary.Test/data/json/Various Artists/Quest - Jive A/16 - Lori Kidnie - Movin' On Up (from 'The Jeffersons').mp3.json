@@ -1,0 +1,36 @@
+{
+  "TrackNumber": 16,
+  "Title": "Movin' On Up (from 'The Jeffersons')",
+  "ArtistNames": [
+    "Lori Kidnie"
+  ],
+  "AlbumTitle": "Quest - Jive A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 172,
+  "Comments": {
+    "": "Originally from \"Latin Mega Hits\" (Casa Musica)",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Jive",
+    "Latin",
+    "Swing"
+  ],
+  "Grouping": "Jive",
+  "Path": "Various Artists\\Quest - Jive A\\16 - Lori Kidnie - Movin' On Up (from 'The Jeffersons').mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

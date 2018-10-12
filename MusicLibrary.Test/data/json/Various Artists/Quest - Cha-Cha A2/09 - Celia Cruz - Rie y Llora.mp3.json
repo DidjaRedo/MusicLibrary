@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 9,
+  "Title": "Rie y Llora",
+  "ArtistNames": [
+    "Celia Cruz"
+  ],
+  "AlbumTitle": "Quest - Cha-Cha A2",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "": "starts solid but switches into weird beat",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Latin"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\Quest - Cha-Cha A2\\09 - Celia Cruz - Rie y Llora.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 1,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 1,
+      "PlayCount": 0
+    }
+  ]
+}

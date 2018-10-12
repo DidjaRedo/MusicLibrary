@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 18,
+  "Title": "Bahia Blanca (Tango, 32mpm)",
+  "ArtistNames": [
+    "Malando"
+  ],
+  "AlbumTitle": "Ballroom Stars Vol 1 Disc 1",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 128,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Tango",
+    "Standard"
+  ],
+  "Grouping": "Tango",
+  "Path": "Casa Musica\\Ballroom Stars Vol 1 Disc 1\\18 - Malando - Bahia Blanca (Tango, 32mpm).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 7,
+  "Title": "Bring It On Down To My House",
+  "ArtistNames": [
+    "Marc Village"
+  ],
+  "AlbumTitle": "Quest - Quickstep A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 200,
+  "Comments": {
+    "": "Originally from \"Ballroom Perfection\"",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Standard"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Various Artists\\Quest - Quickstep A\\07 - Marc Village - Bring It On Down To My House.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

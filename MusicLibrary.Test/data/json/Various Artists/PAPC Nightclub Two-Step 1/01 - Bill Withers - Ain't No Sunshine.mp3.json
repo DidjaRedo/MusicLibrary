@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 1,
+  "Title": "Ain't No Sunshine",
+  "ArtistNames": [
+    "Bill Withers"
+  ],
+  "AlbumTitle": "PAPC Nightclub Two-Step 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Nightclub Two-Step",
+    "Social"
+  ],
+  "Grouping": "Nightclub Two-Step",
+  "Path": "Various Artists\\PAPC Nightclub Two-Step 1\\01 - Bill Withers - Ain't No Sunshine.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

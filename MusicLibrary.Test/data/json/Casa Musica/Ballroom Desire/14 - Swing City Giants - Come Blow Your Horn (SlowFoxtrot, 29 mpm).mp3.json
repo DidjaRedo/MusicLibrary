@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 14,
+  "Title": "Come Blow Your Horn (SlowFoxtrot, 29 mpm)",
+  "ArtistNames": [
+    "Swing City Giants"
+  ],
+  "AlbumTitle": "Ballroom Desire",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 116,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Casa Musica\\Ballroom Desire\\14 - Swing City Giants - Come Blow Your Horn (SlowFoxtrot, 29 mpm).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

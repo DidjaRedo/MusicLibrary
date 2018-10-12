@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 23,
+  "Title": "All I Do Is Dream Of You",
+  "ArtistNames": [
+    "Casa Musica"
+  ],
+  "AlbumTitle": "Quest - Foxtrot Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Quest - Foxtrot Z\\23 - Casa Musica - All I Do Is Dream Of You.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

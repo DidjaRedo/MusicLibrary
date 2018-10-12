@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 5,
+  "Title": "Black Diamond",
+  "ArtistNames": [
+    "East Side Jivers"
+  ],
+  "AlbumTitle": "Quest - Jive Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Jive",
+    "Latin",
+    "Swing"
+  ],
+  "Grouping": "Jive",
+  "Path": "Various Artists\\Quest - Jive Z\\05 - East Side Jivers - Black Diamond.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 1,
+  "Title": "Give Me Life",
+  "ArtistNames": [
+    "Tanzorchester Klaus Hallen"
+  ],
+  "AlbumTitle": "World Hits 2",
+  "AlbumArtistNames": [
+    "Tanzorchester Klaus Hallen"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Latin"
+  ],
+  "Grouping": "Samba",
+  "Path": "Tanzorchester Klaus Hallen\\World Hits 2\\01 - Tanzorchester Klaus Hallen - Give Me Life.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 18,
+  "Title": "Serenata",
+  "ArtistNames": [
+    "[ Unknown ]"
+  ],
+  "AlbumTitle": "Quest - Tango Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 128,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Tango",
+    "Standard"
+  ],
+  "Grouping": "Tango",
+  "Path": "Various Artists\\Quest - Tango Z\\18 - [ Unknown ] - Serenata.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

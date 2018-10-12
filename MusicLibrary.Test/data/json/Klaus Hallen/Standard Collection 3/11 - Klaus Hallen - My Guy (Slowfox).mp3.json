@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 11,
+  "Title": "My Guy (Slowfox)",
+  "ArtistNames": [
+    "Klaus Hallen"
+  ],
+  "AlbumTitle": "Standard Collection 3",
+  "AlbumArtistNames": [
+    "Klaus Hallen"
+  ],
+  "BeatsPerMinute": 118,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Klaus Hallen\\Standard Collection 3\\11 - Klaus Hallen - My Guy (Slowfox).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 1,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 1,
+      "PlayCount": 0
+    }
+  ]
+}

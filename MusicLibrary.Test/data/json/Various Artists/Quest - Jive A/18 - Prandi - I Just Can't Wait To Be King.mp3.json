@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 18,
+  "Title": "I Just Can't Wait To Be King",
+  "ArtistNames": [
+    "Prandi"
+  ],
+  "AlbumTitle": "Quest - Jive A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Jive",
+    "Latin",
+    "Swing"
+  ],
+  "Grouping": "Jive",
+  "Path": "Various Artists\\Quest - Jive A\\18 - Prandi - I Just Can't Wait To Be King.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

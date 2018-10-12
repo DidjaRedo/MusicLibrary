@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 13,
+  "Title": "Santas Beard",
+  "ArtistNames": [
+    "They Might Be Giants"
+  ],
+  "AlbumTitle": "PAPC Xmas East Coast Swing 1x",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 133,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "EC Swing",
+    "Swing",
+    "Social",
+    "Christmas",
+    "Weihnachtsmusik"
+  ],
+  "Grouping": "E.C. Swing",
+  "Path": "Various Artists\\PAPC Xmas East Coast Swing 1x\\13 - They Might Be Giants - Santas Beard.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

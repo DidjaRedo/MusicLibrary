@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 11,
+  "Title": "Surrey With A Fringe On Top",
+  "ArtistNames": [
+    "Casa Musica"
+  ],
+  "AlbumTitle": "Ballroom Emotions",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 116,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Casa Musica\\Ballroom Emotions\\11 - Casa Musica - Surrey With A Fringe On Top.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

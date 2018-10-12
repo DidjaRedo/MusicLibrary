@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 3,
+  "Title": "Tomber La Chemise",
+  "ArtistNames": [
+    "Zebda"
+  ],
+  "AlbumTitle": "PAPC Europe 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 134,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Social"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\PAPC Europe 1\\03 - Zebda - Tomber La Chemise.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

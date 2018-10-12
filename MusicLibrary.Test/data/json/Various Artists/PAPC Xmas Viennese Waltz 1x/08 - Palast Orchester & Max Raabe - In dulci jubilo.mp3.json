@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 8,
+  "Title": "In dulci jubilo",
+  "ArtistNames": [
+    "Palast Orchester & Max Raabe"
+  ],
+  "AlbumTitle": "PAPC Xmas Viennese Waltz 1x",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 171,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Viennese Waltz",
+    "Standard",
+    "Christmas",
+    "Weihnachtsmusik"
+  ],
+  "Grouping": "Viennese Waltz",
+  "Path": "Various Artists\\PAPC Xmas Viennese Waltz 1x\\08 - Palast Orchester & Max Raabe - In dulci jubilo.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

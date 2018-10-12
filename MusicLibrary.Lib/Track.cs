@@ -35,10 +35,16 @@ namespace MusicLibrary.Lib
             Title = title;
             TrackNumber = trackNumber;
             MediaMonkey = new MediaMonkeyTags(this);
+            Dances = new TrackDances(this);
         }
 
         public TrackRating Rating => (Ratings.Count > 0) ? Ratings[0] : null;
+
+        [JsonIgnore]
         public MediaMonkeyTags MediaMonkey { get; }
+
+        [JsonIgnore]
+        public TrackDances Dances { get; }
 
         public override string ToString() {
             return $"{TrackNumber:D02} - {String.Join(";", ArtistNames)} - {Title}";

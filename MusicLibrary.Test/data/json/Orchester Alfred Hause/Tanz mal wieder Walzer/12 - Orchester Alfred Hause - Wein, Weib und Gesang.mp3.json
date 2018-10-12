@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 12,
+  "Title": "Wein, Weib und Gesang",
+  "ArtistNames": [
+    "Orchester Alfred Hause"
+  ],
+  "AlbumTitle": "Tanz mal wieder Walzer",
+  "AlbumArtistNames": [
+    "Orchester Alfred Hause"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Viennese Waltz",
+    "Standard"
+  ],
+  "Grouping": "Viennese Waltz",
+  "Path": "Orchester Alfred Hause\\Tanz mal wieder Walzer\\12 - Orchester Alfred Hause - Wein, Weib und Gesang.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

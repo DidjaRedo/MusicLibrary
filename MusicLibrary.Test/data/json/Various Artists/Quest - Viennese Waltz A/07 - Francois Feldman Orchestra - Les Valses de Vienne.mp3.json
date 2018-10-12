@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 7,
+  "Title": "Les Valses de Vienne",
+  "ArtistNames": [
+    "Francois Feldman Orchestra"
+  ],
+  "AlbumTitle": "Quest - Viennese Waltz A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 177,
+  "Comments": {
+    "": "Originally from \"The Ultimate Ballroom Album 14 - L'Italiano\"",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Viennese Waltz",
+    "Standard"
+  ],
+  "Grouping": "Viennese Waltz",
+  "Path": "Various Artists\\Quest - Viennese Waltz A\\07 - Francois Feldman Orchestra - Les Valses de Vienne.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

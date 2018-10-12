@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 7,
+  "Title": "Tengo Verano",
+  "ArtistNames": [
+    "Ricardo Montaner"
+  ],
+  "AlbumTitle": "Quest - Samba A2",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Latin"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\Quest - Samba A2\\07 - Ricardo Montaner - Tengo Verano.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

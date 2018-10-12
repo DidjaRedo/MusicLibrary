@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 12,
+  "Title": "The Last Unicorn",
+  "ArtistNames": [
+    "In Mood feat. Juliette"
+  ],
+  "AlbumTitle": "PAPC Europe 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 98,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Bolero",
+    "Social"
+  ],
+  "Grouping": "Bolero",
+  "Path": "Various Artists\\PAPC Europe 1\\12 - In Mood feat. Juliette - The Last Unicorn.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 4,
+  "Title": "13 Jours in France [Waltz]",
+  "ArtistNames": [
+    "Columbia Ballroom Orchestra"
+  ],
+  "AlbumTitle": "Let's Dance: I Kiss Your Little Hand, Madame",
+  "AlbumArtistNames": [
+    "Columbia Ballroom Orchestra"
+  ],
+  "BeatsPerMinute": 90,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Columbia Ballroom Orchestra\\Let's Dance- I Kiss Your Little Hand, Madame\\04 - Columbia Ballroom Orchestra - 13 Jours in France [Waltz].mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 64,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 64,
+      "PlayCount": 0
+    }
+  ]
+}

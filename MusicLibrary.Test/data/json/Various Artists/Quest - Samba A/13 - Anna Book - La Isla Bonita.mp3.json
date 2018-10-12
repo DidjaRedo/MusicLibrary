@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 13,
+  "Title": "La Isla Bonita",
+  "ArtistNames": [
+    "Anna Book"
+  ],
+  "AlbumTitle": "Quest - Samba A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Latin"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\Quest - Samba A\\13 - Anna Book - La Isla Bonita.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

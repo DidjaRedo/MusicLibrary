@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 1,
+  "Title": "I've Heard That Song Before",
+  "ArtistNames": [
+    "Harry James"
+  ],
+  "AlbumTitle": "PAPC Foxtrot 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 125,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Social"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\PAPC Foxtrot 1\\01 - Harry James - I've Heard That Song Before.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

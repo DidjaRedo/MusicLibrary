@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 6,
+  "Title": "When I Die",
+  "ArtistNames": [
+    "No Mercy"
+  ],
+  "AlbumTitle": "PAPC Nightclub Two-Step 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Nightclub Two-Step",
+    "Social"
+  ],
+  "Grouping": "Nightclub Two-Step",
+  "Path": "Various Artists\\PAPC Nightclub Two-Step 1\\06 - No Mercy - When I Die.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

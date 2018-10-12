@@ -1,0 +1,36 @@
+{
+  "TrackNumber": 8,
+  "Title": "Hoy Hoy",
+  "ArtistNames": [
+    "Rob Rio"
+  ],
+  "AlbumTitle": "Quest - Jive A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 172,
+  "Comments": {
+    "": "Originally from \"Latin Mega Hits 2\" (Casa Musica)",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Jive",
+    "Latin",
+    "Swing"
+  ],
+  "Grouping": "Jive",
+  "Path": "Various Artists\\Quest - Jive A\\08 - Rob Rio - Hoy Hoy.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

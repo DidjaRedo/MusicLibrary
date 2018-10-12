@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 11,
+  "Title": "I Hadn't Anyone Till You",
+  "ArtistNames": [
+    "Dancelife"
+  ],
+  "AlbumTitle": "Masters of Modern 1",
+  "AlbumArtistNames": [
+    "Dancelife"
+  ],
+  "BeatsPerMinute": 116,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Dancelife\\Masters of Modern 1\\11 - Dancelife - I Hadn't Anyone Till You.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

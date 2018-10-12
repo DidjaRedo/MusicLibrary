@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 2,
+  "Title": "Gettin in the Mood (For Christmas)",
+  "ArtistNames": [
+    "Brian Setzer Orchestra"
+  ],
+  "AlbumTitle": "PAPC Xmas East Coast Swing 1x",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 173,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Jive",
+    "Social",
+    "Christmas",
+    "Weihnachtsmusik"
+  ],
+  "Grouping": "Jive",
+  "Path": "Various Artists\\PAPC Xmas East Coast Swing 1x\\02 - Brian Setzer Orchestra - Gettin in the Mood (For Christmas).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

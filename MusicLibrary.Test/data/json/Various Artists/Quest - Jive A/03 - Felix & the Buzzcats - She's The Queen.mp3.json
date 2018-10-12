@@ -1,0 +1,36 @@
+{
+  "TrackNumber": 3,
+  "Title": "She's The Queen",
+  "ArtistNames": [
+    "Felix & the Buzzcats"
+  ],
+  "AlbumTitle": "Quest - Jive A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 172,
+  "Comments": {
+    "": "Originally from \"The Ultimate Latin Album 12 - Diamante\"",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Jive",
+    "Latin",
+    "Swing"
+  ],
+  "Grouping": "Jive",
+  "Path": "Various Artists\\Quest - Jive A\\03 - Felix & the Buzzcats - She's The Queen.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

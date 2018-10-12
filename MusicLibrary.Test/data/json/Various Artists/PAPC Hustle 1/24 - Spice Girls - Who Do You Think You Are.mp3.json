@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 24,
+  "Title": "Who Do You Think You Are",
+  "ArtistNames": [
+    "Spice Girls"
+  ],
+  "AlbumTitle": "PAPC Hustle 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Hustle",
+    "Social"
+  ],
+  "Grouping": "Hustle",
+  "Path": "Various Artists\\PAPC Hustle 1\\24 - Spice Girls - Who Do You Think You Are.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

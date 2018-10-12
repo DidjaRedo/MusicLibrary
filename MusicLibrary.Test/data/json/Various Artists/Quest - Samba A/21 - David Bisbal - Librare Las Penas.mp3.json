@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 21,
+  "Title": "Librare Las Penas",
+  "ArtistNames": [
+    "David Bisbal"
+  ],
+  "AlbumTitle": "Quest - Samba A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Latin"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\Quest - Samba A\\21 - David Bisbal - Librare Las Penas.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "TrackNumber": 11,
+  "Title": "Little Bitty Pretty One",
+  "ArtistNames": [
+    "Andy Fortuna"
+  ],
+  "AlbumTitle": "Latin Jam",
+  "AlbumArtistNames": [
+    "Andy Fortuna"
+  ],
+  "BeatsPerMinute": 176,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Latin"
+  ],
+  "Grouping": "Jive",
+  "Path": "Andy Fortuna\\Latin Jam\\11 - Andy Fortuna - Little Bitty Pretty One.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

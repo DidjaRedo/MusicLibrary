@@ -1,0 +1,36 @@
+{
+  "TrackNumber": 6,
+  "Title": "The Aba Daba Honeymoon",
+  "ArtistNames": [
+    "Richie Jay & Company"
+  ],
+  "AlbumTitle": "Quest - Quickstep A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 200,
+  "Comments": {
+    "": "Feedback: Intro\r\nOriginally from \"Ballroom Perfection\"",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Standard",
+    "To Edit"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Various Artists\\Quest - Quickstep A\\06 - Richie Jay & Company - The Aba Daba Honeymoon.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 1,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 1,
+      "PlayCount": 0
+    }
+  ]
+}

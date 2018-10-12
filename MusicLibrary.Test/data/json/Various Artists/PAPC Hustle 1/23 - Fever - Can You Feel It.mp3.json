@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 23,
+  "Title": "Can You Feel It",
+  "ArtistNames": [
+    "Fever"
+  ],
+  "AlbumTitle": "PAPC Hustle 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "dup"
+  },
+  "Genres": [
+    "Ballroom",
+    "Hustle",
+    "Social"
+  ],
+  "Grouping": "Hustle",
+  "Path": "Various Artists\\PAPC Hustle 1\\23 - Fever - Can You Feel It.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

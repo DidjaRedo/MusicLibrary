@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 7,
+  "Title": "Shoo Fly Pie and Apple Pan Dowdy",
+  "ArtistNames": [
+    "Pete Jacobs Quintet"
+  ],
+  "AlbumTitle": "Quest - Foxtrot A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 116,
+  "Comments": {
+    "": "Originally from \"Ballroom Perfection\"",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Quest - Foxtrot A\\07 - Pete Jacobs Quintet - Shoo Fly Pie and Apple Pan Dowdy.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

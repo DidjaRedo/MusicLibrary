@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 9,
+  "Title": "Be Mine Tonight",
+  "ArtistNames": [
+    "Casa Musica"
+  ],
+  "AlbumTitle": "Ballroom Emotions",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 177,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Viennese Waltz",
+    "Standard"
+  ],
+  "Grouping": "Viennese Waltz",
+  "Path": "Casa Musica\\Ballroom Emotions\\09 - Casa Musica - Be Mine Tonight.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

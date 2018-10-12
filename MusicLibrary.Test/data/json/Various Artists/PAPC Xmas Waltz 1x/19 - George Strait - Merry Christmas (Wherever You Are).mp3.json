@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 19,
+  "Title": "Merry Christmas (Wherever You Are)",
+  "ArtistNames": [
+    "George Strait"
+  ],
+  "AlbumTitle": "PAPC Xmas Waltz 1x",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 86,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth",
+    "Christmas",
+    "Weihnachtsmusik"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\PAPC Xmas Waltz 1x\\19 - George Strait - Merry Christmas (Wherever You Are).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

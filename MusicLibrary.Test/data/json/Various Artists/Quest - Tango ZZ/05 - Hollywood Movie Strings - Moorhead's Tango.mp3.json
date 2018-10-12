@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 5,
+  "Title": "Moorhead's Tango",
+  "ArtistNames": [
+    "Hollywood Movie Strings"
+  ],
+  "AlbumTitle": "Quest - Tango ZZ",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Tango",
+    "Standard"
+  ],
+  "Grouping": "Tango",
+  "Path": "Various Artists\\Quest - Tango ZZ\\05 - Hollywood Movie Strings - Moorhead's Tango.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

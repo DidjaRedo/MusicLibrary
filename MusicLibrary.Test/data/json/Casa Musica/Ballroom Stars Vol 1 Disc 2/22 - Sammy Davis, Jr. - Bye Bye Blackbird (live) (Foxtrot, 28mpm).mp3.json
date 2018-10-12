@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 22,
+  "Title": "Bye Bye Blackbird (live) (Foxtrot, 28mpm)",
+  "ArtistNames": [
+    "Sammy Davis, Jr."
+  ],
+  "AlbumTitle": "Ballroom Stars Vol 1 Disc 2",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 116,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Casa Musica\\Ballroom Stars Vol 1 Disc 2\\22 - Sammy Davis, Jr. - Bye Bye Blackbird (live) (Foxtrot, 28mpm).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

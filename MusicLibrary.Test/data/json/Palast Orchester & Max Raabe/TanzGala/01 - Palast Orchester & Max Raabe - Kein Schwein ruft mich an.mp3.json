@@ -1,0 +1,33 @@
+{
+  "TrackNumber": 1,
+  "Title": "Kein Schwein ruft mich an",
+  "ArtistNames": [
+    "Palast Orchester & Max Raabe"
+  ],
+  "AlbumTitle": "TanzGala",
+  "AlbumArtistNames": [
+    "Palast Orchester & Max Raabe"
+  ],
+  "BeatsPerMinute": 132,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Deutsch",
+    "Tango",
+    "Standard"
+  ],
+  "Grouping": "Tango",
+  "Path": "Palast Orchester & Max Raabe\\TanzGala\\01 - Palast Orchester & Max Raabe - Kein Schwein ruft mich an.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

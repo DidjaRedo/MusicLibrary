@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 14,
+  "Title": "Delirio",
+  "ArtistNames": [
+    "Klaus Hallen"
+  ],
+  "AlbumTitle": "Quest - Tango Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Tango",
+    "Standard"
+  ],
+  "Grouping": "Tango",
+  "Path": "Various Artists\\Quest - Tango Z\\14 - Klaus Hallen - Delirio.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

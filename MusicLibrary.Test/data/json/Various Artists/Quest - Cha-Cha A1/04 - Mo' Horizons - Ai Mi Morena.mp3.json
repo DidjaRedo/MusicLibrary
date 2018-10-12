@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 4,
+  "Title": "Ai Mi Morena",
+  "ArtistNames": [
+    "Mo' Horizons"
+  ],
+  "AlbumTitle": "Quest - Cha-Cha A1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 124,
+  "Comments": {
+    "": "Feedback: weak\r\nOriginally from \"The Ultimate Latin Album 12 - Diamante\"",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Latin"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\Quest - Cha-Cha A1\\04 - Mo' Horizons - Ai Mi Morena.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 0,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 0,
+      "PlayCount": 0
+    }
+  ]
+}

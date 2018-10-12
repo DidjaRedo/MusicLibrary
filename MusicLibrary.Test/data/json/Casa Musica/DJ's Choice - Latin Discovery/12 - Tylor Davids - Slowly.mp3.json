@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 12,
+  "Title": "Slowly",
+  "ArtistNames": [
+    "Tylor Davids"
+  ],
+  "AlbumTitle": "DJ's Choice - Latin Discovery",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 96,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Rumba",
+    "Latin"
+  ],
+  "Grouping": "Rumba",
+  "Path": "Casa Musica\\DJ's Choice - Latin Discovery\\12 - Tylor Davids - Slowly.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

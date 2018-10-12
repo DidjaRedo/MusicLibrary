@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 8,
+  "Title": "Theme from \"The Lost World\"",
+  "ArtistNames": [
+    "Hollywood Movie Strings"
+  ],
+  "AlbumTitle": "Quest - Viennese Waltz A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 177,
+  "Comments": {
+    "": "Originally from \"Ballroom Passion\" (Casa Musica)",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Viennese Waltz",
+    "Standard"
+  ],
+  "Grouping": "Viennese Waltz",
+  "Path": "Various Artists\\Quest - Viennese Waltz A\\08 - Hollywood Movie Strings - Theme from 'The Lost World'.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

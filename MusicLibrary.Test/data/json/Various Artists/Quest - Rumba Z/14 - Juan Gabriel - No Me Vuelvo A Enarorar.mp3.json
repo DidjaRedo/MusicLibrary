@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 14,
+  "Title": "No Me Vuelvo A Enarorar",
+  "ArtistNames": [
+    "Juan Gabriel"
+  ],
+  "AlbumTitle": "Quest - Rumba Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Rumba",
+    "Latin"
+  ],
+  "Grouping": "Rumba",
+  "Path": "Various Artists\\Quest - Rumba Z\\14 - Juan Gabriel - No Me Vuelvo A Enarorar.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

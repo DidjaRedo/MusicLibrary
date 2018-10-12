@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 3,
+  "Title": "Caramel [TS]",
+  "ArtistNames": [
+    "Suzanne Vega"
+  ],
+  "AlbumTitle": "PAPC Experimental 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 115,
+  "Comments": {
+    "Songs-DB_Custom1": "dup"
+  },
+  "Genres": [
+    "Ballroom",
+    "Rumba",
+    "Social"
+  ],
+  "Grouping": "Rumba",
+  "Path": "Various Artists\\PAPC Experimental 1\\03 - Suzanne Vega - Caramel [TS].mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 64,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 64,
+      "PlayCount": 0
+    }
+  ]
+}

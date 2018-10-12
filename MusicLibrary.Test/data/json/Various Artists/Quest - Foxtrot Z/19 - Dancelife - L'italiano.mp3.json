@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 19,
+  "Title": "L'italiano",
+  "ArtistNames": [
+    "Dancelife"
+  ],
+  "AlbumTitle": "Quest - Foxtrot Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "": "long intro, weird beat",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Quest - Foxtrot Z\\19 - Dancelife - L'italiano.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 0,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 0,
+      "PlayCount": 0
+    }
+  ]
+}

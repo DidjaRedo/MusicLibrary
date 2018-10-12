@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 5,
+  "Title": "Give It Up",
+  "ArtistNames": [
+    "Goodmen"
+  ],
+  "AlbumTitle": "PAPC Samba 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 110,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Social"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\PAPC Samba 1\\05 - Goodmen - Give It Up.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

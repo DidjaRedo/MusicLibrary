@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MusicLibrary.Cli": {
+      "commandName": "Project",
+      "commandLineArgs": "import s:\\music\\mp3 .\\data\\json"
+    }
+  }
+}

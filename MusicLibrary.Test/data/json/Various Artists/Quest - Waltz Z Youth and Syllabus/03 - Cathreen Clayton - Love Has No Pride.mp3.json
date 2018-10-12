@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 3,
+  "Title": "Love Has No Pride",
+  "ArtistNames": [
+    "Cathreen Clayton"
+  ],
+  "AlbumTitle": "Quest - Waltz Z Youth and Syllabus",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 86,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\Quest - Waltz Z Youth and Syllabus\\03 - Cathreen Clayton - Love Has No Pride.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

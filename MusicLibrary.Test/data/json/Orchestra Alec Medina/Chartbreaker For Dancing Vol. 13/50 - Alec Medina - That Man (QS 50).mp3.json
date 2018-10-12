@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 50,
+  "Title": "That Man (QS 50)",
+  "ArtistNames": [
+    "Alec Medina"
+  ],
+  "AlbumTitle": "Chartbreaker For Dancing Vol. 13",
+  "AlbumArtistNames": [
+    "Orchestra Alec Medina"
+  ],
+  "BeatsPerMinute": 50,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Standard"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Orchestra Alec Medina\\Chartbreaker For Dancing Vol. 13\\50 - Alec Medina - That Man (QS 50).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

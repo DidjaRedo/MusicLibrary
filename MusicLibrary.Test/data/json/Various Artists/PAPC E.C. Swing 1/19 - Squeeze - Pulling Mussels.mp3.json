@@ -1,0 +1,33 @@
+{
+  "TrackNumber": 19,
+  "Title": "Pulling Mussels",
+  "ArtistNames": [
+    "Squeeze"
+  ],
+  "AlbumTitle": "PAPC E.C. Swing 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 148,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "EC Swing",
+    "Swing",
+    "Social"
+  ],
+  "Grouping": "E.C. Swing",
+  "Path": "Various Artists\\PAPC E.C. Swing 1\\19 - Squeeze - Pulling Mussels.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

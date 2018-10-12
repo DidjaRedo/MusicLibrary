@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 6,
+  "Title": "Theme From \"George Of The Jungle\"",
+  "ArtistNames": [
+    "Casa Musica"
+  ],
+  "AlbumTitle": "Quest - Quickstep Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Standard"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Various Artists\\Quest - Quickstep Z\\06 - Casa Musica - Theme From 'George Of The Jungle'.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

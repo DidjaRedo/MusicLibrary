@@ -1,4 +1,8 @@
 ﻿using System;
+using System.IO;
+
+using MusicLibrary.Lib;
+using Newtonsoft.Json;
 
 namespace MusicLibrary.Cli
 {
@@ -32,8 +36,29 @@ namespace MusicLibrary.Cli
             Console.WriteLine("    import <path> [<output>]");
         }
 
-        static void Import(string from, string to) {
-            Console.WriteLine($"Should import from {from} to {to}");
+        static void Import(string fromPath, string toPath) {
+            var from = new DirectoryInfo(fromPath);
+            var to = new DirectoryInfo(toPath);
+            if (!from.Exists) {
+                throw new ApplicationException($"Source directory {from.FullName} does not exist.");
+            }
+            if (!to.Exists) {
+                to.Create();
+            }
+            else if ((to.Attributes & FileAttributes.Directory) == 0) {
+                throw new ApplicationException($"Destination {to.FullName} must be a directory.");
+            }
+
+            var dest = Path.Combine(to.FullName, "library.json");
+            var library = new Library(from.FullName);
+            File.WriteAllText(dest, library.ExportToJson(true));
+
+            foreach (var track in library.Tracks) {
+                dest = Path.Combine(to.FullName, $"{track.Path}.json");
+                var dir = new DirectoryInfo(Path.GetDirectoryName(dest));
+                dir.Create();
+                File.WriteAllText(dest, JsonConvert.SerializeObject(track, Formatting.Indented));
+            }
         }
     }
 }

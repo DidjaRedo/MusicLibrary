@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 22,
+  "Title": "Tu",
+  "ArtistNames": [
+    "[ Unknown ]"
+  ],
+  "AlbumTitle": "Quest - Rumba Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Rumba",
+    "Latin"
+  ],
+  "Grouping": "Rumba",
+  "Path": "Various Artists\\Quest - Rumba Z\\22 - [ Unknown ] - Tu.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

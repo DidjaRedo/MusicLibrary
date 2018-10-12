@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 17,
+  "Title": "Evil Ways",
+  "ArtistNames": [
+    "Santana"
+  ],
+  "AlbumTitle": "PAPC Cha-Cha 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 119,
+  "Comments": {
+    "Songs-DB_Custom1": "dup"
+  },
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Social"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\PAPC Cha-Cha 1\\17 - Santana - Evil Ways.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

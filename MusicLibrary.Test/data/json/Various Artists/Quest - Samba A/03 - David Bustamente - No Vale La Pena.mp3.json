@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 3,
+  "Title": "No Vale La Pena",
+  "ArtistNames": [
+    "David Bustamente"
+  ],
+  "AlbumTitle": "Quest - Samba A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 100,
+  "Comments": {
+    "": "Competition feedback: Do not play\r\nOriginally from \"The Ultimate Latin Album 12 - Diamante\"",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Latin"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\Quest - Samba A\\03 - David Bustamente - No Vale La Pena.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 0,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 0,
+      "PlayCount": 0
+    }
+  ]
+}

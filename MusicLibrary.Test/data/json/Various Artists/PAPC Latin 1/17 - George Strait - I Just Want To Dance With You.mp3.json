@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 17,
+  "Title": "I Just Want To Dance With You",
+  "ArtistNames": [
+    "George Strait"
+  ],
+  "AlbumTitle": "PAPC Latin 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 115,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Rumba",
+    "Social"
+  ],
+  "Grouping": "Rumba",
+  "Path": "Various Artists\\PAPC Latin 1\\17 - George Strait - I Just Want To Dance With You.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

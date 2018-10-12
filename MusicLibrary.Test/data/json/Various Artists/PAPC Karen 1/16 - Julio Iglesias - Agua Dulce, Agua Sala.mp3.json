@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 16,
+  "Title": "Agua Dulce, Agua Sala",
+  "ArtistNames": [
+    "Julio Iglesias"
+  ],
+  "AlbumTitle": "PAPC Karen 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Social"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\PAPC Karen 1\\16 - Julio Iglesias - Agua Dulce, Agua Sala.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

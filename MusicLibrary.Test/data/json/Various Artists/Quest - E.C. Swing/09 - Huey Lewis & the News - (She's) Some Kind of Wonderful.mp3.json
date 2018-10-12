@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 9,
+  "Title": "(She's) Some Kind of Wonderful",
+  "ArtistNames": [
+    "Huey Lewis & the News"
+  ],
+  "AlbumTitle": "Quest - E.C. Swing",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "EC Swing",
+    "Rhythm",
+    "Swing"
+  ],
+  "Grouping": "E.C. Swing",
+  "Path": "Various Artists\\Quest - E.C. Swing\\09 - Huey Lewis & the News - (She's) Some Kind of Wonderful.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

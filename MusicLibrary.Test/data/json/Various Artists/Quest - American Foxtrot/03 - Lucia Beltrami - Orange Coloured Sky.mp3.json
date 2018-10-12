@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 3,
+  "Title": "Orange Coloured Sky",
+  "ArtistNames": [
+    "Lucia Beltrami"
+  ],
+  "AlbumTitle": "Quest - American Foxtrot",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 111,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Smooth"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Quest - American Foxtrot\\03 - Lucia Beltrami - Orange Coloured Sky.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

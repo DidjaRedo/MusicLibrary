@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 21,
+  "Title": "Orange Colored Sky",
+  "ArtistNames": [
+    "Nat King Cole"
+  ],
+  "AlbumTitle": "PAPC Foxtrot 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 123,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Social"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\PAPC Foxtrot 1\\21 - Nat King Cole - Orange Colored Sky.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 14,
+  "Title": "In a Perfect World",
+  "ArtistNames": [
+    "Melissa Manchester"
+  ],
+  "AlbumTitle": "Let's Dance: The Best of Ballroom Foxtrots & Waltzes",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Social"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\Let's Dance- The Best of Ballroom Foxtrots & Waltzes\\14 - Melissa Manchester - In a Perfect World.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

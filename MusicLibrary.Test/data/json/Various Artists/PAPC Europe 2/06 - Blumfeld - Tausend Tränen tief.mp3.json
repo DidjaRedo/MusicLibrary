@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 6,
+  "Title": "Tausend Tränen tief",
+  "ArtistNames": [
+    "Blumfeld"
+  ],
+  "AlbumTitle": "PAPC Europe 2",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 100,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Bolero",
+    "Social"
+  ],
+  "Grouping": "Bolero",
+  "Path": "Various Artists\\PAPC Europe 2\\06 - Blumfeld - Tausend Tränen tief.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

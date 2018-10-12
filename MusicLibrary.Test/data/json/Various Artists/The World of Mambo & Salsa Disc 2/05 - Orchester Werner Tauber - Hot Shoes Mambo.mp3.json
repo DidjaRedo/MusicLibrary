@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 5,
+  "Title": "Hot Shoes Mambo",
+  "ArtistNames": [
+    "Orchester Werner Tauber"
+  ],
+  "AlbumTitle": "The World of Mambo & Salsa Disc 2",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 240,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Salsa",
+    "Social"
+  ],
+  "Grouping": "Salsa",
+  "Path": "Various Artists\\The World of Mambo & Salsa Disc 2\\05 - Orchester Werner Tauber - Hot Shoes Mambo.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 1,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 1,
+      "PlayCount": 0
+    }
+  ]
+}

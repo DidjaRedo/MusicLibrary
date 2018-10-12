@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 12,
+  "Title": "Love Ain't Here Any More",
+  "ArtistNames": [
+    "Dancelife"
+  ],
+  "AlbumTitle": "Quest - Waltz Z Youth and Syllabus",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 87,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\Quest - Waltz Z Youth and Syllabus\\12 - Dancelife - Love Ain't Here Any More.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

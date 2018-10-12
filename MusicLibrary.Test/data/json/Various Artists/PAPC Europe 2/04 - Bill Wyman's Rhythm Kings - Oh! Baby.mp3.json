@@ -1,0 +1,33 @@
+{
+  "TrackNumber": 4,
+  "Title": "Oh! Baby",
+  "ArtistNames": [
+    "Bill Wyman's Rhythm Kings"
+  ],
+  "AlbumTitle": "PAPC Europe 2",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 142,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "EC Swing",
+    "Swing",
+    "Social"
+  ],
+  "Grouping": "E.C. Swing",
+  "Path": "Various Artists\\PAPC Europe 2\\04 - Bill Wyman's Rhythm Kings - Oh! Baby.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

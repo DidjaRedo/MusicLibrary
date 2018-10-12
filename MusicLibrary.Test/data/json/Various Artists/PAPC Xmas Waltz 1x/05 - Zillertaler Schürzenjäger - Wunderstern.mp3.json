@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 5,
+  "Title": "Wunderstern",
+  "ArtistNames": [
+    "Zillertaler Schürzenjäger"
+  ],
+  "AlbumTitle": "PAPC Xmas Waltz 1x",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 96,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth",
+    "Christmas",
+    "Weihnachtsmusik"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\PAPC Xmas Waltz 1x\\05 - Zillertaler Schürzenjäger - Wunderstern.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

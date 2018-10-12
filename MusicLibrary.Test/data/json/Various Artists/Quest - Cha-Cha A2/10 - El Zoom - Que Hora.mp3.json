@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 10,
+  "Title": "Que Hora",
+  "ArtistNames": [
+    "El Zoom"
+  ],
+  "AlbumTitle": "Quest - Cha-Cha A2",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Latin"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\Quest - Cha-Cha A2\\10 - El Zoom - Que Hora.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

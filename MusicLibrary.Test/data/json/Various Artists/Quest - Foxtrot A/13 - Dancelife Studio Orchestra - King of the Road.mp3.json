@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 13,
+  "Title": "King of the Road",
+  "ArtistNames": [
+    "Dancelife Studio Orchestra"
+  ],
+  "AlbumTitle": "Quest - Foxtrot A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Quest - Foxtrot A\\13 - Dancelife Studio Orchestra - King of the Road.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

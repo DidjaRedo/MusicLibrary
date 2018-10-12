@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 4,
+  "Title": "Kiss Kiss",
+  "ArtistNames": [
+    "Holly Valance"
+  ],
+  "AlbumTitle": "Quest - Samba A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 100,
+  "Comments": {
+    "": "Originally from \"The Ultimate Latin Album 12 - Diamante\"",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Latin"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\Quest - Samba A\\04 - Holly Valance - Kiss Kiss.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

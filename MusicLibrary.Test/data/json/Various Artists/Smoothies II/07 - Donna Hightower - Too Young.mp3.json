@@ -1,0 +1,33 @@
+{
+  "TrackNumber": 7,
+  "Title": "Too Young",
+  "ArtistNames": [
+    "Donna Hightower"
+  ],
+  "AlbumTitle": "Smoothies II",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 114,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard",
+    "Vocal"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Smoothies II\\07 - Donna Hightower - Too Young.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 5,
+  "Title": "Jealousy",
+  "ArtistNames": [
+    "Various Artists"
+  ],
+  "AlbumTitle": "Most Wanted: Tango",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Tango",
+    "Social"
+  ],
+  "Grouping": "Tango",
+  "Path": "Various Artists\\Most Wanted- Tango\\05 - Various Artists - Jealousy.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

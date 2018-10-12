@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 7,
+  "Title": "Wonderful Copenhagen",
+  "ArtistNames": [
+    "Dancelife"
+  ],
+  "AlbumTitle": "Masters of Modern 1",
+  "AlbumArtistNames": [
+    "Dancelife"
+  ],
+  "BeatsPerMinute": 180,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Viennese Waltz",
+    "Standard"
+  ],
+  "Grouping": "Viennese Waltz",
+  "Path": "Dancelife\\Masters of Modern 1\\07 - Dancelife - Wonderful Copenhagen.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

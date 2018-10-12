@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 13,
+  "Title": "Do You Wanna Dance",
+  "ArtistNames": [
+    "Jive 42BPM"
+  ],
+  "AlbumTitle": "Dancelife's Golden Hits",
+  "AlbumArtistNames": [
+    "Dancelife"
+  ],
+  "BeatsPerMinute": 169,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Jive",
+    "Latin"
+  ],
+  "Grouping": "Jive",
+  "Path": "Dancelife\\Dancelife's Golden Hits\\13 - Jive 42BPM - Do You Wanna Dance.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

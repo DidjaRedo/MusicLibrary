@@ -1,0 +1,30 @@
+{
+  "TrackNumber": 11,
+  "Title": "I've got you under my skin",
+  "ArtistNames": [
+    "Palast Orchester & Max Raabe"
+  ],
+  "AlbumTitle": "TanzGala",
+  "AlbumArtistNames": [
+    "Palast Orchester & Max Raabe"
+  ],
+  "BeatsPerMinute": 116,
+  "Comments": {},
+  "Genres": [
+    "Ballroom"
+  ],
+  "Grouping": null,
+  "Path": "Palast Orchester & Max Raabe\\TanzGala\\11 - Palast Orchester & Max Raabe - I've got you under my skin.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

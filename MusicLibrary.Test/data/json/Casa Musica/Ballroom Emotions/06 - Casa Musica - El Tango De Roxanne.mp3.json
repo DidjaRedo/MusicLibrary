@@ -1,0 +1,24 @@
+{
+  "TrackNumber": 6,
+  "Title": "El Tango De Roxanne",
+  "ArtistNames": [
+    "Casa Musica"
+  ],
+  "AlbumTitle": "Ballroom Emotions",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 128,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Tango",
+    "Standard"
+  ],
+  "Grouping": "Tango",
+  "Path": "Casa Musica\\Ballroom Emotions\\06 - Casa Musica - El Tango De Roxanne.mp3",
+  "Rating": null,
+  "Ratings": []
+}

@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 23,
+  "Title": "Rise",
+  "ArtistNames": [
+    "Gabrielle"
+  ],
+  "AlbumTitle": "PAPC Europe 2",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Nightclub Two-Step",
+    "Social"
+  ],
+  "Grouping": "Nightclub Two-Step",
+  "Path": "Various Artists\\PAPC Europe 2\\23 - Gabrielle - Rise.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

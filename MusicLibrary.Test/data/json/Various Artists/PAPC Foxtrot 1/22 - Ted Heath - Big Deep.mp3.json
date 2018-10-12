@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 22,
+  "Title": "Big Deep",
+  "ArtistNames": [
+    "Ted Heath"
+  ],
+  "AlbumTitle": "PAPC Foxtrot 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 125,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Social"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\PAPC Foxtrot 1\\22 - Ted Heath - Big Deep.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 8,
+  "Title": "The Sweetheart Tree (Waltz, 29mpm)",
+  "ArtistNames": [
+    "Bobby Darin"
+  ],
+  "AlbumTitle": "Ballroom Stars Vol 1 Disc 1",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 87,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Casa Musica\\Ballroom Stars Vol 1 Disc 1\\08 - Bobby Darin - The Sweetheart Tree (Waltz, 29mpm).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

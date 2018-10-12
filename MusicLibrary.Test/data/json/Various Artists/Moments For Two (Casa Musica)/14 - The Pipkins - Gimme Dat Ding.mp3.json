@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 14,
+  "Title": "Gimme Dat Ding",
+  "ArtistNames": [
+    "The Pipkins"
+  ],
+  "AlbumTitle": "Moments For Two (Casa Musica)",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 195,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Standard",
+    "Social"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Various Artists\\Moments For Two (Casa Musica)\\14 - The Pipkins - Gimme Dat Ding.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

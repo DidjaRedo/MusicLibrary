@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 11,
+  "Title": "Yiri Yiri Bon",
+  "ArtistNames": [
+    "Ricardo Lemvo"
+  ],
+  "AlbumTitle": "PAPC Karen 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Salsa",
+    "Social"
+  ],
+  "Grouping": "Salsa",
+  "Path": "Various Artists\\PAPC Karen 1\\11 - Ricardo Lemvo - Yiri Yiri Bon.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

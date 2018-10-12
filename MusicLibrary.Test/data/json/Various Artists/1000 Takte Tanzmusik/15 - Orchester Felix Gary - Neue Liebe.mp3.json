@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 15,
+  "Title": "Neue Liebe",
+  "ArtistNames": [
+    "Orchester Felix Gary"
+  ],
+  "AlbumTitle": "1000 Takte Tanzmusik",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 174,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Viennese Waltz",
+    "Standard"
+  ],
+  "Grouping": "Viennese Waltz",
+  "Path": "Various Artists\\1000 Takte Tanzmusik\\15 - Orchester Felix Gary - Neue Liebe.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 54,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 54,
+      "PlayCount": 0
+    }
+  ]
+}

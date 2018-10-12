@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 13,
+  "Title": "Love Is a Many Splendored Thing [Rumba]",
+  "ArtistNames": [
+    "Columbia Ballroom Orchestra"
+  ],
+  "AlbumTitle": "Let's Dance: I Kiss Your Little Hand, Madame",
+  "AlbumArtistNames": [
+    "Columbia Ballroom Orchestra"
+  ],
+  "BeatsPerMinute": 108,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Rumba",
+    "Latin"
+  ],
+  "Grouping": "Rumba",
+  "Path": "Columbia Ballroom Orchestra\\Let's Dance- I Kiss Your Little Hand, Madame\\13 - Columbia Ballroom Orchestra - Love Is a Many Splendored Thing [Rumba].mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

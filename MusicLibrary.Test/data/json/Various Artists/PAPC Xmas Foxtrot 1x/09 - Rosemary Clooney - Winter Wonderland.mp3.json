@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 9,
+  "Title": "Winter Wonderland",
+  "ArtistNames": [
+    "Rosemary Clooney"
+  ],
+  "AlbumTitle": "PAPC Xmas Foxtrot 1x",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 126,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Social",
+    "Christmas",
+    "Weihnachtsmusik"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\PAPC Xmas Foxtrot 1x\\09 - Rosemary Clooney - Winter Wonderland.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 20,
+  "Title": "Non Dimenticar Le Mie Parole",
+  "ArtistNames": [
+    "Dancelife"
+  ],
+  "AlbumTitle": "Quest - Foxtrot Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Quest - Foxtrot Z\\20 - Dancelife - Non Dimenticar Le Mie Parole.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

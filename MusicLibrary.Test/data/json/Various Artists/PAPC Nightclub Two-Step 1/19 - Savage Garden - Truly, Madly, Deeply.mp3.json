@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 19,
+  "Title": "Truly, Madly, Deeply",
+  "ArtistNames": [
+    "Savage Garden"
+  ],
+  "AlbumTitle": "PAPC Nightclub Two-Step 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Nightclub Two-Step",
+    "Social"
+  ],
+  "Grouping": "Nightclub Two-Step",
+  "Path": "Various Artists\\PAPC Nightclub Two-Step 1\\19 - Savage Garden - Truly, Madly, Deeply.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

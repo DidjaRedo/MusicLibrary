@@ -1,0 +1,36 @@
+{
+  "TrackNumber": 5,
+  "Title": "Time To Get Crazy",
+  "ArtistNames": [
+    "Travis Tritt"
+  ],
+  "AlbumTitle": "Quest - Jive A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 172,
+  "Comments": {
+    "": "Originally from \"The Ultimate Latin Album 12 - Diamante\"",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Jive",
+    "Latin",
+    "Swing"
+  ],
+  "Grouping": "Jive",
+  "Path": "Various Artists\\Quest - Jive A\\05 - Travis Tritt - Time To Get Crazy.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

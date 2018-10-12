@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 10,
+  "Title": "Tango De'l Amor",
+  "ArtistNames": [
+    "Tanzorchester Klaus Hallen"
+  ],
+  "AlbumTitle": "World Hits 2",
+  "AlbumArtistNames": [
+    "Tanzorchester Klaus Hallen"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Tango",
+    "Standard"
+  ],
+  "Grouping": "Tango",
+  "Path": "Tanzorchester Klaus Hallen\\World Hits 2\\10 - Tanzorchester Klaus Hallen - Tango De'l Amor.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 64,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 64,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 13,
+  "Title": "Jingle Bell Rock",
+  "ArtistNames": [
+    "Wayne Newton"
+  ],
+  "AlbumTitle": "PAPC Xmas Foxtrot 1x",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 116,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Social",
+    "Christmas",
+    "Weihnachtsmusik"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\PAPC Xmas Foxtrot 1x\\13 - Wayne Newton - Jingle Bell Rock.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

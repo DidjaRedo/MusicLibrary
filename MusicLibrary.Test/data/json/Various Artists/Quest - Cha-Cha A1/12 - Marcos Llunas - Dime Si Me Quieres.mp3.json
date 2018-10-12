@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 12,
+  "Title": "Dime Si Me Quieres",
+  "ArtistNames": [
+    "Marcos Llunas"
+  ],
+  "AlbumTitle": "Quest - Cha-Cha A1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 124,
+  "Comments": {
+    "": "Originally from \"Latin Mega Hits 2\" (Casa Musica)",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Latin"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\Quest - Cha-Cha A1\\12 - Marcos Llunas - Dime Si Me Quieres.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

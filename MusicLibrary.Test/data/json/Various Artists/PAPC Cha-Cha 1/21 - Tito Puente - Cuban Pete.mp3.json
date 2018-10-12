@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 21,
+  "Title": "Cuban Pete",
+  "ArtistNames": [
+    "Tito Puente"
+  ],
+  "AlbumTitle": "PAPC Cha-Cha 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 116,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Social"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\PAPC Cha-Cha 1\\21 - Tito Puente - Cuban Pete.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 16,
+  "Title": "Come Away With Me",
+  "ArtistNames": [
+    "Casa Musica"
+  ],
+  "AlbumTitle": "Quest - Waltz Z Youth and Syllabus",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\Quest - Waltz Z Youth and Syllabus\\16 - Casa Musica - Come Away With Me.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

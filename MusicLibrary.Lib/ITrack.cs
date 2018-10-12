@@ -20,5 +20,7 @@ namespace MusicLibrary.Lib
         List<TrackRating> Ratings { get; }
         string Title { get; }
         uint TrackNumber { get; }
+
+        TrackDances Dances { get; }
     }
 }

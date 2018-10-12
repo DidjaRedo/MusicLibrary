@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 20,
+  "Title": "I Kiss Your Little Hand, Madame [Tango]",
+  "ArtistNames": [
+    "Columbia Ballroom Orchestra"
+  ],
+  "AlbumTitle": "Let's Dance: I Kiss Your Little Hand, Madame",
+  "AlbumArtistNames": [
+    "Columbia Ballroom Orchestra"
+  ],
+  "BeatsPerMinute": 132,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Tango",
+    "Standard"
+  ],
+  "Grouping": "Tango",
+  "Path": "Columbia Ballroom Orchestra\\Let's Dance- I Kiss Your Little Hand, Madame\\20 - Columbia Ballroom Orchestra - I Kiss Your Little Hand, Madame [Tango].mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 64,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 64,
+      "PlayCount": 0
+    }
+  ]
+}

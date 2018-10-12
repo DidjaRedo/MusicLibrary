@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 6,
+  "Title": "Verano Porteno (Tango)",
+  "ArtistNames": [
+    "Klaus Hallen"
+  ],
+  "AlbumTitle": "Standard Collection 3",
+  "AlbumArtistNames": [
+    "Klaus Hallen"
+  ],
+  "BeatsPerMinute": 132,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Tango",
+    "Standard"
+  ],
+  "Grouping": "Tango",
+  "Path": "Klaus Hallen\\Standard Collection 3\\06 - Klaus Hallen - Verano Porteno (Tango).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

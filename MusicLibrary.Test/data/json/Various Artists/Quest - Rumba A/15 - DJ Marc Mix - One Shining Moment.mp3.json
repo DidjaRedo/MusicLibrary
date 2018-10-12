@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 15,
+  "Title": "One Shining Moment",
+  "ArtistNames": [
+    "DJ Marc Mix"
+  ],
+  "AlbumTitle": "Quest - Rumba A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Rumba",
+    "Latin"
+  ],
+  "Grouping": "Rumba",
+  "Path": "Various Artists\\Quest - Rumba A\\15 - DJ Marc Mix - One Shining Moment.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

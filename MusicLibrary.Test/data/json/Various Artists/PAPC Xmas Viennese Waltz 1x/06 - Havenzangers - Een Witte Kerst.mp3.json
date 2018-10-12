@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 6,
+  "Title": "Een Witte Kerst",
+  "ArtistNames": [
+    "Havenzangers"
+  ],
+  "AlbumTitle": "PAPC Xmas Viennese Waltz 1x",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 184,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Viennese Waltz",
+    "Standard",
+    "Christmas",
+    "Weihnachtsmusik"
+  ],
+  "Grouping": "Viennese Waltz",
+  "Path": "Various Artists\\PAPC Xmas Viennese Waltz 1x\\06 - Havenzangers - Een Witte Kerst.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

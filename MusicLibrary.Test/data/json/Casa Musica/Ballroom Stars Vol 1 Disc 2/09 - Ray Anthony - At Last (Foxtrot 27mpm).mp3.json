@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 9,
+  "Title": "At Last (Foxtrot 27mpm)",
+  "ArtistNames": [
+    "Ray Anthony"
+  ],
+  "AlbumTitle": "Ballroom Stars Vol 1 Disc 2",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 108,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Casa Musica\\Ballroom Stars Vol 1 Disc 2\\09 - Ray Anthony - At Last (Foxtrot 27mpm).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

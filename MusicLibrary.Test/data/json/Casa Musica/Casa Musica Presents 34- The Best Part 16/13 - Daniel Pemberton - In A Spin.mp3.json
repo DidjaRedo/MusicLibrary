@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 13,
+  "Title": "In A Spin",
+  "ArtistNames": [
+    "Daniel Pemberton"
+  ],
+  "AlbumTitle": "Casa Musica Presents 34: The Best Part 16",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 174,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Viennese Waltz",
+    "Standard"
+  ],
+  "Grouping": "Viennese Waltz",
+  "Path": "Casa Musica\\Casa Musica Presents 34- The Best Part 16\\13 - Daniel Pemberton - In A Spin.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

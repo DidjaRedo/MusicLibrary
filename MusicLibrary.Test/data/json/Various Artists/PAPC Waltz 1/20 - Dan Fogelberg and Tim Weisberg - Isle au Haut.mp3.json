@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 20,
+  "Title": "Isle au Haut",
+  "ArtistNames": [
+    "Dan Fogelberg and Tim Weisberg"
+  ],
+  "AlbumTitle": "PAPC Waltz 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 85,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Social"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\PAPC Waltz 1\\20 - Dan Fogelberg and Tim Weisberg - Isle au Haut.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

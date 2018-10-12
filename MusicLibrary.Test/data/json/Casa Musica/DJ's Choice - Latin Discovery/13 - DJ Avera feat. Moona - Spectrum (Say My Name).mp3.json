@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 13,
+  "Title": "Spectrum (Say My Name)",
+  "ArtistNames": [
+    "DJ Avera feat. Moona"
+  ],
+  "AlbumTitle": "DJ's Choice - Latin Discovery",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 100,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Rumba",
+    "Latin"
+  ],
+  "Grouping": "Rumba",
+  "Path": "Casa Musica\\DJ's Choice - Latin Discovery\\13 - DJ Avera feat. Moona - Spectrum (Say My Name).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 19,
+  "Title": "Midnight in Montmarte",
+  "ArtistNames": [
+    "Piere Felére"
+  ],
+  "AlbumTitle": "PAPC Misc X1a",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 189,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Social"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Various Artists\\PAPC Misc X1a\\19 - Piere Felére - Midnight in Montmarte.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 64,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 64,
+      "PlayCount": 0
+    }
+  ]
+}

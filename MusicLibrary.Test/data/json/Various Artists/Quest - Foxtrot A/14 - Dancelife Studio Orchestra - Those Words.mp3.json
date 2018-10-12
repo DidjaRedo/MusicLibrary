@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 14,
+  "Title": "Those Words",
+  "ArtistNames": [
+    "Dancelife Studio Orchestra"
+  ],
+  "AlbumTitle": "Quest - Foxtrot A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "": "Feedback: meh",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Quest - Foxtrot A\\14 - Dancelife Studio Orchestra - Those Words.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 1,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 1,
+      "PlayCount": 0
+    }
+  ]
+}

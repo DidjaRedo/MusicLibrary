@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 14,
+  "Title": "Happy Days And Lonely Nights",
+  "ArtistNames": [
+    "Kay Starr"
+  ],
+  "AlbumTitle": "Smoothies",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 112,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Smoothies\\14 - Kay Starr - Happy Days And Lonely Nights.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

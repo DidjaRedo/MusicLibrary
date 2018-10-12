@@ -1,0 +1,33 @@
+{
+  "TrackNumber": 11,
+  "Title": "Lambada",
+  "ArtistNames": [
+    "Werner Tauber"
+  ],
+  "AlbumTitle": "The World of Mambo & Salsa Disc 2",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 118,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Lambada"
+  ],
+  "Grouping": "Lambada",
+  "Path": "Various Artists\\The World of Mambo & Salsa Disc 2\\11 - Werner Tauber - Lambada.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 54,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 54,
+      "PlayCount": 0
+    }
+  ]
+}

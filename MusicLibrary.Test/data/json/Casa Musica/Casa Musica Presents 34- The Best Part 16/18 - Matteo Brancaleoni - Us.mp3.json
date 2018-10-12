@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 18,
+  "Title": "Us",
+  "ArtistNames": [
+    "Matteo Brancaleoni"
+  ],
+  "AlbumTitle": "Casa Musica Presents 34: The Best Part 16",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 112,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Casa Musica\\Casa Musica Presents 34- The Best Part 16\\18 - Matteo Brancaleoni - Us.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

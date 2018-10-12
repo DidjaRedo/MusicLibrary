@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 29,
+  "Title": "Don't Worry (SF 29)",
+  "ArtistNames": [
+    "Alessandro Olivato"
+  ],
+  "AlbumTitle": "Beautiful Ballroom",
+  "AlbumArtistNames": [
+    "Alessandro Olivato"
+  ],
+  "BeatsPerMinute": 116,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Alessandro Olivato\\Beautiful Ballroom\\29 - Alessandro Olivato - Don't Worry (SF 29).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 18,
+  "Title": "Sucks To Be You",
+  "ArtistNames": [
+    "Prozzäk"
+  ],
+  "AlbumTitle": "PAPC Europe 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Hustle",
+    "Social"
+  ],
+  "Grouping": "Hustle",
+  "Path": "Various Artists\\PAPC Europe 1\\18 - Prozzäk - Sucks To Be You.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 255,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 255,
+      "PlayCount": 0
+    }
+  ]
+}

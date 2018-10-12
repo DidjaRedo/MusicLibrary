@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 1,
+  "Title": "Rockin' Around the Christmas Tree",
+  "ArtistNames": [
+    "Eddie Rabbitt"
+  ],
+  "AlbumTitle": "PAPC Xmas East Coast Swing 1x",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 131,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "EC Swing",
+    "Swing",
+    "Social",
+    "Christmas",
+    "Weihnachtsmusik"
+  ],
+  "Grouping": "E.C. Swing",
+  "Path": "Various Artists\\PAPC Xmas East Coast Swing 1x\\01 - Eddie Rabbitt - Rockin' Around the Christmas Tree.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

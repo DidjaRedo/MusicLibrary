@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 10,
+  "Title": "Mi Pasión",
+  "ArtistNames": [
+    "Havana"
+  ],
+  "AlbumTitle": "PAPC Cha-Cha 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 121,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Social"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\PAPC Cha-Cha 1\\10 - Havana - Mi Pasión.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

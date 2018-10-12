@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 5,
+  "Title": "Peace Sign",
+  "ArtistNames": [
+    "War"
+  ],
+  "AlbumTitle": "PAPC Cha-Cha 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 124,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Social"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\PAPC Cha-Cha 1\\05 - War - Peace Sign.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

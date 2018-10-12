@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 19,
+  "Title": "Until The Real Thing Comes Along",
+  "ArtistNames": [
+    "Dean Martin"
+  ],
+  "AlbumTitle": "Smoothies",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Social"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Smoothies\\19 - Dean Martin - Until The Real Thing Comes Along.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

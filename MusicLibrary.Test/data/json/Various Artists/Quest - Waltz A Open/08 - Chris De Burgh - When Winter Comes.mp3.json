@@ -1,0 +1,36 @@
+{
+  "TrackNumber": 8,
+  "Title": "When Winter Comes",
+  "ArtistNames": [
+    "Chris De Burgh"
+  ],
+  "AlbumTitle": "Quest - Waltz A Open",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 87,
+  "Comments": {
+    "": "Originally from \"The Ultimate Ballroom Album 14 - L'Italiano\"",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\Quest - Waltz A Open\\08 - Chris De Burgh - When Winter Comes.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

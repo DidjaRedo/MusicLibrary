@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 1,
+  "Title": "Always There",
+  "ArtistNames": [
+    "[ Unknown ]"
+  ],
+  "AlbumTitle": "Quest - American Cha-Cha",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto",
+    "Songs-DB_Custom2": "Rhythm"
+  },
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Rhythm"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\Quest - American Cha-Cha\\01 - [ Unknown ] - Always There.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

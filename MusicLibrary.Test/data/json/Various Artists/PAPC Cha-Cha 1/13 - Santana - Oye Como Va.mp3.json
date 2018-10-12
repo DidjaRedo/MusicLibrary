@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 13,
+  "Title": "Oye Como Va",
+  "ArtistNames": [
+    "Santana"
+  ],
+  "AlbumTitle": "PAPC Cha-Cha 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 126,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Social"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\PAPC Cha-Cha 1\\13 - Santana - Oye Como Va.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

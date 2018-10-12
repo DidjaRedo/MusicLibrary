@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 6,
+  "Title": "Cancion Triste",
+  "ArtistNames": [
+    "Prandi Sound"
+  ],
+  "AlbumTitle": "Quest - Tango Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Tango",
+    "Standard"
+  ],
+  "Grouping": "Tango",
+  "Path": "Various Artists\\Quest - Tango Z\\06 - Prandi Sound - Cancion Triste.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

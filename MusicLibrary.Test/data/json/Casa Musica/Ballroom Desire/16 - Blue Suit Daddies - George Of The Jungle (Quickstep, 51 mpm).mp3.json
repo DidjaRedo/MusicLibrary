@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 16,
+  "Title": "George Of The Jungle (Quickstep, 51 mpm)",
+  "ArtistNames": [
+    "Blue Suit Daddies"
+  ],
+  "AlbumTitle": "Ballroom Desire",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 102,
+  "Comments": {
+    "Songs-DB_Custom1": "dup; NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Standard"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Casa Musica\\Ballroom Desire\\16 - Blue Suit Daddies - George Of The Jungle (Quickstep, 51 mpm).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

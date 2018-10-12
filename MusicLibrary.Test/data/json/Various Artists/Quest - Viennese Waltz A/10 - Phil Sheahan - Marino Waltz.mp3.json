@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 10,
+  "Title": "Marino Waltz",
+  "ArtistNames": [
+    "Phil Sheahan"
+  ],
+  "AlbumTitle": "Quest - Viennese Waltz A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 177,
+  "Comments": {
+    "": "Originally from \"Ballroom Passion\" (Casa Musica)",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Viennese Waltz",
+    "Standard"
+  ],
+  "Grouping": "Viennese Waltz",
+  "Path": "Various Artists\\Quest - Viennese Waltz A\\10 - Phil Sheahan - Marino Waltz.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

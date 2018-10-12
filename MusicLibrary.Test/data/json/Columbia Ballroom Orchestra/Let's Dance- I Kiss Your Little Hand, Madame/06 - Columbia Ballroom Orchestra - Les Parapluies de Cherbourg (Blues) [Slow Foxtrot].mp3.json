@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 6,
+  "Title": "Les Parapluies de Cherbourg (Blues) [Slow Foxtrot]",
+  "ArtistNames": [
+    "Columbia Ballroom Orchestra"
+  ],
+  "AlbumTitle": "Let's Dance: I Kiss Your Little Hand, Madame",
+  "AlbumArtistNames": [
+    "Columbia Ballroom Orchestra"
+  ],
+  "BeatsPerMinute": 117,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Columbia Ballroom Orchestra\\Let's Dance- I Kiss Your Little Hand, Madame\\06 - Columbia Ballroom Orchestra - Les Parapluies de Cherbourg (Blues) [Slow Foxtrot].mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 64,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 64,
+      "PlayCount": 0
+    }
+  ]
+}

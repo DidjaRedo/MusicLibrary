@@ -1,0 +1,33 @@
+{
+  "TrackNumber": 6,
+  "Title": "Maria",
+  "ArtistNames": [
+    "Andy Fortuna"
+  ],
+  "AlbumTitle": "Latin Jam",
+  "AlbumArtistNames": [
+    "Andy Fortuna"
+  ],
+  "BeatsPerMinute": 104,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Latin"
+  ],
+  "Grouping": "Samba",
+  "Path": "Andy Fortuna\\Latin Jam\\06 - Andy Fortuna - Maria.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 1,
+  "Title": "Vuelve",
+  "ArtistNames": [
+    "Santino"
+  ],
+  "AlbumTitle": "Quest - Samba A2",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 100,
+  "Comments": {
+    "": "Originally from \"Latin Mega Hits\" (Casa Musica)",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Latin"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\Quest - Samba A2\\01 - Santino - Vuelve.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

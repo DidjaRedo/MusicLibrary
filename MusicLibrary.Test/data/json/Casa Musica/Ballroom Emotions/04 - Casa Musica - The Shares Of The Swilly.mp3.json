@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 4,
+  "Title": "The Shares Of The Swilly",
+  "ArtistNames": [
+    "Casa Musica"
+  ],
+  "AlbumTitle": "Ballroom Emotions",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 84,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Casa Musica\\Ballroom Emotions\\04 - Casa Musica - The Shares Of The Swilly.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 11,
+  "Title": "Sierra",
+  "ArtistNames": [
+    "Boz Scaggs"
+  ],
+  "AlbumTitle": "PAPC Nightclub Two-Step 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Nightclub Two-Step",
+    "Social"
+  ],
+  "Grouping": "Nightclub Two-Step",
+  "Path": "Various Artists\\PAPC Nightclub Two-Step 1\\11 - Boz Scaggs - Sierra.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 15,
+  "Title": "Camaleon",
+  "ArtistNames": [
+    "Sergio Dalma"
+  ],
+  "AlbumTitle": "Quest - Cha-Cha A1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 124,
+  "Comments": {
+    "": "Originally from \"Latin Mega Hits\" (Casa Musica)",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Latin"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\Quest - Cha-Cha A1\\15 - Sergio Dalma - Camaleon.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

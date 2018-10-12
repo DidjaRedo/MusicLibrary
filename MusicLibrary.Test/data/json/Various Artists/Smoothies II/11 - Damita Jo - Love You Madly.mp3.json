@@ -1,0 +1,31 @@
+{
+  "TrackNumber": 11,
+  "Title": "Love You Madly",
+  "ArtistNames": [
+    "Damita Jo"
+  ],
+  "AlbumTitle": "Smoothies II",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Vocal"
+  ],
+  "Grouping": null,
+  "Path": "Various Artists\\Smoothies II\\11 - Damita Jo - Love You Madly.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 64,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 64,
+      "PlayCount": 0
+    }
+  ]
+}

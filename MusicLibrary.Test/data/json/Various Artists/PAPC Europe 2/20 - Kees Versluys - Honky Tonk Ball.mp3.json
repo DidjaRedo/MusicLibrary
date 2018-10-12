@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 20,
+  "Title": "Honky Tonk Ball",
+  "ArtistNames": [
+    "Kees Versluys"
+  ],
+  "AlbumTitle": "PAPC Europe 2",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Country-Two Step",
+    "Social"
+  ],
+  "Grouping": "Country Two-Step",
+  "Path": "Various Artists\\PAPC Europe 2\\20 - Kees Versluys - Honky Tonk Ball.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

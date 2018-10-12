@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 15,
+  "Title": "Christmas Island",
+  "ArtistNames": [
+    "Bob Atcher",
+    "The Dinning Sisters"
+  ],
+  "AlbumTitle": "PAPC Xmas Foxtrot 1x",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 123,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Social",
+    "Christmas",
+    "Weihnachtsmusik"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\PAPC Xmas Foxtrot 1x\\15 - Bob Atcher; The Dinning Sisters - Christmas Island.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

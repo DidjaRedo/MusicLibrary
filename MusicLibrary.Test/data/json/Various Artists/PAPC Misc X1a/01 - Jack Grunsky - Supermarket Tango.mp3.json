@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 1,
+  "Title": "Supermarket Tango",
+  "ArtistNames": [
+    "Jack Grunsky"
+  ],
+  "AlbumTitle": "PAPC Misc X1a",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 128,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Tango",
+    "Social"
+  ],
+  "Grouping": "Tango",
+  "Path": "Various Artists\\PAPC Misc X1a\\01 - Jack Grunsky - Supermarket Tango.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

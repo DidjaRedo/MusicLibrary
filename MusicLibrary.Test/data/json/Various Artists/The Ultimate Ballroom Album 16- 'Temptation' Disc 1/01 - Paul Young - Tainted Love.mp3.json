@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 1,
+  "Title": "Tainted Love",
+  "ArtistNames": [
+    "Paul Young"
+  ],
+  "AlbumTitle": "The Ultimate Ballroom Album 16: \"Temptation\" Disc 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 120,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\The Ultimate Ballroom Album 16- 'Temptation' Disc 1\\01 - Paul Young - Tainted Love.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

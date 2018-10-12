@@ -1,0 +1,36 @@
+{
+  "TrackNumber": 12,
+  "Title": "Deja de Llorar",
+  "ArtistNames": [
+    "Jose Luis Cesarano"
+  ],
+  "AlbumTitle": "Quest - Waltz A Open",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 87,
+  "Comments": {
+    "": "Originally from \"Ballroom Passion\" (Casa Musica)",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\Quest - Waltz A Open\\12 - Jose Luis Cesarano - Deja de Llorar.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 7,
+  "Title": "Good Night",
+  "ArtistNames": [
+    "Orchester Etienne Cap"
+  ],
+  "AlbumTitle": "1000 Takte Tanzmusik",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 208,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Standard"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Various Artists\\1000 Takte Tanzmusik\\07 - Orchester Etienne Cap - Good Night.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 64,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 64,
+      "PlayCount": 0
+    }
+  ]
+}

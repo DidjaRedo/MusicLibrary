@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 17,
+  "Title": "Noche De Primavera",
+  "ArtistNames": [
+    "Malando & His Tango Orchestra"
+  ],
+  "AlbumTitle": "The Ultimate Ballroom Album 16: \"Temptation\" Disc 2",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 124,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Tango",
+    "Standard"
+  ],
+  "Grouping": "Tango",
+  "Path": "Various Artists\\The Ultimate Ballroom Album 16- 'Temptation' Disc 2\\17 - Malando & His Tango Orchestra - Noche De Primavera.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

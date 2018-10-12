@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 8,
+  "Title": "I Wouldn't Trade You",
+  "ArtistNames": [
+    "Jessica Molaskey"
+  ],
+  "AlbumTitle": "Quest - Foxtrot A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 116,
+  "Comments": {
+    "": "Originally from \"Ballroom Perfection\"",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Quest - Foxtrot A\\08 - Jessica Molaskey - I Wouldn't Trade You.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

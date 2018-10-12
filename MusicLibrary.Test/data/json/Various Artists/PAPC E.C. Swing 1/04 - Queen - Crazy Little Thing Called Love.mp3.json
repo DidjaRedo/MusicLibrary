@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 4,
+  "Title": "Crazy Little Thing Called Love",
+  "ArtistNames": [
+    "Queen"
+  ],
+  "AlbumTitle": "PAPC E.C. Swing 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 147,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "EC Swing",
+    "Swing",
+    "Social"
+  ],
+  "Grouping": "E.C. Swing",
+  "Path": "Various Artists\\PAPC E.C. Swing 1\\04 - Queen - Crazy Little Thing Called Love.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

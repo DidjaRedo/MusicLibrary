@@ -1,0 +1,30 @@
+{
+  "TrackNumber": 4,
+  "Title": "Singing The Blues",
+  "ArtistNames": [
+    "The Mills Brothers"
+  ],
+  "AlbumTitle": "Smoothies",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom"
+  ],
+  "Grouping": null,
+  "Path": "Various Artists\\Smoothies\\04 - The Mills Brothers - Singing The Blues.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

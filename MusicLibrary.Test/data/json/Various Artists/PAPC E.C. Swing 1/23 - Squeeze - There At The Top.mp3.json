@@ -1,0 +1,33 @@
+{
+  "TrackNumber": 23,
+  "Title": "There At The Top",
+  "ArtistNames": [
+    "Squeeze"
+  ],
+  "AlbumTitle": "PAPC E.C. Swing 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 149,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "EC Swing",
+    "Swing",
+    "Social"
+  ],
+  "Grouping": "E.C. Swing",
+  "Path": "Various Artists\\PAPC E.C. Swing 1\\23 - Squeeze - There At The Top.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

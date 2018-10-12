@@ -1,0 +1,33 @@
+{
+  "TrackNumber": 20,
+  "Title": "Lido Shuffle",
+  "ArtistNames": [
+    "Boz Scaggs"
+  ],
+  "AlbumTitle": "PAPC E.C. Swing 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 141,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "EC Swing",
+    "Swing",
+    "Social"
+  ],
+  "Grouping": "E.C. Swing",
+  "Path": "Various Artists\\PAPC E.C. Swing 1\\20 - Boz Scaggs - Lido Shuffle.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

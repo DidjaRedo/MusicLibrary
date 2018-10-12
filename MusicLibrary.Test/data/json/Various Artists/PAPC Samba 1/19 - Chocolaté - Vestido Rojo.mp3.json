@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 19,
+  "Title": "Vestido Rojo",
+  "ArtistNames": [
+    "Chocolaté"
+  ],
+  "AlbumTitle": "PAPC Samba 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Social"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\PAPC Samba 1\\19 - Chocolaté - Vestido Rojo.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

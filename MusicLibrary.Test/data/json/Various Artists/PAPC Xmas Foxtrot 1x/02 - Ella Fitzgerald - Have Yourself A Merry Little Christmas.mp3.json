@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 2,
+  "Title": "Have Yourself A Merry Little Christmas",
+  "ArtistNames": [
+    "Ella Fitzgerald"
+  ],
+  "AlbumTitle": "PAPC Xmas Foxtrot 1x",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 115,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Social",
+    "Christmas",
+    "Weihnachtsmusik"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\PAPC Xmas Foxtrot 1x\\02 - Ella Fitzgerald - Have Yourself A Merry Little Christmas.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

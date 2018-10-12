@@ -29,7 +29,11 @@ namespace MusicLibrary.Lib
         public TrackRating Rating => (Ratings.Count > 0) ? Ratings[0] : null;
         public List<TrackRating> Ratings { get; }
   
+        [JsonIgnore]
         public MediaMonkeyTags MediaMonkey { get; }
+
+        [JsonIgnore]
+        public TrackDances Dances { get; }
 
         [JsonIgnore] public TagLib.Tag Tag;
 
@@ -54,6 +58,7 @@ namespace MusicLibrary.Lib
             }
 
             MediaMonkey = new MediaMonkeyTags(this);
+            Dances = new TrackDances(this);
         }
 
         public static TrackFile TryCreate(string path, string root = null) {

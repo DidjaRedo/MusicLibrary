@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 20,
+  "Title": "Eyes From the Sky",
+  "ArtistNames": [
+    "Prandi Sounds"
+  ],
+  "AlbumTitle": "Quest - Rumba A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "": "Feedback: No",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Rumba",
+    "Latin"
+  ],
+  "Grouping": "Rumba",
+  "Path": "Various Artists\\Quest - Rumba A\\20 - Prandi Sounds - Eyes From the Sky.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 0,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 0,
+      "PlayCount": 0
+    }
+  ]
+}

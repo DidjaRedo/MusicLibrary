@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 20,
+  "Title": "La Musica Cubana",
+  "ArtistNames": [
+    "Dancelife Studio Orchestra"
+  ],
+  "AlbumTitle": "Quest - Cha-Cha A1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "": "Feedback: meh",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Latin"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\Quest - Cha-Cha A1\\20 - Dancelife Studio Orchestra - La Musica Cubana.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 1,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 1,
+      "PlayCount": 0
+    }
+  ]
+}

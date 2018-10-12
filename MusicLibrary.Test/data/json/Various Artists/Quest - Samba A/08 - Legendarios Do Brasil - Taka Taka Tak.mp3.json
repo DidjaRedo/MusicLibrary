@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 8,
+  "Title": "Taka Taka Tak",
+  "ArtistNames": [
+    "Legendarios Do Brasil"
+  ],
+  "AlbumTitle": "Quest - Samba A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 102,
+  "Comments": {
+    "": "Originally from \"Latin Mega Hits\" (Casa Musica)",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Latin"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\Quest - Samba A\\08 - Legendarios Do Brasil - Taka Taka Tak.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

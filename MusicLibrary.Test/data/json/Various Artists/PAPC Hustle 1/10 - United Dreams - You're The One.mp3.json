@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 10,
+  "Title": "You're The One",
+  "ArtistNames": [
+    "United Dreams"
+  ],
+  "AlbumTitle": "PAPC Hustle 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Hustle",
+    "Social"
+  ],
+  "Grouping": "Hustle",
+  "Path": "Various Artists\\PAPC Hustle 1\\10 - United Dreams - You're The One.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

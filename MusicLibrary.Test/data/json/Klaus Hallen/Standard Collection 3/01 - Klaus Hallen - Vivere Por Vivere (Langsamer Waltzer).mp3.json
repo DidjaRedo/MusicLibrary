@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 1,
+  "Title": "Vivere Por Vivere (Langsamer Waltzer)",
+  "ArtistNames": [
+    "Klaus Hallen"
+  ],
+  "AlbumTitle": "Standard Collection 3",
+  "AlbumArtistNames": [
+    "Klaus Hallen"
+  ],
+  "BeatsPerMinute": 88,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Klaus Hallen\\Standard Collection 3\\01 - Klaus Hallen - Vivere Por Vivere (Langsamer Waltzer).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 54,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 54,
+      "PlayCount": 0
+    }
+  ]
+}

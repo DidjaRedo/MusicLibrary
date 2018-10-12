@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 13,
+  "Title": "Mi Tierra",
+  "ArtistNames": [
+    "Gloria Estefan"
+  ],
+  "AlbumTitle": "PAPC Experimental 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Salsa",
+    "Social"
+  ],
+  "Grouping": "Salsa",
+  "Path": "Various Artists\\PAPC Experimental 1\\13 - Gloria Estefan - Mi Tierra.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 5,
+  "Title": "Celebrate (Samba/Salsa - 56 TM)",
+  "ArtistNames": [
+    "Art Dance Project"
+  ],
+  "AlbumTitle": "The World of Mambo & Salsa Disc 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Salsa"
+  ],
+  "Grouping": "Samba;Salsa",
+  "Path": "Various Artists\\The World of Mambo & Salsa Disc 1\\05 - Art Dance Project - Celebrate (Samba-Salsa - 56 TM).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 1,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 1,
+      "PlayCount": 0
+    }
+  ]
+}

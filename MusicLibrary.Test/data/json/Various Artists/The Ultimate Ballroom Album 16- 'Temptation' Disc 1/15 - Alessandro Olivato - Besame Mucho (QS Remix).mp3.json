@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 15,
+  "Title": "Besame Mucho (QS Remix)",
+  "ArtistNames": [
+    "Alessandro Olivato"
+  ],
+  "AlbumTitle": "The Ultimate Ballroom Album 16: \"Temptation\" Disc 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 102,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Standard"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Various Artists\\The Ultimate Ballroom Album 16- 'Temptation' Disc 1\\15 - Alessandro Olivato - Besame Mucho (QS Remix).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

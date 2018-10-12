@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 12,
+  "Title": "King of the Road",
+  "ArtistNames": [
+    "Roger Miller"
+  ],
+  "AlbumTitle": "Moments For Two (Casa Musica)",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 120,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard",
+    "Social"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Moments For Two (Casa Musica)\\12 - Roger Miller - King of the Road.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

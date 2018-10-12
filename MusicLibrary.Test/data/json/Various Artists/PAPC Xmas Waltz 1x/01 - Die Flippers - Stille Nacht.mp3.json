@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 1,
+  "Title": "Stille Nacht",
+  "ArtistNames": [
+    "Die Flippers"
+  ],
+  "AlbumTitle": "PAPC Xmas Waltz 1x",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 91,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth",
+    "Christmas",
+    "Weihnachtsmusik"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\PAPC Xmas Waltz 1x\\01 - Die Flippers - Stille Nacht.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

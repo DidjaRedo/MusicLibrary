@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 5,
+  "Title": "Amoeba Hop",
+  "ArtistNames": [
+    "Christine Lavin"
+  ],
+  "AlbumTitle": "PAPC Karen 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 218,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Social",
+    "Silly"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Various Artists\\PAPC Karen 1\\05 - Christine Lavin - Amoeba Hop.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

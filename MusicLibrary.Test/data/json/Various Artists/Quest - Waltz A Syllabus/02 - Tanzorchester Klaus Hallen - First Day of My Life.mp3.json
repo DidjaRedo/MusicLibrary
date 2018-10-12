@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 2,
+  "Title": "First Day of My Life",
+  "ArtistNames": [
+    "Tanzorchester Klaus Hallen"
+  ],
+  "AlbumTitle": "Quest - Waltz A Syllabus",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\Quest - Waltz A Syllabus\\02 - Tanzorchester Klaus Hallen - First Day of My Life.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

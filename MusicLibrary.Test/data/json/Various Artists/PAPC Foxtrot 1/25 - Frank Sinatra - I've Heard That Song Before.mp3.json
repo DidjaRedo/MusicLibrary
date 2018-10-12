@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 25,
+  "Title": "I've Heard That Song Before",
+  "ArtistNames": [
+    "Frank Sinatra"
+  ],
+  "AlbumTitle": "PAPC Foxtrot 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 124,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Social"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\PAPC Foxtrot 1\\25 - Frank Sinatra - I've Heard That Song Before.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

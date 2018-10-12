@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 10,
+  "Title": "Rafiki",
+  "ArtistNames": [
+    "Zap Mama"
+  ],
+  "AlbumTitle": "PAPC Europe 2",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Social"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\PAPC Europe 2\\10 - Zap Mama - Rafiki.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

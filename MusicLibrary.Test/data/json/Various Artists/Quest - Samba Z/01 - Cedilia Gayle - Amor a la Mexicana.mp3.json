@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 1,
+  "Title": "Amor a la Mexicana",
+  "ArtistNames": [
+    "Cedilia Gayle"
+  ],
+  "AlbumTitle": "Quest - Samba Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Latin"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\Quest - Samba Z\\01 - Cedilia Gayle - Amor a la Mexicana.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

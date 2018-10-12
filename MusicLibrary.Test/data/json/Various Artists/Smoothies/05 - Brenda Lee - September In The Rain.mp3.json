@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 5,
+  "Title": "September In The Rain",
+  "ArtistNames": [
+    "Brenda Lee"
+  ],
+  "AlbumTitle": "Smoothies",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 116,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Smoothies\\05 - Brenda Lee - September In The Rain.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

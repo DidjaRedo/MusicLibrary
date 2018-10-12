@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 13,
+  "Title": "Tuesday Afternoon",
+  "ArtistNames": [
+    "Jennifer Brown"
+  ],
+  "AlbumTitle": "PAPC Europe 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Swing",
+    "WC Swing"
+  ],
+  "Grouping": "W.C. Swing",
+  "Path": "Various Artists\\PAPC Europe 1\\13 - Jennifer Brown - Tuesday Afternoon.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

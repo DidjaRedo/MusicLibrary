@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 10,
+  "Title": "Sukiyaki",
+  "ArtistNames": [
+    "Swing City Giants vs. 102 Strings"
+  ],
+  "AlbumTitle": "Quest - Quickstep Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 102,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Standard"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Various Artists\\Quest - Quickstep Z\\10 - Swing City Giants vs. 102 Strings - Sukiyaki.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

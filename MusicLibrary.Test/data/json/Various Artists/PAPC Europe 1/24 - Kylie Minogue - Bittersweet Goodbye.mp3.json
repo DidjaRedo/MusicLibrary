@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 24,
+  "Title": "Bittersweet Goodbye",
+  "ArtistNames": [
+    "Kylie Minogue"
+  ],
+  "AlbumTitle": "PAPC Europe 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Viennese Waltz",
+    "Social"
+  ],
+  "Grouping": "Viennese Waltz",
+  "Path": "Various Artists\\PAPC Europe 1\\24 - Kylie Minogue - Bittersweet Goodbye.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

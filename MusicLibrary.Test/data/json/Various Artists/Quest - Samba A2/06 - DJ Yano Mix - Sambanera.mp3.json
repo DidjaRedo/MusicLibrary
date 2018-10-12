@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 6,
+  "Title": "Sambanera",
+  "ArtistNames": [
+    "DJ Yano Mix"
+  ],
+  "AlbumTitle": "Quest - Samba A2",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Latin"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\Quest - Samba A2\\06 - DJ Yano Mix - Sambanera.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

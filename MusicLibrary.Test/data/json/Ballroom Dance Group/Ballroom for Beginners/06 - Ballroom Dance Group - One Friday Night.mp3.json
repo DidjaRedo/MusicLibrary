@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 6,
+  "Title": "One Friday Night",
+  "ArtistNames": [
+    "Ballroom Dance Group"
+  ],
+  "AlbumTitle": "Ballroom for Beginners",
+  "AlbumArtistNames": [
+    "Ballroom Dance Group"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Ballroom Dance Group\\Ballroom for Beginners\\06 - Ballroom Dance Group - One Friday Night.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 64,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 64,
+      "PlayCount": 0
+    }
+  ]
+}

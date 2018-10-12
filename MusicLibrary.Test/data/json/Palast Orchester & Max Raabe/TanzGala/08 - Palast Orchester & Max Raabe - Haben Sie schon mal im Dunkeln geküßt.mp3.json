@@ -1,0 +1,31 @@
+{
+  "TrackNumber": 8,
+  "Title": "Haben Sie schon mal im Dunkeln geküßt?",
+  "ArtistNames": [
+    "Palast Orchester & Max Raabe"
+  ],
+  "AlbumTitle": "TanzGala",
+  "AlbumArtistNames": [
+    "Palast Orchester & Max Raabe"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Deutsch"
+  ],
+  "Grouping": null,
+  "Path": "Palast Orchester & Max Raabe\\TanzGala\\08 - Palast Orchester & Max Raabe - Haben Sie schon mal im Dunkeln geküßt.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

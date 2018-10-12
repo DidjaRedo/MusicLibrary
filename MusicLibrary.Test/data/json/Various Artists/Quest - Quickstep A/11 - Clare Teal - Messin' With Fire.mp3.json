@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 11,
+  "Title": "Messin' With Fire",
+  "ArtistNames": [
+    "Clare Teal"
+  ],
+  "AlbumTitle": "Quest - Quickstep A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 200,
+  "Comments": {
+    "": "Originally from \"The Ultimate Ballroom Album 14 - L'Italiano\"",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Standard"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Various Artists\\Quest - Quickstep A\\11 - Clare Teal - Messin' With Fire.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

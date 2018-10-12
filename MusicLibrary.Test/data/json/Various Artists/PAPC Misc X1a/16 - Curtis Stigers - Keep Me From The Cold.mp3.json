@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 16,
+  "Title": "Keep Me From The Cold",
+  "ArtistNames": [
+    "Curtis Stigers"
+  ],
+  "AlbumTitle": "PAPC Misc X1a",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "dup"
+  },
+  "Genres": [
+    "Ballroom",
+    "Nightclub Two-Step",
+    "Social"
+  ],
+  "Grouping": "Nightclub Two-Step",
+  "Path": "Various Artists\\PAPC Misc X1a\\16 - Curtis Stigers - Keep Me From The Cold.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 64,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 64,
+      "PlayCount": 0
+    }
+  ]
+}

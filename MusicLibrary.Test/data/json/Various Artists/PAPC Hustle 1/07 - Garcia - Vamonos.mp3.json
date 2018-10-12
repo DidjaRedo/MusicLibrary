@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 7,
+  "Title": "Vamonos",
+  "ArtistNames": [
+    "Garcia"
+  ],
+  "AlbumTitle": "PAPC Hustle 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Hustle",
+    "Social"
+  ],
+  "Grouping": "Hustle",
+  "Path": "Various Artists\\PAPC Hustle 1\\07 - Garcia - Vamonos.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

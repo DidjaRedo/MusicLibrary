@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 10,
+  "Title": "Paris Nocturne",
+  "ArtistNames": [
+    "Dan Fogelberg and Tim Weisberg"
+  ],
+  "AlbumTitle": "PAPC Waltz 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 96,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Social"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\PAPC Waltz 1\\10 - Dan Fogelberg and Tim Weisberg - Paris Nocturne.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

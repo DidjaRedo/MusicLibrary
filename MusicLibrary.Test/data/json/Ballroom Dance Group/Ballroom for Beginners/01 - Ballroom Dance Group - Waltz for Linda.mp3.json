@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 1,
+  "Title": "Waltz for Linda",
+  "ArtistNames": [
+    "Ballroom Dance Group"
+  ],
+  "AlbumTitle": "Ballroom for Beginners",
+  "AlbumArtistNames": [
+    "Ballroom Dance Group"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Ballroom Dance Group\\Ballroom for Beginners\\01 - Ballroom Dance Group - Waltz for Linda.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

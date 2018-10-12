@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 12,
+  "Title": "Run Rudolph Run",
+  "ArtistNames": [
+    "Bryan Adams"
+  ],
+  "AlbumTitle": "PAPC Xmas East Coast Swing 1x",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 154,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "EC Swing",
+    "Swing",
+    "Social",
+    "Christmas",
+    "Weihnachtsmusik"
+  ],
+  "Grouping": "E.C. Swing",
+  "Path": "Various Artists\\PAPC Xmas East Coast Swing 1x\\12 - Bryan Adams - Run Rudolph Run.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

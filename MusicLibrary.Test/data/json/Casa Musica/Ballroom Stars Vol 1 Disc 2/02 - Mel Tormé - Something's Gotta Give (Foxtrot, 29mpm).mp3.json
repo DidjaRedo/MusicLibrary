@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 2,
+  "Title": "Something's Gotta Give (Foxtrot, 29mpm)",
+  "ArtistNames": [
+    "Mel Tormé"
+  ],
+  "AlbumTitle": "Ballroom Stars Vol 1 Disc 2",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 116,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Casa Musica\\Ballroom Stars Vol 1 Disc 2\\02 - Mel Tormé - Something's Gotta Give (Foxtrot, 29mpm).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

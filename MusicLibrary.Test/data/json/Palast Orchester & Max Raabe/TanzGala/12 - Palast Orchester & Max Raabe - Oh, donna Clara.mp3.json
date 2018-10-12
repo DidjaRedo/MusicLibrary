@@ -1,0 +1,30 @@
+{
+  "TrackNumber": 12,
+  "Title": "Oh, donna Clara",
+  "ArtistNames": [
+    "Palast Orchester & Max Raabe"
+  ],
+  "AlbumTitle": "TanzGala",
+  "AlbumArtistNames": [
+    "Palast Orchester & Max Raabe"
+  ],
+  "BeatsPerMinute": 132,
+  "Comments": {},
+  "Genres": [
+    "Ballroom"
+  ],
+  "Grouping": null,
+  "Path": "Palast Orchester & Max Raabe\\TanzGala\\12 - Palast Orchester & Max Raabe - Oh, donna Clara.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

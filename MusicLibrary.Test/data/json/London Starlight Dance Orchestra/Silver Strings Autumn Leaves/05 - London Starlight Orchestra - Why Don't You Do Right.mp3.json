@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 5,
+  "Title": "Why Don't You Do Right?",
+  "ArtistNames": [
+    "London Starlight Orchestra"
+  ],
+  "AlbumTitle": "Silver Strings Autumn Leaves",
+  "AlbumArtistNames": [
+    "London Starlight Dance Orchestra"
+  ],
+  "BeatsPerMinute": 116,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom"
+  ],
+  "Grouping": null,
+  "Path": "London Starlight Dance Orchestra\\Silver Strings Autumn Leaves\\05 - London Starlight Orchestra - Why Don't You Do Right.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

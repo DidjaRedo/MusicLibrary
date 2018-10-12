@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 10,
+  "Title": "The French Song",
+  "ArtistNames": [
+    "Lucille Starr"
+  ],
+  "AlbumTitle": "Moments For Two (Casa Musica)",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 100,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard",
+    "Social"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Moments For Two (Casa Musica)\\10 - Lucille Starr - The French Song.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

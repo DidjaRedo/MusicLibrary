@@ -1,0 +1,36 @@
+{
+  "TrackNumber": 1,
+  "Title": "Vito's Waltz",
+  "ArtistNames": [
+    "Thomas Bevans"
+  ],
+  "AlbumTitle": "Musica Caliente Vol II",
+  "AlbumArtistNames": [
+    "Thomas Bevans"
+  ],
+  "BeatsPerMinute": 93,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth",
+    "Social"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Thomas Bevans\\Musica Caliente Vol II\\01 - Thomas Bevans - Vito's Waltz.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "TrackNumber": 10,
+  "Title": "Horchai Hai Caliptus",
+  "ArtistNames": [
+    "Ishtar"
+  ],
+  "AlbumTitle": "Quest - Waltz A Open",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 87,
+  "Comments": {
+    "": "Originally from \"The Ultimate Ballroom Album 14 - L'Italiano\"",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\Quest - Waltz A Open\\10 - Ishtar - Horchai Hai Caliptus.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

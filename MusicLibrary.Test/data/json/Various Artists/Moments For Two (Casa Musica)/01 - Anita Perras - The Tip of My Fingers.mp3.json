@@ -1,0 +1,36 @@
+{
+  "TrackNumber": 1,
+  "Title": "The Tip of My Fingers",
+  "ArtistNames": [
+    "Anita Perras"
+  ],
+  "AlbumTitle": "Moments For Two (Casa Musica)",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 84,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth",
+    "Social"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\Moments For Two (Casa Musica)\\01 - Anita Perras - The Tip of My Fingers.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

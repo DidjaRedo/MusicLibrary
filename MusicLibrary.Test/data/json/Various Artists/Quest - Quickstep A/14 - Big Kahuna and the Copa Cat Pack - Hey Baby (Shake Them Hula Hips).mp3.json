@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 14,
+  "Title": "Hey Baby (Shake Them Hula Hips)",
+  "ArtistNames": [
+    "Big Kahuna and the Copa Cat Pack"
+  ],
+  "AlbumTitle": "Quest - Quickstep A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 200,
+  "Comments": {
+    "": "Originally from \"The Ultimate Ballroom Album 14 - L'Italiano\"",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Standard"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Various Artists\\Quest - Quickstep A\\14 - Big Kahuna and the Copa Cat Pack - Hey Baby (Shake Them Hula Hips).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 1,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 1,
+      "PlayCount": 0
+    }
+  ]
+}

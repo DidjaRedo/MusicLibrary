@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 17,
+  "Title": "Always With Me",
+  "ArtistNames": [
+    "Hollywood Movie Strings"
+  ],
+  "AlbumTitle": "Quest - Viennese Waltz Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Viennese Waltz",
+    "Standard"
+  ],
+  "Grouping": "Viennese Waltz",
+  "Path": "Various Artists\\Quest - Viennese Waltz Z\\17 - Hollywood Movie Strings - Always With Me.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

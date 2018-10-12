@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 3,
+  "Title": "To Love",
+  "ArtistNames": [
+    "Tanzorchester Klaus Hallen"
+  ],
+  "AlbumTitle": "Quest - Waltz A Syllabus",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\Quest - Waltz A Syllabus\\03 - Tanzorchester Klaus Hallen - To Love.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

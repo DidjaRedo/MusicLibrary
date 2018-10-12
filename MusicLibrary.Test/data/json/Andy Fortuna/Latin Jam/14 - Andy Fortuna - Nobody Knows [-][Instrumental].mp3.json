@@ -1,0 +1,33 @@
+{
+  "TrackNumber": 14,
+  "Title": "Nobody Knows [*][Instrumental]",
+  "ArtistNames": [
+    "Andy Fortuna"
+  ],
+  "AlbumTitle": "Latin Jam",
+  "AlbumArtistNames": [
+    "Andy Fortuna"
+  ],
+  "BeatsPerMinute": 104,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Latin"
+  ],
+  "Grouping": "Rumba",
+  "Path": "Andy Fortuna\\Latin Jam\\14 - Andy Fortuna - Nobody Knows [-][Instrumental].mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

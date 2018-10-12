@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 12,
+  "Title": "Paso Bravada",
+  "ArtistNames": [
+    "Thomas Bevans"
+  ],
+  "AlbumTitle": "Musica Caliente Vol II",
+  "AlbumArtistNames": [
+    "Thomas Bevans"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Paso Doble",
+    "Latin"
+  ],
+  "Grouping": "Paso Doble",
+  "Path": "Thomas Bevans\\Musica Caliente Vol II\\12 - Thomas Bevans - Paso Bravada.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

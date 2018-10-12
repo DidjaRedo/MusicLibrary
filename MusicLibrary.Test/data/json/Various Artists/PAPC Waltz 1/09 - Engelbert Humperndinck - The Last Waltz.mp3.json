@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 9,
+  "Title": "The Last Waltz",
+  "ArtistNames": [
+    "Engelbert Humperndinck"
+  ],
+  "AlbumTitle": "PAPC Waltz 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 96,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Social"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\PAPC Waltz 1\\09 - Engelbert Humperndinck - The Last Waltz.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 19,
+  "Title": "Marcia Baila",
+  "ArtistNames": [
+    "Ricky Martin"
+  ],
+  "AlbumTitle": "PAPC Karen 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 122,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Social"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\PAPC Karen 1\\19 - Ricky Martin - Marcia Baila.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

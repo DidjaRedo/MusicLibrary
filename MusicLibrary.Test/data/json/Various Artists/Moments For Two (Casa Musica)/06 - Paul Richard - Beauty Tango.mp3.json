@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 6,
+  "Title": "Beauty Tango",
+  "ArtistNames": [
+    "Paul Richard"
+  ],
+  "AlbumTitle": "Moments For Two (Casa Musica)",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 124,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Tango",
+    "Standard",
+    "Social"
+  ],
+  "Grouping": "Tango",
+  "Path": "Various Artists\\Moments For Two (Casa Musica)\\06 - Paul Richard - Beauty Tango.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

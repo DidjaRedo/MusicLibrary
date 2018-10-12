@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 6,
+  "Title": "Pedro Is Coming Home (Mambo)",
+  "ArtistNames": [
+    "Orchester Etienne Cap"
+  ],
+  "AlbumTitle": "The World of Mambo & Salsa Disc 2",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 228,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Mambo",
+    "Rhythm"
+  ],
+  "Grouping": "Mambo",
+  "Path": "Various Artists\\The World of Mambo & Salsa Disc 2\\06 - Orchester Etienne Cap - Pedro Is Coming Home (Mambo).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 64,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 64,
+      "PlayCount": 0
+    }
+  ]
+}

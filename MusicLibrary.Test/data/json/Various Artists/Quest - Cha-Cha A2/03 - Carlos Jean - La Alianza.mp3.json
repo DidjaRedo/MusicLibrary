@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 3,
+  "Title": "La Alianza",
+  "ArtistNames": [
+    "Carlos Jean"
+  ],
+  "AlbumTitle": "Quest - Cha-Cha A2",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "": "Feedback: Rap is distracting",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Latin"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\Quest - Cha-Cha A2\\03 - Carlos Jean - La Alianza.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 0,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 0,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 15,
+  "Title": "Here We Go",
+  "ArtistNames": [
+    "C+C Music Factory"
+  ],
+  "AlbumTitle": "PAPC Hustle 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Hustle",
+    "Social"
+  ],
+  "Grouping": "Hustle",
+  "Path": "Various Artists\\PAPC Hustle 1\\15 - C+C Music Factory - Here We Go.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 255,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 255,
+      "PlayCount": 0
+    }
+  ]
+}

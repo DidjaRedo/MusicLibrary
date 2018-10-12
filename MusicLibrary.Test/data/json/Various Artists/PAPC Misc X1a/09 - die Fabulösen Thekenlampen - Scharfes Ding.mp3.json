@@ -1,0 +1,33 @@
+{
+  "TrackNumber": 9,
+  "Title": "Scharfes Ding",
+  "ArtistNames": [
+    "die Fabulösen Thekenlampen"
+  ],
+  "AlbumTitle": "PAPC Misc X1a",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "WC Swing",
+    "Swing",
+    "Social"
+  ],
+  "Grouping": "W.C. Swing",
+  "Path": "Various Artists\\PAPC Misc X1a\\09 - die Fabulösen Thekenlampen - Scharfes Ding.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

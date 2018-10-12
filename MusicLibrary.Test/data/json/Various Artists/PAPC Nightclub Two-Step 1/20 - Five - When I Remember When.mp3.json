@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 20,
+  "Title": "When I Remember When",
+  "ArtistNames": [
+    "Five"
+  ],
+  "AlbumTitle": "PAPC Nightclub Two-Step 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Nightclub Two-Step",
+    "Social"
+  ],
+  "Grouping": "Nightclub Two-Step",
+  "Path": "Various Artists\\PAPC Nightclub Two-Step 1\\20 - Five - When I Remember When.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

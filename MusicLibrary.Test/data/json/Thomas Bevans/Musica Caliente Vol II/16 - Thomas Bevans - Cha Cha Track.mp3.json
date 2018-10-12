@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 16,
+  "Title": "Cha Cha Track",
+  "ArtistNames": [
+    "Thomas Bevans"
+  ],
+  "AlbumTitle": "Musica Caliente Vol II",
+  "AlbumArtistNames": [
+    "Thomas Bevans"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Practice"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Thomas Bevans\\Musica Caliente Vol II\\16 - Thomas Bevans - Cha Cha Track.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

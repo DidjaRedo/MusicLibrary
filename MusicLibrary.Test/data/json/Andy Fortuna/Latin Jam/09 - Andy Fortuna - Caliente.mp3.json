@@ -1,0 +1,33 @@
+{
+  "TrackNumber": 9,
+  "Title": "Caliente",
+  "ArtistNames": [
+    "Andy Fortuna"
+  ],
+  "AlbumTitle": "Latin Jam",
+  "AlbumArtistNames": [
+    "Andy Fortuna"
+  ],
+  "BeatsPerMinute": 104,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Latin"
+  ],
+  "Grouping": "Samba",
+  "Path": "Andy Fortuna\\Latin Jam\\09 - Andy Fortuna - Caliente.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 11,
+  "Title": "Sta. Isabel de las Lajas",
+  "ArtistNames": [
+    "Grupo Niche"
+  ],
+  "AlbumTitle": "Quest - Cha-Cha A1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 124,
+  "Comments": {
+    "": "Originally from \"Latin Mega Hits 2\" (Casa Musica)",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Latin"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\Quest - Cha-Cha A1\\11 - Grupo Niche - Sta. Isabel de las Lajas.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 1,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 1,
+      "PlayCount": 0
+    }
+  ]
+}

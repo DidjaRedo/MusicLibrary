@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 1,
+  "Title": "La Mentira",
+  "ArtistNames": [
+    "Ana Belén"
+  ],
+  "AlbumTitle": "PAPC Latin 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 99,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Bolero",
+    "Social"
+  ],
+  "Grouping": "Bolero",
+  "Path": "Various Artists\\PAPC Latin 1\\01 - Ana Belén - La Mentira.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

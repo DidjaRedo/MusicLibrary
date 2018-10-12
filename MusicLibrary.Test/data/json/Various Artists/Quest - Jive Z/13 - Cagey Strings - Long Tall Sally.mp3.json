@@ -1,0 +1,37 @@
+{
+  "TrackNumber": 13,
+  "Title": "Long Tall Sally",
+  "ArtistNames": [
+    "Cagey Strings"
+  ],
+  "AlbumTitle": "Quest - Jive Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Preference": "[Intro]",
+    "MusicMatch_Preference": "[Intro]",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Jive",
+    "Latin",
+    "Swing"
+  ],
+  "Grouping": "Jive",
+  "Path": "Various Artists\\Quest - Jive Z\\13 - Cagey Strings - Long Tall Sally.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

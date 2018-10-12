@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 5,
+  "Title": "Don't Keep Me Waiting",
+  "ArtistNames": [
+    "Petra Fierlbeck"
+  ],
+  "AlbumTitle": "Quest - Waltz Z Youth and Syllabus",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\Quest - Waltz Z Youth and Syllabus\\05 - Petra Fierlbeck - Don't Keep Me Waiting.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

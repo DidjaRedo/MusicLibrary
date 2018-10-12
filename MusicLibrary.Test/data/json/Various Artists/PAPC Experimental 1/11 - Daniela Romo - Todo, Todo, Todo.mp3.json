@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 11,
+  "Title": "Todo, Todo, Todo",
+  "ArtistNames": [
+    "Daniela Romo"
+  ],
+  "AlbumTitle": "PAPC Experimental 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 132,
+  "Comments": {
+    "Songs-DB_Custom1": "dup"
+  },
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Social"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\PAPC Experimental 1\\11 - Daniela Romo - Todo, Todo, Todo.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

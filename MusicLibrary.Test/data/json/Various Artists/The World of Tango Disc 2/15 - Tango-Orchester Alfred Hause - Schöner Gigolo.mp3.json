@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 15,
+  "Title": "Schöner Gigolo",
+  "ArtistNames": [
+    "Tango-Orchester Alfred Hause"
+  ],
+  "AlbumTitle": "The World of Tango Disc 2",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Tango",
+    "Standard"
+  ],
+  "Grouping": "Tango",
+  "Path": "Various Artists\\The World of Tango Disc 2\\15 - Tango-Orchester Alfred Hause - Schöner Gigolo.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 54,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 54,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 5,
+  "Title": "Besame (Radio Version)",
+  "ArtistNames": [
+    "Andres Ballinas"
+  ],
+  "AlbumTitle": "Quest - American Cha-Cha",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto",
+    "Songs-DB_Custom2": "Rhythm"
+  },
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Rhythm"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\Quest - American Cha-Cha\\05 - Andres Ballinas - Besame (Radio Version).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 15,
+  "Title": "Mucho Tango",
+  "ArtistNames": [
+    "Musica & Poesia"
+  ],
+  "AlbumTitle": "Quest - Tango Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Tango",
+    "Standard"
+  ],
+  "Grouping": "Tango",
+  "Path": "Various Artists\\Quest - Tango Z\\15 - Musica & Poesia - Mucho Tango.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

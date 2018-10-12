@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 14,
+  "Title": "Sam",
+  "ArtistNames": [
+    "Olivia Newton-John"
+  ],
+  "AlbumTitle": "PAPC Waltz 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 94,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Social"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\PAPC Waltz 1\\14 - Olivia Newton-John - Sam.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

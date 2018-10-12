@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 8,
+  "Title": "Explota La Bomba",
+  "ArtistNames": [
+    "Sa & Fe"
+  ],
+  "AlbumTitle": "Quest - Samba A2",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Latin"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\Quest - Samba A2\\08 - Sa & Fe - Explota La Bomba.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

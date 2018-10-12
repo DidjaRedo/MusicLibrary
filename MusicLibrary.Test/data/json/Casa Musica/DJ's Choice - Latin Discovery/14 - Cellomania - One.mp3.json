@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 14,
+  "Title": "One",
+  "ArtistNames": [
+    "Cellomania"
+  ],
+  "AlbumTitle": "DJ's Choice - Latin Discovery",
+  "AlbumArtistNames": [
+    "Casa Musica"
+  ],
+  "BeatsPerMinute": 100,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Rumba",
+    "Latin"
+  ],
+  "Grouping": "Rumba",
+  "Path": "Casa Musica\\DJ's Choice - Latin Discovery\\14 - Cellomania - One.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

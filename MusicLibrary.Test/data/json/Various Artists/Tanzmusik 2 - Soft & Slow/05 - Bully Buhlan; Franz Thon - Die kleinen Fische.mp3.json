@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 5,
+  "Title": "Die kleinen Fische",
+  "ArtistNames": [
+    "Bully Buhlan",
+    "Franz Thon"
+  ],
+  "AlbumTitle": "Tanzmusik 2 - Soft & Slow",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 129,
+  "Comments": {},
+  "Genres": [
+    "Big Band",
+    "Ballroom",
+    "Foxtrot",
+    "Swing"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Tanzmusik 2 - Soft & Slow\\05 - Bully Buhlan; Franz Thon - Die kleinen Fische.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

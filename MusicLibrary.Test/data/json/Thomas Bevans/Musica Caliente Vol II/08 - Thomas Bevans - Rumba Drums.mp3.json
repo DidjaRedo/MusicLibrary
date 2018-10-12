@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 8,
+  "Title": "Rumba Drums",
+  "ArtistNames": [
+    "Thomas Bevans"
+  ],
+  "AlbumTitle": "Musica Caliente Vol II",
+  "AlbumArtistNames": [
+    "Thomas Bevans"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Rumba",
+    "Latin"
+  ],
+  "Grouping": "Rumba",
+  "Path": "Thomas Bevans\\Musica Caliente Vol II\\08 - Thomas Bevans - Rumba Drums.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

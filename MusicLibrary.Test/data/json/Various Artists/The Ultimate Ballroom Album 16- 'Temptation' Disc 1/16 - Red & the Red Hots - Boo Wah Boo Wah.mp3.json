@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 16,
+  "Title": "Boo Wah Boo Wah",
+  "ArtistNames": [
+    "Red & the Red Hots"
+  ],
+  "AlbumTitle": "The Ultimate Ballroom Album 16: \"Temptation\" Disc 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 102,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Standard"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Various Artists\\The Ultimate Ballroom Album 16- 'Temptation' Disc 1\\16 - Red & the Red Hots - Boo Wah Boo Wah.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

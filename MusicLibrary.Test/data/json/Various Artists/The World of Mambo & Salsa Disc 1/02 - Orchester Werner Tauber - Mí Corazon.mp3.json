@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 2,
+  "Title": "Mí Corazon",
+  "ArtistNames": [
+    "Orchester Werner Tauber"
+  ],
+  "AlbumTitle": "The World of Mambo & Salsa Disc 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 232,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Mambo",
+    "Rhythm"
+  ],
+  "Grouping": "Mambo",
+  "Path": "Various Artists\\The World of Mambo & Salsa Disc 1\\02 - Orchester Werner Tauber - Mí Corazon.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 1,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 1,
+      "PlayCount": 0
+    }
+  ]
+}

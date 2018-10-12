@@ -1,0 +1,30 @@
+{
+  "TrackNumber": 23,
+  "Title": "Baby You're Something Else",
+  "ArtistNames": [
+    "Chevalier Brothers"
+  ],
+  "AlbumTitle": "Smoothies",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom"
+  ],
+  "Grouping": null,
+  "Path": "Various Artists\\Smoothies\\23 - Chevalier Brothers - Baby You're Something Else.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 64,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 64,
+      "PlayCount": 0
+    }
+  ]
+}

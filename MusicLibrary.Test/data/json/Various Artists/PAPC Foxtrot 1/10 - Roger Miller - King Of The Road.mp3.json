@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 10,
+  "Title": "King Of The Road",
+  "ArtistNames": [
+    "Roger Miller"
+  ],
+  "AlbumTitle": "PAPC Foxtrot 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 120,
+  "Comments": {
+    "Songs-DB_Custom1": "dup"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Social"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\PAPC Foxtrot 1\\10 - Roger Miller - King Of The Road.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

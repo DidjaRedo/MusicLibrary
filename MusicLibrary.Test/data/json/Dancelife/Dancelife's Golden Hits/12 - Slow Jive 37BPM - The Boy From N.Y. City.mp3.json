@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 12,
+  "Title": "The Boy From N.Y. City",
+  "ArtistNames": [
+    "Slow Jive 37BPM"
+  ],
+  "AlbumTitle": "Dancelife's Golden Hits",
+  "AlbumArtistNames": [
+    "Dancelife"
+  ],
+  "BeatsPerMinute": 149,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Jive",
+    "Practice"
+  ],
+  "Grouping": "Jive",
+  "Path": "Dancelife\\Dancelife's Golden Hits\\12 - Slow Jive 37BPM - The Boy From N.Y. City.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 64,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 64,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 6,
+  "Title": "Tangogo",
+  "ArtistNames": [
+    "Ramon Buenavista y su Orquestra"
+  ],
+  "AlbumTitle": "Quest - Tango A",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 128,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Tango",
+    "Standard"
+  ],
+  "Grouping": "Tango",
+  "Path": "Various Artists\\Quest - Tango A\\06 - Ramon Buenavista y su Orquestra - Tangogo.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

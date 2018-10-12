@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 8,
+  "Title": "Primitive",
+  "ArtistNames": [
+    "Annie Lennox"
+  ],
+  "AlbumTitle": "PAPC Latin 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 98,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Bolero",
+    "Social"
+  ],
+  "Grouping": "Bolero",
+  "Path": "Various Artists\\PAPC Latin 1\\08 - Annie Lennox - Primitive.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

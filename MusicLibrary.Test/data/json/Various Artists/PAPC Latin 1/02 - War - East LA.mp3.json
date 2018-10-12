@@ -1,0 +1,33 @@
+{
+  "TrackNumber": 2,
+  "Title": "East LA",
+  "ArtistNames": [
+    "War"
+  ],
+  "AlbumTitle": "PAPC Latin 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 110,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Rumba"
+  ],
+  "Grouping": "Rumba",
+  "Path": "Various Artists\\PAPC Latin 1\\02 - War - East LA.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

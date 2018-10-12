@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 26,
+  "Title": "Let It Snow! Let It Snow! Let It Snow!",
+  "ArtistNames": [
+    "Toby Keith"
+  ],
+  "AlbumTitle": "PAPC Xmas Foxtrot 1x",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 120,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Social",
+    "Christmas",
+    "Weihnachtsmusik"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\PAPC Xmas Foxtrot 1x\\26 - Toby Keith - Let It Snow! Let It Snow! Let It Snow!.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

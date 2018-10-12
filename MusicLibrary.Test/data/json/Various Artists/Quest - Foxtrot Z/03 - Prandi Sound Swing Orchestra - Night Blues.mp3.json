@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 3,
+  "Title": "Night Blues",
+  "ArtistNames": [
+    "Prandi Sound Swing Orchestra"
+  ],
+  "AlbumTitle": "Quest - Foxtrot Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "": "Originally from \"Ancona Open Ballroom Vol. 1\" (Prandi)",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Foxtrot",
+    "Standard"
+  ],
+  "Grouping": "Foxtrot",
+  "Path": "Various Artists\\Quest - Foxtrot Z\\03 - Prandi Sound Swing Orchestra - Night Blues.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

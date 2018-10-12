@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 7,
+  "Title": "I Love You Morena",
+  "ArtistNames": [
+    "Los Tremendos"
+  ],
+  "AlbumTitle": "Quest - Cha-Cha Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 124,
+  "Comments": {
+    "": "Originally from \"Agua de Coco\" (Casa Musica)",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Cha-Cha",
+    "Latin"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Various Artists\\Quest - Cha-Cha Z\\07 - Los Tremendos - I Love You Morena.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 186,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 186,
+      "PlayCount": 0
+    }
+  ]
+}

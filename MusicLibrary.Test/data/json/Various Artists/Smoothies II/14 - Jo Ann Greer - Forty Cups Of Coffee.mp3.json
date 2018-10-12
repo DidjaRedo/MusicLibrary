@@ -1,0 +1,31 @@
+{
+  "TrackNumber": 14,
+  "Title": "Forty Cups Of Coffee",
+  "ArtistNames": [
+    "Jo Ann Greer"
+  ],
+  "AlbumTitle": "Smoothies II",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Vocal"
+  ],
+  "Grouping": null,
+  "Path": "Various Artists\\Smoothies II\\14 - Jo Ann Greer - Forty Cups Of Coffee.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 1,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 1,
+      "PlayCount": 0
+    }
+  ]
+}

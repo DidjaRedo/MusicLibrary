@@ -1,0 +1,36 @@
+{
+  "TrackNumber": 19,
+  "Title": "Salome",
+  "ArtistNames": [
+    "Estéfano"
+  ],
+  "AlbumTitle": "Quest - Samba Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 104,
+  "Comments": {
+    "Songs-DB_Preference": "[Intro]",
+    "MusicMatch_Preference": "[Intro]",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Latin"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\Quest - Samba Z\\19 - Estéfano - Salome.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

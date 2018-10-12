@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 5,
+  "Title": "Hernando's Hideaway",
+  "ArtistNames": [
+    "Archie Bleyer"
+  ],
+  "AlbumTitle": "Moments For Two (Casa Musica)",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 120,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Tango",
+    "Standard",
+    "Social"
+  ],
+  "Grouping": "Tango",
+  "Path": "Various Artists\\Moments For Two (Casa Musica)\\05 - Archie Bleyer - Hernando's Hideaway.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

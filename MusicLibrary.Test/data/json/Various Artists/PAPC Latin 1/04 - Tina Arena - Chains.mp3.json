@@ -1,0 +1,34 @@
+{
+  "TrackNumber": 4,
+  "Title": "Chains",
+  "ArtistNames": [
+    "Tina Arena"
+  ],
+  "AlbumTitle": "PAPC Latin 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 93,
+  "Comments": {
+    "Songs-DB_Custom1": "Dup"
+  },
+  "Genres": [
+    "Ballroom",
+    "Bolero",
+    "Social"
+  ],
+  "Grouping": "Bolero",
+  "Path": "Various Artists\\PAPC Latin 1\\04 - Tina Arena - Chains.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

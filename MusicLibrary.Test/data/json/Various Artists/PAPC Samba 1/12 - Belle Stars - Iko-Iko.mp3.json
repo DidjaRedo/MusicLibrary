@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 12,
+  "Title": "Iko-Iko",
+  "ArtistNames": [
+    "Belle Stars"
+  ],
+  "AlbumTitle": "PAPC Samba 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 108,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Social"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\PAPC Samba 1\\12 - Belle Stars - Iko-Iko.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

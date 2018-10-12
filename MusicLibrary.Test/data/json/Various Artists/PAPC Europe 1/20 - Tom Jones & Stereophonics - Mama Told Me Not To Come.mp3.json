@@ -1,0 +1,33 @@
+{
+  "TrackNumber": 20,
+  "Title": "Mama Told Me Not To Come",
+  "ArtistNames": [
+    "Tom Jones & Stereophonics"
+  ],
+  "AlbumTitle": "PAPC Europe 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "WC Swing",
+    "Swing",
+    "Social"
+  ],
+  "Grouping": "W.C. Swing",
+  "Path": "Various Artists\\PAPC Europe 1\\20 - Tom Jones & Stereophonics - Mama Told Me Not To Come.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

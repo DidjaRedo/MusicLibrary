@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 12,
+  "Title": "Charade",
+  "ArtistNames": [
+    "Andy Williams"
+  ],
+  "AlbumTitle": "Let's Dance: The Best of Ballroom Foxtrots & Waltzes",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 92,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Social"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\Let's Dance- The Best of Ballroom Foxtrots & Waltzes\\12 - Andy Williams - Charade.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

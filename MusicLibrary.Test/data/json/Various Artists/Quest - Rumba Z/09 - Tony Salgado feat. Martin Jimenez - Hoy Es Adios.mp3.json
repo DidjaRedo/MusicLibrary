@@ -1,0 +1,36 @@
+{
+  "TrackNumber": 9,
+  "Title": "Hoy Es Adios",
+  "ArtistNames": [
+    "Tony Salgado feat. Martin Jimenez"
+  ],
+  "AlbumTitle": "Quest - Rumba Z",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "": "Feedback: long intro",
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Rumba",
+    "Latin",
+    "To Edit"
+  ],
+  "Grouping": "Rumba",
+  "Path": "Various Artists\\Quest - Rumba Z\\09 - Tony Salgado feat. Martin Jimenez - Hoy Es Adios.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 1,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 1,
+      "PlayCount": 0
+    }
+  ]
+}

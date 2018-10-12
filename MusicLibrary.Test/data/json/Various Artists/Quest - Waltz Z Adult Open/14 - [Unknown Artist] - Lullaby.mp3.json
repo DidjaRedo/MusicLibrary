@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 14,
+  "Title": "Lullaby",
+  "ArtistNames": [
+    "[Unknown Artist]"
+  ],
+  "AlbumTitle": "Quest - Waltz Z Adult Open",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\Quest - Waltz Z Adult Open\\14 - [Unknown Artist] - Lullaby.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

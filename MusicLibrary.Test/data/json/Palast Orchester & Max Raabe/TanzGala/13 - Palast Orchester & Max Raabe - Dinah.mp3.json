@@ -1,0 +1,30 @@
+{
+  "TrackNumber": 13,
+  "Title": "Dinah",
+  "ArtistNames": [
+    "Palast Orchester & Max Raabe"
+  ],
+  "AlbumTitle": "TanzGala",
+  "AlbumArtistNames": [
+    "Palast Orchester & Max Raabe"
+  ],
+  "BeatsPerMinute": 192,
+  "Comments": {},
+  "Genres": [
+    "Ballroom"
+  ],
+  "Grouping": null,
+  "Path": "Palast Orchester & Max Raabe\\TanzGala\\13 - Palast Orchester & Max Raabe - Dinah.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}

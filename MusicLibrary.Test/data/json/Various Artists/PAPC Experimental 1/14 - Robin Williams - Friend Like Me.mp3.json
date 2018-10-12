@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 14,
+  "Title": "Friend Like Me",
+  "ArtistNames": [
+    "Robin Williams"
+  ],
+  "AlbumTitle": "PAPC Experimental 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 196,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Quickstep",
+    "Social"
+  ],
+  "Grouping": "Quickstep",
+  "Path": "Various Artists\\PAPC Experimental 1\\14 - Robin Williams - Friend Like Me.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 196,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 196,
+      "PlayCount": 0
+    }
+  ]
+}

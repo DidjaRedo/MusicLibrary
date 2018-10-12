@@ -1,0 +1,33 @@
+{
+  "TrackNumber": 4,
+  "Title": "C'mon 'N Ride It (The Train)",
+  "ArtistNames": [
+    "Andy Fortuna"
+  ],
+  "AlbumTitle": "Latin Jam",
+  "AlbumArtistNames": [
+    "Andy Fortuna"
+  ],
+  "BeatsPerMinute": 128,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Latin"
+  ],
+  "Grouping": "Cha-Cha",
+  "Path": "Andy Fortuna\\Latin Jam\\04 - Andy Fortuna - C'mon 'N Ride It (The Train).mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 118,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 118,
+      "PlayCount": 0
+    }
+  ]
+}

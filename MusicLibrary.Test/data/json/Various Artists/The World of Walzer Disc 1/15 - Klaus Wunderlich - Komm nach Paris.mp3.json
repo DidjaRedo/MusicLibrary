@@ -1,0 +1,35 @@
+{
+  "TrackNumber": 15,
+  "Title": "Komm nach Paris",
+  "ArtistNames": [
+    "Klaus Wunderlich"
+  ],
+  "AlbumTitle": "The World of Walzer Disc 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {
+    "Songs-DB_Custom1": "NoAuto"
+  },
+  "Genres": [
+    "Ballroom",
+    "Waltz",
+    "Standard",
+    "Smooth"
+  ],
+  "Grouping": "Waltz",
+  "Path": "Various Artists\\The World of Walzer Disc 1\\15 - Klaus Wunderlich - Komm nach Paris.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 1,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 1,
+      "PlayCount": 0
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "TrackNumber": 9,
+  "Title": "Caballo Blanco",
+  "ArtistNames": [
+    "Dancelife"
+  ],
+  "AlbumTitle": "PAPC Samba 1",
+  "AlbumArtistNames": [
+    "Various Artists"
+  ],
+  "BeatsPerMinute": 0,
+  "Comments": {},
+  "Genres": [
+    "Ballroom",
+    "Samba",
+    "Social"
+  ],
+  "Grouping": "Samba",
+  "Path": "Various Artists\\PAPC Samba 1\\09 - Dancelife - Caballo Blanco.mp3",
+  "Rating": {
+    "Rater": "no@email",
+    "rating": 128,
+    "PlayCount": 0
+  },
+  "Ratings": [
+    {
+      "Rater": "no@email",
+      "rating": 128,
+      "PlayCount": 0
+    }
+  ]
+}
