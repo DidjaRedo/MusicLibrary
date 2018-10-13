@@ -9,7 +9,8 @@ namespace MusicLibrary.Lib
 {
     public class Library
     {
-
+        public delegate void TrackAddedHandler(ITrack track, string path);
+ 
         public Library(IEnumerable<ITrack> tracks, string root = null) {
             Root = root;
             _tracks = tracks.ToList();
@@ -65,7 +66,7 @@ namespace MusicLibrary.Lib
 
             switch (file.Extension) {
                 case ".json":
-                    throw new NotImplementedException("JSON import not implemented yet.");
+                    throw new NotImplementedException($"Cannot import {file.FullName} - JSON import not implemented yet.");
                     break;
                 case ".mp3":
                 case ".wma":
@@ -75,6 +76,7 @@ namespace MusicLibrary.Lib
                     var track = TrackFile.TryCreate(file.FullName, Root);
                     if (track != null) {
                         _tracks.Add(track);
+                        RaiseTrackAdded(track, file.FullName);
                         imported = true;
                     }
                     break;
@@ -89,7 +91,12 @@ namespace MusicLibrary.Lib
 
         public string Root { get; set; }
         public IReadOnlyList<ITrack> Tracks => _tracks.AsReadOnly();
-
         protected List<ITrack> _tracks;
+
+        public event TrackAddedHandler OnTrackAdded;
+
+        protected void RaiseTrackAdded(ITrack track, string path) {
+            OnTrackAdded?.Invoke(track, path);
+        }
     }
 }

@@ -50,7 +50,10 @@ namespace MusicLibrary.Cli
             }
 
             var dest = Path.Combine(to.FullName, "library.json");
-            var library = new Library(from.FullName);
+            var library = new Library();
+            library.OnTrackAdded += (t, p) => Console.WriteLine($"Added {t} (\"{p}\")");
+            library.Root = from.FullName;
+            library.Import(from.FullName);
             File.WriteAllText(dest, library.ExportToJson(true));
 
             foreach (var track in library.Tracks) {
