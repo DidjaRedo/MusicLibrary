@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 using Newtonsoft.Json;
 using TagLib;
@@ -23,9 +24,10 @@ namespace MusicLibrary.Lib
         public string[] AlbumArtistNames => Tag.AlbumArtists;
         public uint BeatsPerMinute => Tag.BeatsPerMinute;
         public Dictionary<string, string> Comments { get; }
-        public string[] Genres => Tag.Genres;
+        public string[] Genres { get; }
         public string Grouping => Tag.Grouping;
         public string Path { get; }
+        [JsonIgnore]
         public TrackRating Rating => (Ratings.Count > 0) ? Ratings[0] : null;
         public List<TrackRating> Ratings { get; }
   
@@ -47,8 +49,9 @@ namespace MusicLibrary.Lib
             }
             Tag = track.Tag;
 
-            var id3v2 = track.GetTag(TagTypes.Id3v2) as TagLib.Id3v2.Tag;
-            if (id3v2 != null) {
+            Genres = TrimStrings(Tag.Genres);
+
+            if (track.GetTag(TagTypes.Id3v2) is TagLib.Id3v2.Tag id3v2) {
                 Comments = id3v2.GetAllComments(TagLib.Id3v2.Tag.Language);
                 Ratings = id3v2.GetAllRatings();
             }
@@ -75,6 +78,10 @@ namespace MusicLibrary.Lib
 
         public override string ToString() {
             return $"{TrackNumber:D02} - {String.Join(";", ArtistNames)} - {Title}";
+        }
+
+        protected string[] TrimStrings(IEnumerable<string> strings) {
+            return strings.Select<string, string>((s) => s.Trim()).ToArray();
         }
     }
 }

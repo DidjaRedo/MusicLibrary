@@ -8,7 +8,7 @@ using Xunit;
 
 namespace MusicLibrary.Test
 {
-    public class TestLibrary
+    public class LibraryTest
     {
         [Fact]
         public void ShouldRecurseDirectories() {
@@ -34,6 +34,15 @@ namespace MusicLibrary.Test
             library.Root = ".\\data\\Music\\";
             var json = library.ExportToJson();
             Assert.Equal(expected, json);
+        }
+
+        [Fact]
+        public void ShouldImportJson() {
+            // var library = new Library("./data/json/library.json");
+            var expected = File.ReadAllText("./data/json/library.json");
+            var library = Newtonsoft.Json.JsonConvert.DeserializeObject<Library>(expected);
+            var got = library.ExportToJson(true);
+            Assert.Equal(expected, got);
         }
     }
 }

@@ -10,8 +10,8 @@ namespace MusicLibrary.Lib
     public class Library
     {
 
-
         public Library(IEnumerable<ITrack> tracks, string root = null) {
+            Root = root;
             _tracks = tracks.ToList();
         }
 
@@ -24,6 +24,11 @@ namespace MusicLibrary.Lib
                 Root = file.FullName;
             }
             Import(path);
+        }
+
+        [JsonConstructor]
+        public Library(string root, Track[] tracks) : this(tracks, root) {
+
         }
 
         public void Import(string path) {
@@ -60,6 +65,7 @@ namespace MusicLibrary.Lib
 
             switch (file.Extension) {
                 case ".json":
+                    throw new NotImplementedException("JSON import not implemented yet.");
                     break;
                 case ".mp3":
                 case ".wma":

@@ -37,7 +37,7 @@ namespace MusicLibrary.Lib
             return _tempos[category];
         }
 
-        private Dictionary<DanceCategory, TempoRange?> _tempos = new Dictionary<DanceCategory, TempoRange?>();
+        private readonly Dictionary<DanceCategory, TempoRange?> _tempos = new Dictionary<DanceCategory, TempoRange?>();
 
         public Dance(string[] names, IEnumerable<TempoRange> tempos) {
             if ((names == null) || (names.Length < 1)) {
