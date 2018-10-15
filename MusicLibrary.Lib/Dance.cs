@@ -2,34 +2,36 @@
 using System.Collections.Generic;
 using System.Text;
 
+using System.Linq;
+
 namespace MusicLibrary.Lib
 {
+    public enum DanceCategory
+    {
+        Standard = 0,
+        Latin = 1,
+        Smooth = 2,
+        Rhythm = 3,
+        Swing = 4,
+        Social = 5,
+        Competition = 6
+    }
+
+    [Flags]
+    public enum DanceCategories
+    {
+        None = 0,
+        Standard = 1 << DanceCategory.Standard,
+        Latin = 1 << DanceCategory.Latin,
+        Smooth = 1 << DanceCategory.Smooth,
+        Rhythm = 1 << DanceCategory.Rhythm,
+        Swing = 1 << DanceCategory.Swing,
+        Social = 1 << DanceCategory.Social,
+        Competition = 1 << DanceCategory.Competition
+    };
+
     public class Dance
     {
-        public enum DanceCategory
-        {
-            Standard = 0,
-            Latin = 1,
-            Smooth = 2,
-            Rhythm = 3,
-            Swing = 4,
-            Social = 5,
-            Competition = 6
-        }
-
-        [Flags]
-        public enum DanceCategories
-        {
-            None = 0,
-            Standard = 1 << DanceCategory.Standard,
-            Latin = 1 << DanceCategory.Latin,
-            Smooth = 1 << DanceCategory.Smooth,
-            Rhythm = 1 << DanceCategory.Rhythm,
-            Swing = 1 << DanceCategory.Swing,
-            Social = 1 << DanceCategory.Social,
-            Competition = 1 << DanceCategory.Competition
-        };
-
         public string Name { get; }
         public string[] AllNames { get; }
         public DanceCategories Categories { get; } = DanceCategories.None;
@@ -58,6 +60,15 @@ namespace MusicLibrary.Lib
 
         public Dance(string[] names, params TempoRange[] tempos) : this(names, (IEnumerable<TempoRange>)tempos) {
 
+        }
+
+        private static readonly DanceCategory[] AllCategories = new DanceCategory[] {
+            DanceCategory.Standard, DanceCategory.Latin, DanceCategory.Smooth, DanceCategory.Rhythm,
+            DanceCategory.Swing, DanceCategory.Social, DanceCategory.Competition
+        };
+
+        public IEnumerable<DanceCategory> EnumerateCategories() {
+            return AllCategories.Where((c) => (Categories & ((DanceCategories)(1 << (int)c))) != 0);
         }
 
         public override string ToString() {

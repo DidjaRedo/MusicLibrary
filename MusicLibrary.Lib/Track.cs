@@ -18,7 +18,7 @@ namespace MusicLibrary.Lib
         public string Grouping { get; }
 
         public string Path { get; }
-        public List<TrackRating> Ratings { get; }
+        public List<TrackRating> Ratings { get; } = new List<TrackRating>();
 
         [JsonConstructor]
         public Track(string path, uint trackNumber, string title, string[] artistNames, string[] albumArtistNames, string albumTitle, uint beatsPerMinute, Dictionary<string, string> comments, string[] genres, string grouping, List<TrackRating> ratings) {
@@ -29,10 +29,12 @@ namespace MusicLibrary.Lib
             AlbumArtistNames = albumArtistNames;
             BeatsPerMinute = beatsPerMinute;
             Comments = comments ?? new Dictionary<string, string>();
-            Genres = genres;
+            Genres = genres ?? new string[0];
             Grouping = grouping;
             Path = path;
-            Ratings = ratings;
+            if ((ratings != null) && (ratings.Count > 0)) {
+                Ratings.AddRange(ratings);
+            }
             MediaMonkey = new MediaMonkeyTags(this);
             Dances = new TrackDances(this);
         }
