@@ -49,5 +49,14 @@ namespace MusicLibrary.Lib
         public override string ToString() {
             return $"{TrackNumber:D02} - {String.Join(";", ArtistNames)} - {Title}";
         }
+
+        public static Track FromJsonText(string json) {
+            return JsonConvert.DeserializeObject<Track>(json);
+        }
+
+        public static Track FromJsonFile(string path) {
+            var json = System.IO.File.ReadAllText(path);
+            return FromJsonText(json);
+        }
     }
 }

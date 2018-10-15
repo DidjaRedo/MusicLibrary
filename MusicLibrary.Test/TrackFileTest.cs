@@ -9,7 +9,7 @@ namespace MusicLibrary.Test
     {
         [Fact]
         public void ShouldConstructFromAnMp3File() {
-            var track = new TrackFile("./data/music/Various Artists/Quest - Foxtrot Z/13 - Premium Standard - A Wink & A Smile.mp3");
+            var track = new TrackFile("./data/mp3/music/Various Artists/Quest - Foxtrot Z/13 - Premium Standard - A Wink & A Smile.mp3");
             Assert.Equal("A Wink & A Smile", track.Title);
             Assert.Equal(new string[] { "Premium Standard" }, track.ArtistNames);
             Assert.Equal("Quest - Foxtrot Z", track.AlbumTitle);

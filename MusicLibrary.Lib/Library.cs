@@ -28,8 +28,16 @@ namespace MusicLibrary.Lib
         }
 
         [JsonConstructor]
-        public Library(string root, Track[] tracks) : this(tracks, root) {
+        public Library(string root, params Track[] tracks) : this(tracks, root) {
+        }
 
+        public static Library FromJsonText(string json) {
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<Library>(json);
+        }
+
+        public static Library FromJsonFile(string path) {
+            var json = File.ReadAllText(path);
+            return FromJsonText(json);
         }
 
         public void Import(string path) {
@@ -64,22 +72,24 @@ namespace MusicLibrary.Lib
                 throw new ApplicationException($"Cannot import '{file.FullName}' - file not found.");
             }
 
+            ITrack track = null;
             switch (file.Extension) {
                 case ".json":
-                    throw new NotImplementedException($"Cannot import {file.FullName} - JSON import not implemented yet.");
+                    track = Track.FromJsonFile(file.FullName);
                     break;
                 case ".mp3":
                 case ".wma":
                 case ".aiff":
                 case ".flac":
                 case ".wav":
-                    var track = TrackFile.TryCreate(file.FullName, Root);
-                    if (track != null) {
-                        _tracks.Add(track);
-                        RaiseTrackAdded(track, file.FullName);
-                        imported = true;
-                    }
+                    track = TrackFile.TryCreate(file.FullName, Root);
                     break;
+            }
+
+            if (track != null) {
+                _tracks.Add(track);
+                RaiseTrackAdded(track, file.FullName);
+                imported = true;
             }
             return imported;
         }

@@ -28,7 +28,7 @@ namespace MusicLibrary.Test
 
         [Fact]
         public void ShouldRoundTrip() {
-            var file = new TrackFile("./data/Music/Various Artists/Quest - Foxtrot Z/13 - Premium Standard - A Wink & A Smile.mp3");
+            var file = new TrackFile("./data/mp3/Music/Various Artists/Quest - Foxtrot Z/13 - Premium Standard - A Wink & A Smile.mp3");
             var fileJson = JsonConvert.SerializeObject((ITrack)file);
             var track = JsonConvert.DeserializeObject<Track>(fileJson);
             VerifyTracksMatch(file, track);

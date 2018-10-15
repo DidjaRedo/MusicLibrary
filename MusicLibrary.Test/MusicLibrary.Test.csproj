@@ -4,16 +4,20 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.5.0" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\External\DotNetZip.Semverd\src\Zip NetStandard\Zip NetStandard.csproj" />
     <ProjectReference Include="..\MusicLibrary.Lib\MusicLibrary.Lib.csproj" />
   </ItemGroup>
 
@@ -21,13 +25,121 @@
     <None Update="data\json\library.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="data\json\Music.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alessandro Olivato\Beautiful Ballroom\28 - Alessandro Olivato - Terra Mia %28SW 28%29.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alessandro Olivato\Beautiful Ballroom\28 - Alessandro Olivato - Tonight %28SF 28%29.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alessandro Olivato\Beautiful Ballroom\29 - Alessandro Olivato - Don%27t Worry %28SF 29%29.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alessandro Olivato\Only Ballroom\18 - Alessandro Olivato - Maruzzè.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alfred Hause &amp; sein Tango-Orchester\Alfred Hause und sein großes Tango-Orchester\01 - Alfred Hause &amp; sein Tango-Orchester - La Paloma.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alfred Hause &amp; sein Tango-Orchester\Alfred Hause und sein großes Tango-Orchester\02 - Alfred Hause &amp; sein Tango-Orchester - The Perlfisherman.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alfred Hause &amp; sein Tango-Orchester\Alfred Hause und sein großes Tango-Orchester\03 - Alfred Hause &amp; sein Tango-Orchester - Santa Lucia in Napoli.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alfred Hause &amp; sein Tango-Orchester\Alfred Hause und sein großes Tango-Orchester\04 - Alfred Hause &amp; sein Tango-Orchester - Tango  D´Artesienne.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alfred Hause &amp; sein Tango-Orchester\Alfred Hause und sein großes Tango-Orchester\05 - Alfred Hause &amp; sein Tango-Orchester - La Golondrina-Der Schwalbentango.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alfred Hause &amp; sein Tango-Orchester\Alfred Hause und sein großes Tango-Orchester\06 - Alfred Hause &amp; sein Tango-Orchester - Tango De Rubinstein.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alfred Hause &amp; sein Tango-Orchester\Alfred Hause und sein großes Tango-Orchester\07 - Alfred Hause &amp; sein Tango-Orchester - The Wedding Bell Tango.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alfred Hause &amp; sein Tango-Orchester\Alfred Hause und sein großes Tango-Orchester\08 - Alfred Hause &amp; sein Tango-Orchester - Greensleeves Tango.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alfred Hause &amp; sein Tango-Orchester\Alfred Hause und sein großes Tango-Orchester\09 - Alfred Hause &amp; sein Tango-Orchester - Tango Lindo Mexicano.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alfred Hause &amp; sein Tango-Orchester\Alfred Hause und sein großes Tango-Orchester\10 - Alfred Hause &amp; sein Tango-Orchester - Du schwarzer Zigeuner.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alfred Hause &amp; sein Tango-Orchester\Alfred Hause und sein großes Tango-Orchester\11 - Alfred Hause &amp; sein Tango-Orchester - La Esperanza Tango.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alfred Hause &amp; sein Tango-Orchester\Alfred Hause und sein großes Tango-Orchester\12 - Alfred Hause &amp; sein Tango-Orchester - Scarborough Fair.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alfred Hause &amp; sein Tango-Orchester\Alfred Hause und sein großes Tango-Orchester\13 - Alfred Hause &amp; sein Tango-Orchester - Tango  D´Albenitz.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alfred Hause &amp; sein Tango-Orchester\Alfred Hause und sein großes Tango-Orchester\14 - Alfred Hause &amp; sein Tango-Orchester - Moldau-Melodie.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alfred Hause &amp; sein Tango-Orchester\Alfred Hause und sein großes Tango-Orchester\15 - Alfred Hause &amp; sein Tango-Orchester - Otchi Tschornia-Schwarze Augen.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Alfred Hause &amp; sein Tango-Orchester\Alfred Hause und sein großes Tango-Orchester\16 - Alfred Hause &amp; sein Tango-Orchester - Tango  Bei Candlelight.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Andy Fortuna\Latin Jam\01 - Andy Fortuna - Take Your Time %28Do It Right%29.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Andy Fortuna\Latin Jam\02 - Andy Fortuna - Blessed.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Andy Fortuna\Latin Jam\03 - Andy Fortuna - You%27ll Be Mine %28Party Time%29.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Andy Fortuna\Latin Jam\04 - Andy Fortuna - C%27mon %27N Ride It %28The Train%29.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Andy Fortuna\Latin Jam\05 - Andy Fortuna - Mucho Corazón.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Andy Fortuna\Latin Jam\06 - Andy Fortuna - Maria.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Andy Fortuna\Latin Jam\07 - Andy Fortuna - You Got the Power.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Andy Fortuna\Latin Jam\08 - Andy Fortuna - Nobody Knows.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Andy Fortuna\Latin Jam\09 - Andy Fortuna - Caliente.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Andy Fortuna\Latin Jam\10 - Andy Fortuna - Don%27t Cry for Me, Argentina.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Andy Fortuna\Latin Jam\11 - Andy Fortuna - Little Bitty Pretty One.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Andy Fortuna\Latin Jam\12 - Andy Fortuna - Ain%27t Got No Home.mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Andy Fortuna\Latin Jam\13 - Andy Fortuna - C%27mon %27N Ride It [-][Instrumental].mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Andy Fortuna\Latin Jam\14 - Andy Fortuna - Nobody Knows [-][Instrumental].mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="data\json\Music\Andy Fortuna\Latin Jam\15 - Andy Fortuna - Maria [-][Instrumental].mp3.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="data\json\test.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="data\Music\Various Artists\PAPC Foxtrot 1\03 - Domino - Business Of Love.mp3">
+    <None Update="data\mp3\Music\Various Artists\PAPC Foxtrot 1\03 - Domino - Business Of Love.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="data\Music\Various Artists\Quest - Foxtrot Z\13 - Premium Standard - A Wink &amp; A Smile.mp3">
+    <None Update="data\mp3\Music\Various Artists\Quest - Foxtrot Z\13 - Premium Standard - A Wink &amp; A Smile.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
