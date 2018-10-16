@@ -136,6 +136,9 @@
     <None Update="data\json\test.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="data\json\TrackDanceInferenceData.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="data\mp3\Music\Various Artists\PAPC Foxtrot 1\03 - Domino - Business Of Love.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

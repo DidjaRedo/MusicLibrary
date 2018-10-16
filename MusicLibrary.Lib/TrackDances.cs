@@ -9,28 +9,41 @@ namespace MusicLibrary.Lib
     {
         public TrackDances(ITrack track) {
             Track = track;
-            ReviewTags = (track.MediaMonkey.Custom2 ?? "").SplitAndNormalize(';').ToArray();
-            _dances = InferDances(track, ReviewTags);
+            ApprovedTags = (track.MediaMonkey.Custom2 ?? "").SplitAndNormalize(';').ToArray();
+            ReviewTags = (track.MediaMonkey.Custom3 ?? "").SplitAndNormalize(';').ToArray();
+            _dances = InferDances(track, ApprovedTags, ReviewTags);
         }
 
         protected List<TrackDanceInfo> _dances;
         public IReadOnlyList<TrackDanceInfo> Dances => _dances.AsReadOnly();
+        public string[] ApprovedTags { get; }
         public string[] ReviewTags { get; }
 
-        protected static List<TrackDanceInfo> InferDances(ITrack track, string[] reviewTags) {
+        protected static List<TrackDanceInfo> InferDances(ITrack track, string[] approvedTags, string[] reviewTags) {
             var dances = new List<Dance>();
 
-            bool isBallroomImplied = false;
+            var mergedTags = new List<string>();
             if (!String.IsNullOrEmpty(track.Grouping)) {
                 var dance = MusicLibrary.Lib.Dances.ByName[track.Grouping];
                 if (dance != null) {
-                    isBallroomImplied = true;
-                    dances.Add(dance);
+                    mergedTags.AddUnique("ballroom");
+                    mergedTags.AddUnique(track.Grouping);
                 }
             }
 
-            var approved = new CategoryFilter(track.Genres, isBallroomImplied);
-            var toReview = new CategoryFilter(reviewTags);
+            if (approvedTags.Length > 0) {
+                mergedTags.AddUnique("ballroom");
+                mergedTags.AddRangeUnique(approvedTags);
+            }
+
+            mergedTags.AddRangeUnique(track.Genres);
+
+            var approved = new CategoryFilter(mergedTags);
+
+            var reviewFlags = (approved.Categories == DanceCategories.None) ? FilterFlags.SocialIsDefault : FilterFlags.None;
+            var toReview = new CategoryFilter(reviewTags, reviewFlags);
+
+            approved.Categories &= ~toReview.Categories;
 
             dances.AddRangeUnique(approved.Dances);
             dances.AddRangeUnique(toReview.Dances);
@@ -56,15 +69,24 @@ namespace MusicLibrary.Lib
             return String.Join("|", Dances.Select<TrackDanceInfo, string>((d) => d.ToString()));
         }
 
+        [Flags]
+        protected enum FilterFlags {
+            None = 0,
+            BallroomIsImplied = 0x01,
+            SocialIsDefault = 0x2
+        }
+
         protected class CategoryFilter {
             public bool IsBallroom { get; }
-            public DanceCategories Categories { get; }
+            public DanceCategories Categories { get; set; }
             public IReadOnlyList<Dance> Dances { get; }
             public IReadOnlyList<string> Unused { get; }
 
-            public CategoryFilter(IEnumerable <string> strings, bool isBallroomImplied = true) {
+            public CategoryFilter(IEnumerable <string> strings, FilterFlags flags = FilterFlags.None) {
                 var remaining = strings.Select<string, string>((s) => s.ToLowerInvariant()).ToList();
 
+
+                var isBallroomImplied = ((flags & FilterFlags.BallroomIsImplied) == FilterFlags.BallroomIsImplied);
                 IsBallroom = isBallroomImplied || (remaining.RemoveAll((s) => s.Equals("ballroom")) > 0);
                 bool isSocial = (remaining.RemoveAll((s) => s.Equals("social")) > 0);
                 bool isCompetition = (remaining.RemoveAll((s) => s.Equals("competition")) > 0);
@@ -83,6 +105,10 @@ namespace MusicLibrary.Lib
                 cat = cat | (isSwing ? DanceCategories.Swing : DanceCategories.None);
                 cat = cat | (isSocial ? DanceCategories.Social : DanceCategories.None);
                 cat = cat | (isCompetition ? DanceCategories.Competition : DanceCategories.None);
+                if ((cat == DanceCategories.None) && ((flags & FilterFlags.SocialIsDefault) == FilterFlags.SocialIsDefault)) {
+                    cat = DanceCategories.Social;
+                }
+
                 Categories = cat;
 
                 var dances = new List<Dance>();
