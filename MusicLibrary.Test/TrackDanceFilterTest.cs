@@ -13,41 +13,47 @@ namespace MusicLibrary.Test
     public class TrackDanceFilterTest
     {
         [Fact]
-        public void ShouldFilterByDance() {
+        public void ShouldFilterByDanceAndCategory() {
             var library = SampleData.GetTestLibrary();
+            var results = new Dictionary<Dance,DanceTestResult>();
+
             foreach (var dance in Dances.All) {
-                var filter = new TrackDanceFilter(dance);
-                var tracks = filter.Filter(library.Tracks);
-                ExpectedDanceInfo expected = null;
-                int gotCount = tracks.Count();
+                var dtr = new DanceTestResult() { TotalTracks = new TrackDanceFilter(dance).Filter(library.Tracks).Count() };
 
-                if (SampleData.ExpectedDanceInfo.TryGetValue(dance, out expected)) {
-                    Assert.Equal(expected.TotalTracks, gotCount);
-                }
+                var categories = dance.EnumerateCategories().ToList();
+                categories.AddRangeUnique(new DanceCategory[] { DanceCategory.Competition, DanceCategory.Social });
 
-                foreach (var track in tracks) {
-                    Assert.Contains<TrackDanceInfo>(track.Dances.Dances, (tdi) => tdi.Dance == dance);
-                }
-            }
-        }
-
-        [Fact]
-        public void ShouldFilterByCategory() {
-            var library = SampleData.GetTestLibrary();
-            foreach (var dance in Dances.All) {
-                foreach (var cat in dance.EnumerateCategories()) {
+                foreach (var cat in categories) {
                     var mask = (DanceCategories)(1 << (int)cat);
                     var filter = new TrackDanceFilter(dance) { Categories = mask };
                     var tracks = filter.Filter(library.Tracks);
-                    ExpectedDanceInfo expected = null;
-                    int gotCount = tracks.Count();
-                    if (SampleData.ExpectedDanceInfo.TryGetValue(dance, out expected)) {
-                        Assert.Equal(expected.GetTotalForCategory(cat), gotCount);
-                    }
+
+                    dtr.SetTotalForCategory(cat, tracks.Count());
 
                     foreach (var track in tracks) {
                         Assert.Contains<TrackDanceInfo>(track.Dances.Dances, (tdi) => ((tdi.Categories & mask) != 0));
                     }
+                }
+
+                results[dance] = dtr;
+            }
+
+            foreach (var kvp in results) {
+                var expected = SampleData.ExpectedDanceInfo[kvp.Key];
+                Assert.Equal(expected, kvp.Value);
+            }
+        }
+
+        [Fact]
+        public void ShouldFilterByRating() {
+            var library = SampleData.GetTestLibrary();
+            foreach (var rating in SampleData.ExpectedTracksByRating.Keys) {
+                var filter = new TrackDanceFilter() { MinRating = TrackRating.FiveStarRatingToRaw(rating) };
+                var tracks = filter.Filter(library.Tracks);
+                Assert.Equal(SampleData.ExpectedTracksByRating[rating], tracks.Count());
+                foreach (var track in tracks) {
+                    Assert.NotNull(track.Rating);
+                    Assert.True(track.Rating.FiveStarRating >= rating);
                 }
             }
         }

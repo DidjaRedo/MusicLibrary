@@ -25,9 +25,25 @@ namespace MusicLibrary.Lib
         [JsonProperty]
         public ulong PlayCount { get; }
 
-        public double PercentRating => ((double)RawRating / (double)255);
-        public double FiveStarRating => Math.Round(PercentRating * 10.0) / 2.0;
+        public double PercentRating => RawRatingToPercent(RawRating);
+        public double FiveStarRating => RawRatingToFiveStar(RawRating);
         public Dance Dance { get; }
+
+        public static double RawRatingToPercent(uint raw) {
+            return Math.Round(((double)raw / (double)255), 2);
+        }
+
+        public static double RawRatingToFiveStar(uint raw) {
+            return Math.Round(RawRatingToPercent(raw) * 10.0) / 2.0;
+        }
+
+        public static uint PercentRatingToRaw(double percent) {
+            return (uint)Math.Round(255.0 * percent);
+        }
+
+        public static uint FiveStarRatingToRaw(double fiveStarRating) {
+            return PercentRatingToRaw(fiveStarRating * 0.2);
+        }
 
         public override bool Equals(object obj) {
             var other = obj as TrackRating;
