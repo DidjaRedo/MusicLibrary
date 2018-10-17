@@ -22,12 +22,16 @@ namespace MusicLibrary.Lib
             }
         }
 
+        public static IEnumerable<string> Normalize(this IEnumerable<string> strings) {
+            return strings.Select<string, string>((s) => s.Trim().ToLowerInvariant());
+        }
+
         public static IEnumerable<string> SplitAndNormalize(this string str, char separator) {
             if (String.IsNullOrEmpty(str)) {
                 return new string[0];
             }
 
-            return str.Split(separator).Select<string, string>((s) => s.Trim().ToLowerInvariant());
+            return str.Split(separator).Normalize();
         }
     }
 }

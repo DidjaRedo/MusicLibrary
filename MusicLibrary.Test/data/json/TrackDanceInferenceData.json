@@ -2,21 +2,12 @@
   {
     "Tracks": [
       {
-        "TrackNumber": 1,
         "Title": "BallroomAndDanceGenreNoGroupingNoReview",
-        "ArtistNames": [ "Track Artist" ],
-        "AlbumTitle": "Album Title",
-        "AlbumArtistNames": [ "Album Artist" ],
-        "BeatsPerMinute": 0,
-        "Comments": {
-          "Songs-DB_Custom1": "NoAuto"
-        },
         "Genres": [
           "Ballroom",
           "Foxtrot",
           "Standard"
         ],
-        "Path": "song.mp3",
         "Ratings": [
           {
             "Rater": "no@email",
@@ -26,21 +17,12 @@
         ]
       },
       {
-        "TrackNumber": 1,
         "Title": "GroupingButNoBallroomGenre",
-        "ArtistNames": [ "Track Artist" ],
-        "AlbumTitle": "Album Title",
-        "AlbumArtistNames": [ "Album Artist" ],
-        "BeatsPerMinute": 0,
-        "Comments": {
-          "Songs-DB_Custom1": "NoAuto"
-        },
         "Genres": [
           "Vocal",
           "Standard"
         ],
         "Grouping": "Foxtrot",
-        "Path": "song.mp3",
         "Ratings": [
           {
             "Rater": "no@email",
@@ -63,20 +45,11 @@
   {
     "Tracks": [
       {
-        "TrackNumber": 1,
         "Title": "GroupingWithNoUsableGenreYieldsSocial",
-        "ArtistNames": [ "Track Artist" ],
-        "AlbumTitle": "Album Title",
-        "AlbumArtistNames": [ "Album Artist" ],
-        "BeatsPerMinute": 0,
-        "Comments": {
-          "Songs-DB_Custom1": "NoAuto"
-        },
         "Genres": [
           "Vocal"
         ],
         "Grouping": "Foxtrot",
-        "Path": "song.mp3",
         "Ratings": [
           {
             "Rater": "no@email",
@@ -90,6 +63,46 @@
       {
         "DanceName": "Foxtrot",
         "Categories": "Social",
+        "Difficulty": "Any",
+        "Status": "NeedsReview",
+        "RawRating": 128
+      }
+    ]
+  },
+  {
+    "Tracks": [
+      {
+        "Title": "ShouldRespectNeedsReviewTags",
+        "Genres": [
+          "Ballroom",
+          "Waltz",
+          "Standard",
+          "Smooth"
+        ],
+        "Grouping": "Waltz",
+        "Comments": {
+          "Songs-DB_Custom3": "Smooth"
+        },
+        "Ratings": [
+          {
+            "Rater": "no@email",
+            "rating": 128,
+            "PlayCount": 0
+          }
+        ]
+      }
+    ],
+    "Results": [
+      {
+        "DanceName": "Waltz",
+        "Categories": "Standard",
+        "Difficulty": "Any",
+        "Status": "Reviewed",
+        "RawRating": 128
+      },
+      {
+        "DanceName": "Waltz",
+        "Categories": "Smooth",
         "Difficulty": "Any",
         "Status": "NeedsReview",
         "RawRating": 128
