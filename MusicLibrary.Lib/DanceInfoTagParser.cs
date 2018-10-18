@@ -1,29 +1,46 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Globalization;
 
 using System.Linq;
 
 namespace MusicLibrary.Lib
 {
-    class DanceInfoTagParser
+    public class DanceInfoTagParser
     {
         public bool IsBallroom { get; protected set; }
         public DanceCategories Categories { get; protected set; }
         public IReadOnlyList<Dance> Dances { get; }
         public IReadOnlyList<string> UnusedTags { get; }
 
-        public Dictionary<DanceCategory, uint> Ratings { get; }
-
-        public uint? GetEffectiveRating(DanceCategory cat, uint? defaultRating) {
-            uint rating;
-            return Ratings.TryGetValue(cat, out rating) ? rating : defaultRating;
-        }
-
         protected uint? DefaultRating { get; }
-        protected DanceCategories DefaultCategories;
-        protected Dictionary<uint?, DanceCategories> CategoriesByRating = new Dictionary<uint?, DanceCategories>();
+        protected DanceCategories DefaultCategories { get; }
+
+        protected DanceCategories UnratedCategories { get; set; } = DanceCategories.None;
+        protected Dictionary<uint, DanceCategories> CategoriesByRating = new Dictionary<uint, DanceCategories>();
         protected Dictionary<Dance, uint?> RatingsByDance = new Dictionary<Dance, uint?>();
+
+        public IEnumerable<TrackDanceInfo> GetTagDanceInfo() {
+            var tdis = new List<TrackDanceInfo>();
+
+            foreach (var kvp in CategoriesByRating) {
+                if (kvp.Value != DanceCategories.None) {
+                    foreach (var dance in Dances) {
+                        tdis.Add(new TrackDanceInfo(dance, kvp.Value, kvp.Key));
+                    }
+                }
+            }
+
+            if (UnratedCategories != DanceCategories.None) {
+                foreach (var dance in Dances) {
+                    var rating = RatingsByDance[dance] ?? DefaultRating;
+                    tdis.Add(new TrackDanceInfo(dance, UnratedCategories, rating));
+                }
+            }
+
+            return tdis;
+        }
 
         protected bool TryGetCategoryMask(string tag, out DanceCategories mask) {
             return Enum.TryParse<DanceCategories>(tag, true, out mask);
@@ -40,7 +57,8 @@ namespace MusicLibrary.Lib
                 var split = tag.Split('@');
                 if (split.Length == 2) {
                     double val;
-                    if (double.TryParse(split[1], out val) && (val >= 0.0) && (val <= 5.0)) {
+                    bool valid = double.TryParse(split[1], NumberStyles.Any, CultureInfo.InvariantCulture, out val);
+                    if (valid && (val >= 0.0) && (val <= 5.0)) {
                         rating = TrackRating.FiveStarRatingToRaw(val);
                         return split[0];
                     }
@@ -64,12 +82,17 @@ namespace MusicLibrary.Lib
 
         protected void AddOrUpdateCategories(DanceCategories categories, uint? rating) {
             DanceCategories existing;
-            if (CategoriesByRating.TryGetValue(rating, out existing)) {
-                var newCategories = categories | existing;
-                CategoriesByRating[rating] = newCategories;
+            if (!rating.HasValue) {
+                UnratedCategories |= categories;
             }
             else {
-                CategoriesByRating[rating] = categories;
+                if (CategoriesByRating.TryGetValue(rating.Value, out existing)) {
+                    var newCategories = categories | existing;
+                    CategoriesByRating[rating.Value] = newCategories;
+                }
+                else {
+                    CategoriesByRating[rating.Value] = categories;
+                }
             }
         }
 
@@ -77,32 +100,22 @@ namespace MusicLibrary.Lib
             var all = DanceCategories.None;
 
             foreach (var kvp in CategoriesByRating) {
-                if (kvp.Key.HasValue) {
-                    if ((all & kvp.Value) != 0) {
-                        throw new ApplicationException($"Multiple ratings for {kvp.Value}");
-                    }
-                    all |= kvp.Value;
+                if ((all & kvp.Value) != 0) {
+                    throw new ApplicationException($"Multiple ratings for {kvp.Value}");
                 }
+                all |= kvp.Value;
             }
 
-            DanceCategories unrated;
-            if (CategoriesByRating.TryGetValue(null, out unrated)) {
-                unrated &= ~all;
-                if (unrated == DanceCategories.None) {
-                    CategoriesByRating.Remove(null);
-                }
-                else {
-                    CategoriesByRating[null] = unrated;
-                    all |= unrated;
-                }
+            if (UnratedCategories != DanceCategories.None) {
+                UnratedCategories &= ~all;
             }
 
-            Categories = all;
+            Categories = all | UnratedCategories;
         }
 
-        protected string ExtractTag(string tag) {
+        protected string ExtractTag(string rawTag) {
             uint? rating;
-            tag = ExtractRating(tag, out rating);
+            var tag = ExtractRating(rawTag.Normalize(), out rating);
 
             DanceCategories categories;
             Dance dance;
@@ -118,17 +131,22 @@ namespace MusicLibrary.Lib
                 IsBallroom = true;
                 return String.Empty;
             }
-            return tag;
+            return rawTag;
         }
 
         public DanceInfoTagParser(uint? defaultRating, DanceCategories defaultCategories, IEnumerable<string> tags) {
             DefaultRating = defaultRating;
             DefaultCategories = defaultCategories;
 
-            UnusedTags = tags.Normalize().Select<string, string>(ExtractTag).Where((s) => !String.IsNullOrEmpty(s)).ToList().AsReadOnly();
+            UnusedTags = tags.Select<string, string>(ExtractTag).Where((s) => !String.IsNullOrEmpty(s)).ToList().AsReadOnly();
 
             UpdateAllCategories();
             Dances = RatingsByDance.Keys.ToList();
+        }
+
+        public DanceInfoTagParser(uint? defaultRating, DanceCategories defaultCategories, params string[] tags) 
+            : this(defaultRating, defaultCategories, (IEnumerable<string>)tags)
+        {
         }
     }
 }
