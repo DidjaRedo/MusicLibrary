@@ -104,7 +104,6 @@ namespace MusicLibrary.Lib
                 cat = cat | (isRhythm ? DanceCategories.Rhythm : DanceCategories.None);
                 cat = cat | (isSwing ? DanceCategories.Swing : DanceCategories.None);
                 cat = cat | (isSocial ? DanceCategories.Social : DanceCategories.None);
-                cat = cat | (isCompetition ? DanceCategories.Competition : DanceCategories.None);
                 if ((cat == DanceCategories.None) && ((flags & FilterFlags.SocialIsDefault) == FilterFlags.SocialIsDefault)) {
                     cat = DanceCategories.Social;
                 }

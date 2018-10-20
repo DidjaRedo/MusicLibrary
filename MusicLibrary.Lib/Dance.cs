@@ -26,8 +26,7 @@ namespace MusicLibrary.Lib
         Smooth = 1 << DanceCategory.Smooth,
         Rhythm = 1 << DanceCategory.Rhythm,
         Swing = 1 << DanceCategory.Swing,
-        Social = 1 << DanceCategory.Social,
-        Competition = 1 << DanceCategory.Competition
+        Social = 1 << DanceCategory.Social
     };
 
     public class Dance
@@ -43,7 +42,7 @@ namespace MusicLibrary.Lib
 
         public Dance(string[] names, IEnumerable<TempoRange> tempos) {
             if ((names == null) || (names.Length < 1)) {
-                throw new ApplicationException("Dance constructer needs at least one name");
+                throw new ApplicationException("Dance constructor needs at least one name");
             }
 
             Name = names[0];

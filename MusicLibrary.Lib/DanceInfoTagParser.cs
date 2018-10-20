@@ -27,15 +27,21 @@ namespace MusicLibrary.Lib
             foreach (var kvp in CategoriesByRating) {
                 if (kvp.Value != DanceCategories.None) {
                     foreach (var dance in Dances) {
-                        tdis.Add(new TrackDanceInfo(dance, kvp.Value, kvp.Key));
+                        var categories = kvp.Value & dance.Categories;
+                        if (categories != DanceCategories.None) {
+                            tdis.Add(new TrackDanceInfo(dance, categories, kvp.Key));
+                        }
                     }
                 }
             }
 
             if (UnratedCategories != DanceCategories.None) {
                 foreach (var dance in Dances) {
-                    var rating = RatingsByDance[dance] ?? DefaultRating;
-                    tdis.Add(new TrackDanceInfo(dance, UnratedCategories, rating));
+                    var categories = UnratedCategories & dance.Categories;
+                    if (categories != DanceCategories.None) {
+                        var rating = RatingsByDance[dance] ?? DefaultRating;
+                        tdis.Add(new TrackDanceInfo(dance, categories, rating));
+                    }
                 }
             }
 
@@ -147,6 +153,10 @@ namespace MusicLibrary.Lib
         public DanceInfoTagParser(uint? defaultRating, DanceCategories defaultCategories, params string[] tags) 
             : this(defaultRating, defaultCategories, (IEnumerable<string>)tags)
         {
+        }
+
+        public DanceInfoTagParser(params string[] tags) : this(null, DanceCategories.None, tags) {
+
         }
     }
 }

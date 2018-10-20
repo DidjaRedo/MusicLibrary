@@ -92,13 +92,15 @@ namespace MusicLibrary.Lib
         public static readonly Dance Jive = new Dance(
             new string[] { "Jive", "JIV" },
             new Dance.TempoRange() { Category = DanceCategory.Latin, MinBpm = 42 * 4, MaxBpm = 44 * 4 },
-            new Dance.TempoRange() { Category = DanceCategory.Social, MinBpm = 42 * 4, MaxBpm = 44 * 4 }
+            new Dance.TempoRange() { Category = DanceCategory.Social, MinBpm = 42 * 4, MaxBpm = 44 * 4 },
+            new Dance.TempoRange() { Category = DanceCategory.Swing, MinBpm = 42 * 4, MaxBpm = 44 * 4 }
         );
 
         public static readonly Dance EastCoastSwing = new Dance(
             new string[] { "East Coast Swing", "EC Swing", "Fast Swing", "FSW", "ECS" },
             new Dance.TempoRange() { Category = DanceCategory.Rhythm, MinBpm = 34 * 4, MaxBpm = 36 * 4 },
-            new Dance.TempoRange() { Category = DanceCategory.Social, MinBpm = 33 * 4, MaxBpm = 36 * 4 }
+            new Dance.TempoRange() { Category = DanceCategory.Social, MinBpm = 33 * 4, MaxBpm = 36 * 4 },
+            new Dance.TempoRange() { Category = DanceCategory.Swing, MinBpm = 33 * 4, MaxBpm = 36 * 4}
         );
 
         public static readonly Dance Mambo = new Dance(
@@ -116,7 +118,8 @@ namespace MusicLibrary.Lib
         public static readonly Dance WestCoastSwing = new Dance(
             new string[] { "West Coast Swing", "WC Swing", "Slow Swing", "SSW", "WCS" },
             new Dance.TempoRange() { Category = DanceCategory.Rhythm, MinBpm = 28 * 4, MaxBpm = 32 * 4 },
-            new Dance.TempoRange() { Category = DanceCategory.Social, MinBpm = 37 * 4, MaxBpm = 33 * 4 }
+            new Dance.TempoRange() { Category = DanceCategory.Social, MinBpm = 37 * 4, MaxBpm = 33 * 4 },
+            new Dance.TempoRange() { Category = DanceCategory.Swing, MinBpm = 28 * 4, MaxBpm = 33 * 4}
         );
 
         public static readonly Dance Hustle = new Dance(
