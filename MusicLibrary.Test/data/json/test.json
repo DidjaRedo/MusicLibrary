@@ -25,7 +25,8 @@
           "rating": 196,
           "PlayCount": 0
         }
-      ]
+      ],
+      "LastPlayed": "0001-01-01T00:00:00+00:00"
     },
     {
       "TrackNumber": 13,
@@ -60,7 +61,8 @@
           "rating": 186,
           "PlayCount": 0
         }
-      ]
+      ],
+      "LastPlayed": "0001-01-01T00:00:00+00:00"
     }
   ]
 }

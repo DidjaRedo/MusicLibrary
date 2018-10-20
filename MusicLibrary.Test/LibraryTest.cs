@@ -19,8 +19,9 @@ namespace MusicLibrary.Test
         [Fact]
         public void ShouldExportJson() {
             string expected = File.ReadAllText("./data/json/test.json");
-            var library = new Library("./data/mp3/Music");
-            library.Root = ".\\data\\Music\\";
+            var library = new Library("./data/mp3/Music") {
+                Root = ".\\data\\Music\\"
+            };
             var json = library.ExportToJson(true);
             Assert.Equal(expected, json);
         }

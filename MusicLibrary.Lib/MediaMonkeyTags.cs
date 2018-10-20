@@ -12,8 +12,7 @@ namespace MusicLibrary.Lib
         }
 
         protected string GetCommentOrDefault(string key) {
-            string value = null;
-            return _track.Comments.TryGetValue(key, out value) ? value : null;
+            return _track.Comments.TryGetValue(key, out string value) ? value : null;
         }
 
         public string Occasion => GetCommentOrDefault("Songs-DB_Occasion");
@@ -24,8 +23,7 @@ namespace MusicLibrary.Lib
         public string Custom5 => GetCommentOrDefault("Songs-DB_Custom5");
 
         public override bool Equals(object obj) {
-            var other = obj as MediaMonkeyTags;
-            return (other != null) && (GetHashCode() == other.GetHashCode());
+            return (obj is MediaMonkeyTags other) && (GetHashCode() == other.GetHashCode());
         }
 
         public override int GetHashCode() {

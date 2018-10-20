@@ -26,11 +26,12 @@ namespace MusicLibrary.Lib
         Smooth = 1 << DanceCategory.Smooth,
         Rhythm = 1 << DanceCategory.Rhythm,
         Swing = 1 << DanceCategory.Swing,
-        Social = 1 << DanceCategory.Social
+        Social = 1 << DanceCategory.Social,
+        AmericanStyle = (Smooth | Rhythm),
+        InternationalStyle = (Standard | Latin)
     };
 
-    public class Dance
-    {
+    public class Dance {
         public string Name { get; }
         public string[] AllNames { get; }
         public DanceCategories Categories { get; } = DanceCategories.None;
@@ -66,8 +67,16 @@ namespace MusicLibrary.Lib
             DanceCategory.Swing, DanceCategory.Social, DanceCategory.Competition
         };
 
+        public IEnumerable<DanceCategory> EnumerateCategories(DanceCategories categories) {
+            return AllCategories.Where((c) => (categories & ((DanceCategories)(1 << (int)c))) != 0);
+        }
+
         public IEnumerable<DanceCategory> EnumerateCategories() {
-            return AllCategories.Where((c) => (Categories & ((DanceCategories)(1 << (int)c))) != 0);
+            return EnumerateCategories(Categories);
+        }
+
+        public static DanceCategories ToCategoriesMask(DanceCategory category) {
+            return (DanceCategories)(1 << (int)category);
         }
 
         public override string ToString() {

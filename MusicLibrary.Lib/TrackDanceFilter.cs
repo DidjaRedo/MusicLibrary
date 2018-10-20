@@ -8,6 +8,7 @@ namespace MusicLibrary.Lib
 {
     public class TrackDanceFilter
     {
+        public string Name { get; set; }
         public List<Dance> Dances { get; } = new List<Dance>();
         public DanceCategories? Categories { get; set; } = null;
         public int? MinBpm { get; set; }
@@ -29,6 +30,7 @@ namespace MusicLibrary.Lib
 
         public TrackDanceFilter Clone() {
             var result = new TrackDanceFilter() {
+                Name = Name,
                 Categories = Categories,
                 MinBpm = MinBpm,
                 MaxBpm = MaxBpm,
@@ -41,7 +43,11 @@ namespace MusicLibrary.Lib
             return result;
         }
 
-        public TrackDanceFilter Merge(IEnumerable<TrackDanceFilter> filters) {
+        public static TrackDanceFilter Merge(params TrackDanceFilter[] filters) {
+            return Merge((IEnumerable<TrackDanceFilter>)filters);
+        }
+
+        public static TrackDanceFilter Merge(IEnumerable<TrackDanceFilter> filters) {
             TrackDanceFilter merged = null;
             foreach (var filter in filters) {
                 if (merged == null) {
@@ -55,7 +61,7 @@ namespace MusicLibrary.Lib
                     merged.ReviewStatus = merged.ReviewStatus ?? filter.ReviewStatus;
                     merged.MinRating = merged.MinRating ?? filter.MinRating;
                     merged.MaxRating = merged.MaxRating ?? filter.MaxRating;
-                    merged.Dances.AddRange(Dances);
+                    merged.Dances.AddRange(filter.Dances);
                 }
             }
             return merged;

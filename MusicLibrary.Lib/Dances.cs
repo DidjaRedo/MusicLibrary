@@ -21,11 +21,7 @@ namespace MusicLibrary.Lib
 
         public Dance this[string name] {
             get {
-                Dance dance = null;
-                if (_dances.TryGetValue(name, out dance)) {
-                    return dance;
-                }
-                return null;
+                return _dances.TryGetValue(name, out Dance dance) ? dance : null;
             }
         }
 
