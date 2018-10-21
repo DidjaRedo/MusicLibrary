@@ -48,7 +48,10 @@ namespace MusicLibrary.Test
         public void ShouldFilterByRating() {
             var library = SampleData.GetTestLibrary();
             foreach (var rating in SampleData.ExpectedTracksByRating.Keys) {
-                var filter = new TrackDanceFilter() { MinRating = TrackRating.FiveStarRatingToRaw(rating) };
+                var filter = new TrackDanceFilter() {
+                    MinRating = TrackRating.FiveStarRatingToRaw(rating),
+                    MaxRating = TrackRating.FiveStarRatingToRaw(5.0)
+                };
                 var tracks = filter.Filter(library.Tracks);
                 Assert.Equal(SampleData.ExpectedTracksByRating[rating], tracks.Count());
                 foreach (var track in tracks) {

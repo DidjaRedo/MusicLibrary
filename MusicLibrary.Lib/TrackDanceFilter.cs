@@ -89,7 +89,7 @@ namespace MusicLibrary.Lib
             matches = matches && ((MinBpm == null) || (track.BeatsPerMinute >= MinBpm.Value));
             matches = matches && ((MaxBpm == null) || (track.BeatsPerMinute <= MaxBpm.Value));
             matches = matches && ((MinRating == null) || ((track.Rating != null) && (track.Rating.RawRating >= MinRating.Value)));
-            matches = matches && ((MaxRating == null) || ((track.Rating != null) && (track.Rating.RawRating >= MaxRating.Value)));
+            matches = matches && ((MaxRating == null) || ((track.Rating != null) && (track.Rating.RawRating <= MaxRating.Value)));
             return matches ? MatchingDances(track) : new List<TrackDanceInfo>();
         }
 
@@ -99,6 +99,11 @@ namespace MusicLibrary.Lib
 
         public IEnumerable<ITrack> Filter(IEnumerable<ITrack> all) {
             return all.Where((t) => IsMatch(t));
+        }
+
+        public override string ToString() {
+            string dances = string.Join(",", Dances.Select((d) => d.ToString()));
+            return $"[{dances}]{(Categories.HasValue ? Categories.ToString() : String.Empty)}";
         }
     }
 }

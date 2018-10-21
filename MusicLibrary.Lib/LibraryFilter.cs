@@ -50,8 +50,12 @@ namespace MusicLibrary.Lib
             foreach (var category in categories) {
                 foreach (var dance in Dances.All) {
                     var mask = Dance.ToCategoriesMask(category);
-                    if ((dance.Categories & mask) != DanceCategories.None) {
-                        AddFilter(new TrackDanceFilter(dance));
+                    var effective = dance.Categories & mask;
+                    if (effective != DanceCategories.None) {
+                        AddFilter(new TrackDanceFilter(dance) {
+                            Name = $"{dance.Name}-{mask.ToString()}",
+                            Categories = effective
+                        });
                     }
                 }
             }
@@ -68,6 +72,10 @@ namespace MusicLibrary.Lib
             public TrackDanceFilter Configured { get; }
             public TrackDanceFilter Effective { get; set; }
             public List<ITrack> Tracks { get; } = new List<ITrack>();
+
+            public override string ToString() {
+                return Effective.ToString();
+            }
         }
     }
 }

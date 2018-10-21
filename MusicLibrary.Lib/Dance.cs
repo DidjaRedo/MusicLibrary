@@ -62,12 +62,12 @@ namespace MusicLibrary.Lib
 
         }
 
-        private static readonly DanceCategory[] AllCategories = new DanceCategory[] {
+        public static readonly DanceCategory[] AllCategories = new DanceCategory[] {
             DanceCategory.Standard, DanceCategory.Latin, DanceCategory.Smooth, DanceCategory.Rhythm,
             DanceCategory.Swing, DanceCategory.Social, DanceCategory.Competition
         };
 
-        public IEnumerable<DanceCategory> EnumerateCategories(DanceCategories categories) {
+        public static IEnumerable<DanceCategory> EnumerateCategories(DanceCategories categories) {
             return AllCategories.Where((c) => (categories & ((DanceCategories)(1 << (int)c))) != 0);
         }
 

@@ -1,0 +1,62 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Linq;
+
+using Xunit;
+using MusicLibrary.Lib;
+
+namespace MusicLibrary.Test
+{
+    public class LibraryFilterTest
+    {
+        [Fact]
+        public void ShouldInitializeDancesByCategory() {
+            var lib = new LibraryFilter(SampleData.GetTestLibrary());
+            lib.AddDanceFiltersByCategory(DanceCategory.Standard, DanceCategory.Latin);
+            Assert.Equal(lib.Filters.Keys, new string[] {
+                "Waltz-Standard", "Tango-Standard", "Foxtrot-Standard", "Quickstep-Standard", "Viennese Waltz-Standard",
+                "Samba-Latin", "Cha-Cha-Latin", "Rumba-Latin", "Paso Doble-Latin", "Jive-Latin"
+            });
+        }
+
+        [Fact]
+        public void ShouldPopulateFilterTracksFromLibrary() {
+            var lib = new LibraryFilter(SampleData.GetTestLibrary());
+            lib.AddDanceFiltersByCategory(Dance.AllCategories);
+            foreach (var fi in lib.Filters.Values) {
+                foreach (var dance in fi.Effective.Dances) {
+                    var edi = SampleData.ExpectedDanceInfo[dance];
+                    if (!fi.Effective.Categories.HasValue) {
+                        Assert.Equal(edi.TotalTracks, fi.Tracks.Count);
+                    }
+                    else {
+                        foreach (var category in Dance.EnumerateCategories(fi.Effective.Categories.Value)) {
+                            var expected = edi.GetTotalForCategory(category);
+                            Assert.Equal(expected, fi.Tracks.Count);
+                        }
+                    }
+
+                }
+            }
+        }
+
+        [Fact]
+        public void ShouldMergeDefaultCategories() {
+            var minRating = TrackRating.FiveStarRatingToRaw(3.5);
+            var maxRating = TrackRating.FiveStarRatingToRaw(5.0);
+            var defaultFilter = new TrackDanceFilter() { MinRating = minRating, MaxRating = maxRating };
+            var lib = new LibraryFilter(SampleData.GetTestLibrary(), defaultFilter);
+            lib.AddDanceFiltersByCategory(DanceCategory.Standard, DanceCategory.Latin);
+
+            foreach (var fi in lib.Filters.Values) {
+                Assert.True(fi.Effective.MinRating.HasValue && (fi.Effective.MinRating.Value == minRating)
+                            && fi.Effective.MaxRating.HasValue && (fi.Effective.MaxRating.Value == maxRating));
+                Assert.All(fi.Tracks, (t) => {
+                    Assert.NotNull(t.Rating);
+                    Assert.InRange<uint>(t.Rating.RawRating, minRating, maxRating);
+                });
+            }
+        }
+    }
+}
