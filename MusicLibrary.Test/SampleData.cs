@@ -33,6 +33,8 @@ namespace MusicLibrary.Test
             { Dances.Merengue, new DanceTestResult() { TotalTracks = 1, TotalSocial = 1 } }
         };
 
+        public const int NumTracksWithoutDances = 199;
+
         public static Dictionary<double, int> ExpectedTracksByRating = new Dictionary<double, int>() {
             { 5.0, 11 },
             { 4.5, 14 },
@@ -45,6 +47,11 @@ namespace MusicLibrary.Test
             { 1.0, 1110 },
             { 0.5, 1110 },
             { 0.0, 1171 }
+        };
+
+        public static Dictionary<DanceReviewStatus, int> ExpectedTracksByReviewStatus = new Dictionary<DanceReviewStatus, int>() {
+            { DanceReviewStatus.NeedsReview, 15 },
+            { DanceReviewStatus.Reviewed, 1583 }
         };
     }
 }

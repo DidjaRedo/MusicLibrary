@@ -45,6 +45,19 @@ namespace MusicLibrary.Test
         }
 
         [Fact]
+        public void ShouldRespectFlagToIncludeTracksWithNoDances() {
+            var library = SampleData.GetTestLibrary();
+            var filter = new TrackDanceFilter() { Options = DanceFilterFlags.IncludeTracksWithNoDances };
+            var tracks = filter.Filter(library.Tracks);
+            var totalTracks = tracks.Count();
+
+            filter = new TrackDanceFilter();
+            tracks = filter.Filter(library.Tracks);
+            var tracksWithDances = tracks.Count();
+            Assert.Equal(SampleData.NumTracksWithoutDances, totalTracks - tracksWithDances);
+        }
+
+        [Fact]
         public void ShouldFilterByRating() {
             var library = SampleData.GetTestLibrary();
             foreach (var rating in SampleData.ExpectedTracksByRating.Keys) {
@@ -58,6 +71,18 @@ namespace MusicLibrary.Test
                     Assert.NotNull(track.Rating);
                     Assert.True(track.Rating.FiveStarRating >= rating);
                 }
+            }
+        }
+        
+        [Fact]
+        public void ShouldFilterByReviewStatus() {
+            var library = SampleData.GetTestLibrary();
+            foreach (var status in new DanceReviewStatus[] {  DanceReviewStatus.NeedsReview, DanceReviewStatus.Reviewed }) {
+                var filter = new TrackDanceFilter() {
+                    ReviewStatus = status
+                };
+                var tracks = filter.Filter(library.Tracks);
+                Assert.Equal(SampleData.ExpectedTracksByReviewStatus[status], tracks.Count());
             }
         }
     }

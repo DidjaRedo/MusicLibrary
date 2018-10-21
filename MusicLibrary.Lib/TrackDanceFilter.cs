@@ -6,6 +6,14 @@ using System.Linq;
 
 namespace MusicLibrary.Lib
 {
+    [Flags] public enum DanceFilterFlags
+    {
+        Default = 0x00,
+        IncludeTracksWithNoDances = 0x01,
+        IncludeTracksWithNoBpm = 0x02,
+        IncludeTracksWithNoRating = 0x4
+    };
+
     public class TrackDanceFilter
     {
         public string Name { get; set; }
@@ -17,6 +25,7 @@ namespace MusicLibrary.Lib
         public DanceReviewStatus? ReviewStatus { get; set; }
         public uint? MinRating { get; set; }
         public uint? MaxRating { get; set; }
+        public DanceFilterFlags Options { get; set; } = DanceFilterFlags.Default;
 
         public TrackDanceFilter(IEnumerable<Dance> dances) {
             if (dances != null) {
@@ -37,7 +46,8 @@ namespace MusicLibrary.Lib
                 Difficulty = Difficulty,
                 ReviewStatus = ReviewStatus,
                 MinRating = MinRating,
-                MaxRating = MaxRating
+                MaxRating = MaxRating,
+                Options = Options
             };
             result.Dances.AddRange(Dances);
             return result;
@@ -61,6 +71,7 @@ namespace MusicLibrary.Lib
                     merged.ReviewStatus = merged.ReviewStatus ?? filter.ReviewStatus;
                     merged.MinRating = merged.MinRating ?? filter.MinRating;
                     merged.MaxRating = merged.MaxRating ?? filter.MaxRating;
+                    merged.Options |= filter.Options;
                     merged.Dances.AddRange(filter.Dances);
                 }
             }
@@ -69,32 +80,42 @@ namespace MusicLibrary.Lib
 
         public List<TrackDanceInfo> MatchingDances(ITrack track) {
             var matches = new List<TrackDanceInfo>();
-            foreach (var dance in track.Dances.Dances) {
-                bool match = (Dances.Count == 0) || Dances.Contains(dance.Dance);
-                // For category we need to match all of the filtered categories
-                // For difficulty we need to match any of the filtered difficulties
-                match = match && ((!Categories.HasValue) || ((dance.Categories & Categories.Value) == Categories.Value));
-                match = match && ((!Difficulty.HasValue) || ((dance.Difficulty & Difficulty.Value) != 0));
-                match = match && ((!ReviewStatus.HasValue) || (dance.Status == ReviewStatus.Value));
-                if (match) {
-                    matches.Add(dance);
+            if (track.Dances.Dances.Count > 0) {
+                foreach (var dance in track.Dances.Dances) {
+                    bool match = (Dances.Count == 0) || Dances.Contains(dance.Dance);
+                    // For category we need to match all of the filtered categories
+                    // For difficulty we need to match any of the filtered difficulties
+                    match = match && ((!Categories.HasValue) || ((dance.Categories & Categories.Value) == Categories.Value));
+                    match = match && ((!Difficulty.HasValue) || ((dance.Difficulty & Difficulty.Value) != 0));
+                    match = match && ((!ReviewStatus.HasValue) || (dance.Status == ReviewStatus.Value));
+                    if ((dance.RawRating.HasValue) || ((Options & DanceFilterFlags.IncludeTracksWithNoRating) == 0)) {
+                        match = match && ((MinRating == null) || ((dance.RawRating.HasValue) && (dance.RawRating.Value >= MinRating.Value)));
+                        match = match && ((MaxRating == null) || ((dance.RawRating.HasValue) && (dance.RawRating.Value <= MaxRating.Value)));
+                    }
+                    if (match) {
+                        matches.Add(dance);
+                    }
                 }
+
+                matches = (matches.Count > 0) ? matches : null;
+            }
+            else {
+                matches = ((Options & DanceFilterFlags.IncludeTracksWithNoDances) != 0) ? matches : null;
             }
             return matches;
         }
 
         public List<TrackDanceInfo> Matches(ITrack track) {
             bool matches = true;
-
-            matches = matches && ((MinBpm == null) || (track.BeatsPerMinute >= MinBpm.Value));
-            matches = matches && ((MaxBpm == null) || (track.BeatsPerMinute <= MaxBpm.Value));
-            matches = matches && ((MinRating == null) || ((track.Rating != null) && (track.Rating.RawRating >= MinRating.Value)));
-            matches = matches && ((MaxRating == null) || ((track.Rating != null) && (track.Rating.RawRating <= MaxRating.Value)));
-            return matches ? MatchingDances(track) : new List<TrackDanceInfo>();
+            if ((track.BeatsPerMinute != 0) || ((Options & DanceFilterFlags.IncludeTracksWithNoBpm) == 0)) {
+                matches = matches && ((MinBpm == null) || (track.BeatsPerMinute >= MinBpm.Value));
+                matches = matches && ((MaxBpm == null) || (track.BeatsPerMinute <= MaxBpm.Value));
+            }
+            return matches ? MatchingDances(track) : null;
         }
 
         public bool IsMatch(ITrack track) {
-            return (Matches(track).Count > 0);
+            return Matches(track) != null;
         }
 
         public IEnumerable<ITrack> Filter(IEnumerable<ITrack> all) {
