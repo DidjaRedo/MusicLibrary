@@ -14,23 +14,35 @@ namespace DanceDj.Mvvm.ViewModel
         private readonly IDataService _dataService;
 
         /// <summary>
-        /// The <see cref="WelcomeTitle" /> property's name.
+        /// The <see cref="Source" /> property's name.
         /// </summary>
         public const string WelcomeTitlePropertyName = "WelcomeTitle";
 
-        private string _welcomeTitle = string.Empty;
+        private string _source = string.Empty;
 
         /// <summary>
         /// Gets the WelcomeTitle property.
         /// Changes to that property's value raise the PropertyChanged event. 
         /// </summary>
-        public string WelcomeTitle {
+        public string Source {
             get {
-                return _welcomeTitle;
+                return _source;
             }
             set {
-                Set(ref _welcomeTitle, value);
+                Set(ref _source, value);
             }
+        }
+
+        private bool _found = false;
+        public bool Found {
+            get { return _found; }
+            set { Set(ref _found, value); }
+        }
+
+        private LibraryViewModel _library = null;
+        public LibraryViewModel Library {
+            get { return _library; }
+            set { Set(ref _library, value); }
         }
 
         /// <summary>
@@ -45,7 +57,11 @@ namespace DanceDj.Mvvm.ViewModel
                         return;
                     }
 
-                    WelcomeTitle = item.Title;
+                    Source = item.Source;
+                    Found = (item.Library != null);
+                    if (Found) {
+                        Library = new LibraryViewModel(item.Library);
+                    }
                 });
         }
 

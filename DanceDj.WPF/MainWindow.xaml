@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:ignore="http://www.galasoft.ch/ignore"
         mc:Ignorable="d ignore"
-        Height="300"
-        Width="300"
-        Title="MVVM Light Application"
+        Height="640"
+        Width="1024"
+        Title="Dance DJ"
         DataContext="{Binding Main, Source={StaticResource Locator}}">
     
     <Window.Resources>
@@ -19,14 +19,16 @@
     </Window.Resources>
 
     <Grid x:Name="LayoutRoot">
-
-        <TextBlock FontSize="36"
-                   FontWeight="Bold"
-                   Foreground="Purple"
-                   Text="{Binding WelcomeTitle}"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center"
-                   TextWrapping="Wrap" />
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <Label VerticalAlignment="Center">Source:</Label>
+                <TextBlock Text="{Binding Source}" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label VerticalAlignment="Center">Found:</Label>
+                <TextBlock Text="{Binding Found}" VerticalAlignment="Center"/>
+            </StackPanel>
+        </StackPanel>
 
     </Grid>
 </Window>
