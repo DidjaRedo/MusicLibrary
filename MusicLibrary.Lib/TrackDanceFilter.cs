@@ -64,6 +64,7 @@ namespace MusicLibrary.Lib
                     merged = filter.Clone();
                 }
                 else {
+                    merged.Name = merged.Name ?? filter.Name;
                     merged.Categories = merged.Categories ?? filter.Categories;
                     merged.MinBpm = merged.MinBpm ?? filter.MinBpm;
                     merged.MaxBpm = merged.MaxBpm ?? filter.MaxBpm;

@@ -21,6 +21,7 @@ namespace DanceDj.Mvvm.ViewModel
 
         internal LibraryFilter.FilterInfo FilterInfo { get; }
 
+        public string Name => Filter.Name;
         public FilterViewModel Filter { get; }
 
         private ObservableCollection<TrackViewModel> InnerTracks { get; }

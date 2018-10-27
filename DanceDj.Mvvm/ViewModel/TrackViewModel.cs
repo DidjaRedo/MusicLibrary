@@ -20,5 +20,9 @@ namespace DanceDj.Mvvm.ViewModel
         public string[] Artists => Track.ArtistNames;
         public string Album => Track.AlbumTitle;
         public string[] AlbumArtists => Track.AlbumArtistNames;
+
+        public override string ToString() {
+            return Track.ToString();
+        }
     }
 }

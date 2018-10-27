@@ -69,6 +69,7 @@ namespace MusicLibrary.Lib
                 Tracks.AddRange(Effective.Filter(library.Tracks));
             }
 
+            public string Name => Configured.Name;
             public TrackDanceFilter Configured { get; }
             public TrackDanceFilter Effective { get; set; }
             public List<ITrack> Tracks { get; } = new List<ITrack>();
