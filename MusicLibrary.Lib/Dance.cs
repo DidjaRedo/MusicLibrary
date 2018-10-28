@@ -28,7 +28,8 @@ namespace MusicLibrary.Lib
         Swing = 1 << DanceCategory.Swing,
         Social = 1 << DanceCategory.Social,
         AmericanStyle = (Smooth | Rhythm),
-        InternationalStyle = (Standard | Latin)
+        InternationalStyle = (Standard | Latin),
+        Any = AmericanStyle | InternationalStyle | Swing | Social
     };
 
     public class Dance {

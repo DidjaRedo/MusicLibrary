@@ -18,11 +18,11 @@ namespace MusicLibrary.Lib
     {
         public string Name { get; set; }
         public List<Dance> Dances { get; } = new List<Dance>();
-        public DanceCategories? Categories { get; set; } = null;
+        public DanceCategories Categories { get; set; } = DanceCategories.None;
         public int? MinBpm { get; set; }
         public int? MaxBpm { get; set; }
-        public DanceDifficulty? Difficulty { get; set; }
-        public DanceReviewStatus? ReviewStatus { get; set; }
+        public DanceDifficulty Difficulty { get; set; } = DanceDifficulty.Any;
+        public DanceReviewStatusFlags ReviewStatus { get; set; } = DanceReviewStatusFlags.Any;
         public uint? MinRating { get; set; }
         public uint? MaxRating { get; set; }
         public DanceFilterFlags Options { get; set; } = DanceFilterFlags.Default;
@@ -65,11 +65,11 @@ namespace MusicLibrary.Lib
                 }
                 else {
                     merged.Name = merged.Name ?? filter.Name;
-                    merged.Categories = merged.Categories ?? filter.Categories;
+                    merged.Categories = merged.Categories | filter.Categories;
                     merged.MinBpm = merged.MinBpm ?? filter.MinBpm;
                     merged.MaxBpm = merged.MaxBpm ?? filter.MaxBpm;
-                    merged.Difficulty = merged.Difficulty ?? filter.Difficulty;
-                    merged.ReviewStatus = merged.ReviewStatus ?? filter.ReviewStatus;
+                    merged.Difficulty = merged.Difficulty | filter.Difficulty;
+                    merged.ReviewStatus = merged.ReviewStatus | filter.ReviewStatus;
                     merged.MinRating = merged.MinRating ?? filter.MinRating;
                     merged.MaxRating = merged.MaxRating ?? filter.MaxRating;
                     merged.Options |= filter.Options;
@@ -86,9 +86,9 @@ namespace MusicLibrary.Lib
                     bool match = (Dances.Count == 0) || Dances.Contains(dance.Dance);
                     // For category we need to match all of the filtered categories
                     // For difficulty we need to match any of the filtered difficulties
-                    match = match && ((!Categories.HasValue) || ((dance.Categories & Categories.Value) == Categories.Value));
-                    match = match && ((!Difficulty.HasValue) || ((dance.Difficulty & Difficulty.Value) != 0));
-                    match = match && ((!ReviewStatus.HasValue) || (dance.Status == ReviewStatus.Value));
+                    match = match && ((dance.Categories & Categories) == Categories);
+                    match = match && ((dance.Difficulty & Difficulty) != 0);
+                    match = match && ((TrackDanceInfo.ToStatusFlags(dance.Status) & ReviewStatus) != 0);
                     if ((dance.RawRating.HasValue) || ((Options & DanceFilterFlags.IncludeTracksWithNoRating) == 0)) {
                         match = match && ((MinRating == null) || ((dance.RawRating.HasValue) && (dance.RawRating.Value >= MinRating.Value)));
                         match = match && ((MaxRating == null) || ((dance.RawRating.HasValue) && (dance.RawRating.Value <= MaxRating.Value)));
@@ -125,7 +125,7 @@ namespace MusicLibrary.Lib
 
         public override string ToString() {
             string dances = string.Join(",", Dances.Select((d) => d.ToString()));
-            return $"[{dances}]{(Categories.HasValue ? Categories.ToString() : String.Empty)}";
+            return $"[{dances}]{Categories.ToString()}";
         }
     }
 }

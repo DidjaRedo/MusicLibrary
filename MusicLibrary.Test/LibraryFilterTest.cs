@@ -22,21 +22,20 @@ namespace MusicLibrary.Test
 
         [Fact]
         public void ShouldPopulateFilterTracksFromLibrary() {
-            var lib = new LibraryFilter(SampleData.GetTestLibrary());
+            var defaultFilter = new TrackDanceFilter() {
+                Categories = DanceCategories.None,
+                ReviewStatus = DanceReviewStatusFlags.Any,
+                Difficulty = DanceDifficulty.Any,
+            };
+            var lib = new LibraryFilter(SampleData.GetTestLibrary(), defaultFilter);
             lib.AddDanceFiltersByCategory(Dance.AllCategories);
             foreach (var fi in lib.Filters.Values) {
                 foreach (var dance in fi.Effective.Dances) {
                     var edi = SampleData.ExpectedDanceInfo[dance];
-                    if (!fi.Effective.Categories.HasValue) {
-                        Assert.Equal(edi.TotalTracks, fi.Tracks.Count);
+                    foreach (var category in Dance.EnumerateCategories(fi.Effective.Categories)) {
+                        var expected = edi.GetTotalForCategory(category);
+                        Assert.Equal(expected, fi.Tracks.Count);
                     }
-                    else {
-                        foreach (var category in Dance.EnumerateCategories(fi.Effective.Categories.Value)) {
-                            var expected = edi.GetTotalForCategory(category);
-                            Assert.Equal(expected, fi.Tracks.Count);
-                        }
-                    }
-
                 }
             }
         }
@@ -45,7 +44,11 @@ namespace MusicLibrary.Test
         public void ShouldMergeDefaultCategories() {
             var minRating = TrackRating.FiveStarRatingToRaw(3.5);
             var maxRating = TrackRating.FiveStarRatingToRaw(5.0);
-            var defaultFilter = new TrackDanceFilter() { MinRating = minRating, MaxRating = maxRating };
+            var defaultFilter = new TrackDanceFilter() {
+                ReviewStatus = DanceReviewStatusFlags.Any,
+                Difficulty = DanceDifficulty.Any,
+                MinRating = minRating, MaxRating = maxRating
+            };
             var lib = new LibraryFilter(SampleData.GetTestLibrary(), defaultFilter);
             lib.AddDanceFiltersByCategory(DanceCategory.Standard, DanceCategory.Latin);
 

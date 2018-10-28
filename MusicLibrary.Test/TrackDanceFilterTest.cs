@@ -79,9 +79,12 @@ namespace MusicLibrary.Test
             var library = SampleData.GetTestLibrary();
             foreach (var status in new DanceReviewStatus[] {  DanceReviewStatus.NeedsReview, DanceReviewStatus.Reviewed }) {
                 var filter = new TrackDanceFilter() {
-                    ReviewStatus = status
+                    Difficulty = DanceDifficulty.Any,
+                    ReviewStatus = TrackDanceInfo.ToStatusFlags(status)
                 };
-                var tracks = filter.Filter(library.Tracks);
+                var tmp = library.Tracks.Where((t) => t.Dances.Dances.Any((d) => d.Status == status));
+                var tracks = filter.Filter(tmp);
+                // var tracks = filter.Filter(library.Tracks);
                 Assert.Equal(SampleData.ExpectedTracksByReviewStatus[status], tracks.Count());
             }
         }

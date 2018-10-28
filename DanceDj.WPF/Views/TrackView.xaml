@@ -9,6 +9,14 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TextBox Text="{Binding Title, Mode=OneWay}"/>
+        <Expander Header="{Binding Title}" ExpandDirection="Down">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <TextBox Text="Album:"/>
+                    <TextBlock Text="{Binding TrackNumber, Mode=OneWay}"/>
+                    <TextBlock Text="{Binding Album, Mode=OneWay}"/>
+                </StackPanel>
+            </StackPanel>
+        </Expander>
     </Grid>
 </UserControl>

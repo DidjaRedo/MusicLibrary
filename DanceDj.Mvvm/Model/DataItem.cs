@@ -15,7 +15,7 @@ namespace DanceDj.Mvvm.Model
                     if (fi.Exists) {
                         var library = new LibraryFilter(MusicLibrary.Lib.Library.FromJsonFile(fi.FullName));
                         library?.AddFilter(new TrackDanceFilter() { Name = "All Tracks" });
-                        library?.AddFilter(new TrackDanceFilter(Dances.Waltz) { Name = "Waltz" });
+                        library?.AddFilter(new TrackDanceFilter(Dances.PasoDoble) { Name = "Paso Doble" });
                         Library = library;
                         _source = fi.FullName;
                     }

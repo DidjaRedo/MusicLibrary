@@ -17,8 +17,19 @@ namespace MusicLibrary.Lib
 
     public enum DanceReviewStatus
     {
-        NeedsReview,
-        Reviewed
+        NotReviewed = 0,
+        NeedsReview = 1,
+        Reviewed = 2
+    }
+
+    [Flags]
+    public enum DanceReviewStatusFlags
+    {
+        None = 0,
+        NotReviewed = (1 << DanceReviewStatus.NotReviewed),
+        NeedsReview = (1 << DanceReviewStatus.NeedsReview),
+        Reviewed = (1 << DanceReviewStatus.Reviewed),
+        Any = NotReviewed | NeedsReview | Reviewed
     }
 
     public class TrackDanceInfo {
@@ -55,6 +66,10 @@ namespace MusicLibrary.Lib
 
         [JsonIgnore]
         public double? FiveStarRating => (RawRating.HasValue ? ((double?)Math.Round(PercentRating.Value * 10.0) / 2.0) : null);
+
+        public static DanceReviewStatusFlags ToStatusFlags(DanceReviewStatus status) {
+            return (DanceReviewStatusFlags)(1 << (int)status);
+        }
 
         public override string ToString() {
             var rating = (FiveStarRating.HasValue ? $"@{FiveStarRating.Value.ToString()}" : String.Empty);

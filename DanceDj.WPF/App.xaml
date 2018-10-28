@@ -12,6 +12,6 @@
         <!--Global View Model Locator-->
         <vm:ViewModelLocator x:Key="Locator"
                              d:IsDataSource="True" />
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibility"/>
     </Application.Resources>
-    
 </Application>

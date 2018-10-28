@@ -16,7 +16,13 @@ namespace DanceDj.Mvvm.ViewModel
         internal TrackDanceFilter Filter { get; }
 
         public string Name => Filter.Name;
-        public DanceReviewStatus? ReviewStatus => Filter.ReviewStatus;
-        public DanceDifficulty? Difficulty => Filter.Difficulty;
+
+        public DanceDifficulty Difficulty => Filter.Difficulty;
+
+        private bool _showDetails = false;
+        public bool ShowDetails {
+            get => _showDetails;
+            set => Set<bool>(ref _showDetails, value, "ShowDetails");
+        }
     }
 }
