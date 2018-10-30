@@ -17,14 +17,30 @@ namespace DanceDj.Mvvm.ViewModel
             var trackVMs = fi.Tracks.Select<ITrack, TrackViewModel>((t) => new TrackViewModel(t));
             InnerTracks = new ObservableCollection<TrackViewModel>(trackVMs);
             Tracks = new ReadOnlyObservableCollection<TrackViewModel>(InnerTracks);
+
+            Filter.PropertyChanged += FilterPropertyChangedHandler;
+        }
+
+        private void FilterPropertyChangedHandler(object sender, System.ComponentModel.PropertyChangedEventArgs e) {
+            FilterInfo.Refresh();
+            RefreshTracks();
+        }
+
+        private void RefreshTracks() {
+            var trackVMs = FilterInfo.Tracks.Select<ITrack, TrackViewModel>((t) => new TrackViewModel(t));
+            InnerTracks = new ObservableCollection<TrackViewModel>(trackVMs);
+            Tracks = new ReadOnlyObservableCollection<TrackViewModel>(InnerTracks);
+            RaisePropertyChanged("Tracks");
         }
 
         internal LibraryFilter.FilterInfo FilterInfo { get; }
 
         public string Name => Filter.Name;
+        public string NameAndCount => $"{Name} ({Tracks.Count})";
+ 
         public FilterViewModel Filter { get; }
 
-        private ObservableCollection<TrackViewModel> InnerTracks { get; }
-        public ReadOnlyObservableCollection<TrackViewModel> Tracks { get; }
+        private ObservableCollection<TrackViewModel> InnerTracks { get; set;  }
+        public ReadOnlyObservableCollection<TrackViewModel> Tracks { get; private set; }
     }
 }

@@ -68,7 +68,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Converters\ReviewStatusToStringConverter.cs" />
+    <Compile Include="Converters\EnumToCollectionConverter.cs" />
     <Compile Include="Views\FilteredTracksView.xaml.cs">
       <DependentUpon>FilteredTracksView.xaml</DependentUpon>
     </Compile>

@@ -64,11 +64,18 @@ namespace MusicLibrary.Lib
         public class FilterInfo
         {
             public FilterInfo(Library library, TrackDanceFilter configured, TrackDanceFilter defaultFilter) {
+                Library = library;
                 Configured = configured;
                 Effective = TrackDanceFilter.Merge(defaultFilter, configured);
                 Tracks.AddRange(Effective.Filter(library.Tracks));
             }
 
+            public void Refresh() {
+                Tracks.Clear();
+                Tracks.AddRange(Effective.Filter(Library.Tracks));
+            }
+
+            protected Library Library { get; }
             public string Name => Configured.Name;
             public TrackDanceFilter Configured { get; }
             public TrackDanceFilter Effective { get; set; }

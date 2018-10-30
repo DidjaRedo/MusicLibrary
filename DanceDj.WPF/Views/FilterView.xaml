@@ -4,18 +4,36 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DanceDj.WPF.Views"
+             xmlns:cvt="clr-namespace:DanceDj.WPF.Converters"
+             xmlns:my="clr-namespace:DanceDj.WPF"
              xmlns:vm="clr-namespace:DanceDj.Mvvm.ViewModel;assembly=DanceDj.Mvvm"
              d:DataContext="{d:DesignInstance vm:FilterViewModel}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Expander Header="{Binding Name}" ExpandDirection="Down">
-            <StackPanel Orientation="Vertical">
-                <StackPanel Orientation="Horizontal">
-                    <TextBox Text="Difficulty:"/>
-                    <TextBlock Text="{Binding Difficulty,Mode=OneWay}"/>
-                </StackPanel>
-            </StackPanel>
+        <Expander Header="{Binding Description,Mode=OneWay}" ExpandDirection="Down">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBox Text="Difficulty:" Grid.Row="0" Grid.Column="0"/>
+                <ComboBox HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Grid.Row="0" Grid.Column="1"
+                            SelectedValuePath="Value" DisplayMemberPath="Description"
+                            ItemsSource="{Binding Path=Difficulty, Converter={cvt:EnumToCollectionConverter}, Mode=OneTime}"
+                            SelectedValue="{Binding Path=Difficulty}"/>
+                <TextBox Text="Review Status:" Grid.Row="1" Grid.Column="0"/>
+                <ComboBox HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Grid.Row="1" Grid.Column="1"
+                            SelectedValuePath="Value" DisplayMemberPath="Description"
+                            ItemsSource="{Binding Path=ReviewStatus, Converter={cvt:EnumToCollectionConverter}, Mode=OneTime}"
+                            SelectedValue="{Binding Path=ReviewStatus}"/>
+            </Grid>
         </Expander>
     </Grid>
 </UserControl>

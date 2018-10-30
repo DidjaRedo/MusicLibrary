@@ -7,9 +7,12 @@
              xmlns:vm="clr-namespace:DanceDj.Mvvm.ViewModel;assembly=DanceDj.Mvvm"
              d:DataContext="{d:DesignInstance vm:FilteredTracksViewModel}"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="250"
+             MinWidth="250" MaxWidth="350"
+             VerticalAlignment="Top">
     <Grid>
         <StackPanel Orientation="Vertical">
+            <TextBox Text="{Binding NameAndCount,Mode=OneWay}"/>
             <local:FilterView DataContext="{Binding Filter}"/>
             <ListView ItemsSource="{Binding Tracks}">
                 <ListView.ItemTemplate>
