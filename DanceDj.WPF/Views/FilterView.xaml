@@ -20,6 +20,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <TextBox Text="Difficulty:" Grid.Row="0" Grid.Column="0"/>
                 <ComboBox HorizontalAlignment="Center" VerticalAlignment="Center"
@@ -33,6 +34,12 @@
                             SelectedValuePath="Value" DisplayMemberPath="Description"
                             ItemsSource="{Binding Path=ReviewStatus, Converter={cvt:EnumToCollectionConverter}, Mode=OneTime}"
                             SelectedValue="{Binding Path=ReviewStatus}"/>
+                <TextBox Text="Categories:" Grid.Row="2" Grid.Column="0"/>
+                <ComboBox HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Grid.Row="2" Grid.Column="1"
+                            SelectedValuePath="Value" DisplayMemberPath="Description"
+                            ItemsSource="{Binding Path=Categories, Converter={cvt:EnumToCollectionConverter}, Mode=OneTime}"
+                            SelectedValue="{Binding Path=Categories}"/>
             </Grid>
         </Expander>
     </Grid>

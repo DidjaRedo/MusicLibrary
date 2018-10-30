@@ -11,29 +11,33 @@ namespace DanceDj.Mvvm.ViewModel
 {
     public class FilteredTracksViewModel : ViewModelBase
     {
-        public FilteredTracksViewModel(LibraryFilter.FilterInfo fi) {
+        public FilteredTracksViewModel(FilteredTracks fi) {
             FilterInfo = fi;
             Filter = new FilterViewModel(fi.Filter);
             var trackVMs = fi.Tracks.Select<ITrack, TrackViewModel>((t) => TrackViewModel.GetOrAdd(t));
             InnerTracks = new ObservableCollection<TrackViewModel>(trackVMs);
             Tracks = new ReadOnlyObservableCollection<TrackViewModel>(InnerTracks);
 
-            Filter.PropertyChanged += FilterPropertyChangedHandler;
+            fi.PropertyChanged += Fi_PropertyChanged;
         }
 
-        private void FilterPropertyChangedHandler(object sender, System.ComponentModel.PropertyChangedEventArgs e) {
-            FilterInfo.Refresh();
+        private void Fi_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e) {
             RefreshTracks();
         }
 
         private void RefreshTracks() {
+            var count = InnerTracks.Count;
             var trackVMs = FilterInfo.Tracks.Select<ITrack, TrackViewModel>((t) => TrackViewModel.GetOrAdd(t));
             InnerTracks = new ObservableCollection<TrackViewModel>(trackVMs);
             Tracks = new ReadOnlyObservableCollection<TrackViewModel>(InnerTracks);
             RaisePropertyChanged("Tracks");
+
+            if (InnerTracks.Count != count) {
+                RaisePropertyChanged("NameAndCount");
+            }
         }
 
-        internal LibraryFilter.FilterInfo FilterInfo { get; }
+        internal FilteredTracks FilterInfo { get; }
 
         public string Name => Filter.Name;
         public string NameAndCount => $"{Name} ({Tracks.Count})";

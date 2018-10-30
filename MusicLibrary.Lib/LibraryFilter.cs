@@ -1,28 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Text;
 
 using System.Linq;
 
 namespace MusicLibrary.Lib
 {
-    public class LibraryFilter
+    public class LibraryFilter : ObservableBase
     {
         public Library Library { get; }
 
-        public FilterInfo Default { get; }
+        public FilteredTracks Default { get; }
 
-        protected Dictionary<string, FilterInfo> _filters = new Dictionary<string, FilterInfo>();
-        public IReadOnlyDictionary<string, FilterInfo> Filters;
+        protected Dictionary<string, FilteredTracks> _filters = new Dictionary<string, FilteredTracks>();
+        public IReadOnlyDictionary<string, FilteredTracks> Filters;
 
         public IReadOnlyList<ITrack> AllTracks => Library.Tracks;
 
         public LibraryFilter(Library library, TrackDanceFilter defaultFilter = null) {
             Library = library;
 
-            Default = new FilterInfo(this, defaultFilter ?? new TrackDanceFilter(), true);
-            Filters = new ReadOnlyDictionary<string, FilterInfo>(_filters);
+            Default = new FilteredTracks(this, defaultFilter ?? new TrackDanceFilter(), true);
+            Filters = new ReadOnlyDictionary<string, FilteredTracks>(_filters);
         }
 
         public bool Refresh() {
@@ -35,7 +36,7 @@ namespace MusicLibrary.Lib
             return false;
         }
 
-        public FilterInfo AddFilter(TrackDanceFilter filter, string name = null) {
+        public FilteredTracks AddFilter(TrackDanceFilter filter, string name = null) {
             name = name ?? filter.Name;
             if (string.IsNullOrEmpty(name)) {
                 throw new ApplicationException("Filter name must be specified.");
@@ -43,8 +44,9 @@ namespace MusicLibrary.Lib
             else if (_filters.ContainsKey(name)) {
                 throw new ApplicationException($"Filter {name} already defined.");
             }
-            var fi = new FilterInfo(this, filter);
+            var fi = new FilteredTracks(this, filter);
             _filters[name] = fi;
+            RaisePropertyChanged("Filters");
             return fi;
         }
 
@@ -75,42 +77,5 @@ namespace MusicLibrary.Lib
             }
         }
 
-        public class FilterInfo
-        {
-            public FilterInfo(LibraryFilter library, TrackDanceFilter filter, bool isDefault = false) {
-                Library = library;
-                IsDefault = isDefault;
-                Filter = filter;
-                Tracks.AddRange(Filter.Apply(LibraryTracks));
-            }
-
-            public bool Refresh() {
-                var newTracks = Filter.Apply(LibraryTracks);
-                if (!newTracks.SequenceEqual(Tracks)) {
-                    Tracks.Clear();
-                    Tracks.AddRange(Filter.Apply(LibraryTracks));
-                    return true;
-                }
-                return false;
-            }
-
-            protected LibraryFilter Library { get; }
-            protected IEnumerable<ITrack> LibraryTracks => (IsDefault ? Library.AllTracks : Library.Default.Tracks);
-
-            public string Name => Filter.Name;
-            public TrackDanceFilter Filter { get; }
-            public bool IsDefault { get; }
-            public List<ITrack> Tracks { get; } = new List<ITrack>();
-
-            private string _description;
-            public string Description {
-                get => _description ?? ToString();
-                set => _description = value;
-            }
-
-            public override string ToString() {
-                return Filter.ToString();
-            }
-        }
     }
 }

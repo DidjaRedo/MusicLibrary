@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 using System.Linq;
+using System.Collections.ObjectModel;
 
 namespace MusicLibrary.Lib
 {
@@ -14,69 +15,56 @@ namespace MusicLibrary.Lib
         IncludeTracksWithNoRating = 0x4
     };
 
-    public class TrackDanceFilter
+    public class TrackDanceFilter : ObservableBase
     {
-        public string Name { get; set; }
-        public List<Dance> Dances { get; } = new List<Dance>();
-        public DanceCategories Categories { get; set; } = DanceCategories.None;
-        public int? MinBpm { get; set; }
-        public int? MaxBpm { get; set; }
-        public DanceDifficulty Difficulty { get; set; } = DanceDifficulty.Any;
-        public DanceReviewStatusFlags ReviewStatus { get; set; } = DanceReviewStatusFlags.Any;
-        public uint? MinRating { get; set; }
-        public uint? MaxRating { get; set; }
-        public DanceFilterFlags Options { get; set; } = DanceFilterFlags.Default;
+
+        protected string _name;
+        protected DanceCategories _categories = DanceCategories.None;
+        protected int? _minBpm;
+        protected int? _maxBpm;
+        protected DanceDifficulty _difficulty = DanceDifficulty.Any;
+        protected DanceReviewStatusFlags _reviewStatus = DanceReviewStatusFlags.AnyNotRejected;
+        protected uint? _minRating;
+        protected uint? _maxRating;
+        protected DanceFilterFlags _options = DanceFilterFlags.Default;
+        protected string _description;
+
+        public string Name { get => _name; set => Set(ref _name, value, "Name"); }
+        public string Description { get => _description ?? ToString(); set => Set(ref _description, value, "Description"); }
+
+        public ObservableCollection<Dance> Dances { get; } = new ObservableCollection<Dance>();
+
+        public DanceCategories Categories { get => _categories; set => Set(ref _categories, value, "Categories"); }
+
+        public int? MinBpm { get => _minBpm; set => Set(ref _minBpm, value, "MinBpm"); }
+        public int? MaxBpm { get => _maxBpm; set => Set(ref _maxBpm, value, "MaxBpm"); }
+        public DanceDifficulty Difficulty { get => _difficulty; set => Set(ref _difficulty, value, "Difficulty"); }
+        public DanceReviewStatusFlags ReviewStatus { get => _reviewStatus; set => Set(ref _reviewStatus, value, "ReviewStatus"); }
+        public uint? MinRating { get => _minRating; set => Set(ref _minRating, value, "MinRating", "MinRatingFiveStars"); }
+        public uint? MaxRating { get => _maxRating; set => Set(ref _maxRating, value, "MaxRating", "MaxRatingFiveStars"); }
+
+        public double? MinRatingFiveStars {
+            get => TrackRating.RawRatingToFiveStar(MinRating.Value);
+            set => MinRating = TrackRating.FiveStarRatingToRaw(value);
+        }
+
+        public double? MaxRatingFiveStars {
+            get => TrackRating.RawRatingToFiveStar(MaxRating.Value);
+            set => MaxRating = TrackRating.FiveStarRatingToRaw(value);
+        }
+
+        public DanceFilterFlags Options { get => _options; set => Set(ref _options, value, "Options"); }
 
         public TrackDanceFilter(IEnumerable<Dance> dances) {
             if (dances != null) {
-                Dances.AddRange(dances);
+                foreach (var dance in dances) {
+                    Dances.Add(dance);
+                }
             }
         }
 
         public TrackDanceFilter(params Dance[] dances) : this((IEnumerable<Dance>)dances) {
 
-        }
-
-        public TrackDanceFilter Clone() {
-            var result = new TrackDanceFilter() {
-                Name = Name,
-                Categories = Categories,
-                MinBpm = MinBpm,
-                MaxBpm = MaxBpm,
-                Difficulty = Difficulty,
-                ReviewStatus = ReviewStatus,
-                MinRating = MinRating,
-                MaxRating = MaxRating,
-                Options = Options
-            };
-            result.Dances.AddRange(Dances);
-            return result;
-        }
-
-        public static TrackDanceFilter Merge(params TrackDanceFilter[] filters) {
-            return Merge((IEnumerable<TrackDanceFilter>)filters);
-        }
-
-        public static TrackDanceFilter Merge(IEnumerable<TrackDanceFilter> filters) {
-            TrackDanceFilter merged = null;
-            foreach (var filter in filters) {
-                if (merged == null) {
-                    merged = filter.Clone();
-                }
-                else {
-                    merged.Name = merged.Name ?? filter.Name;
-                    merged.Categories = merged.Categories | filter.Categories;
-                    merged.MinBpm = merged.MinBpm ?? filter.MinBpm;
-                    merged.MaxBpm = merged.MaxBpm ?? filter.MaxBpm;
-                    merged.Difficulty = merged.Difficulty | filter.Difficulty;
-                    merged.ReviewStatus = merged.ReviewStatus | filter.ReviewStatus;
-                    merged.MinRating = merged.MinRating ?? filter.MinRating;
-                    merged.MaxRating = merged.MaxRating ?? filter.MaxRating;
-                    merged.Options |= filter.Options;
-                    merged.Dances.AddRange(filter.Dances);
-                }
-            }
-            return merged;
         }
 
         public List<TrackDanceInfo> MatchingDances(ITrack track) {

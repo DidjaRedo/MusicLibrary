@@ -39,27 +39,5 @@ namespace MusicLibrary.Test
                 }
             }
         }
-
-        [Fact]
-        public void ShouldMergeDefaultCategories() {
-            var minRating = TrackRating.FiveStarRatingToRaw(3.5);
-            var maxRating = TrackRating.FiveStarRatingToRaw(5.0);
-            var defaultFilter = new TrackDanceFilter() {
-                ReviewStatus = DanceReviewStatusFlags.Any,
-                Difficulty = DanceDifficulty.Any,
-                MinRating = minRating, MaxRating = maxRating
-            };
-            var lib = new LibraryFilter(SampleData.GetTestLibrary(), defaultFilter);
-            lib.AddDanceFiltersByCategory(DanceCategory.Standard, DanceCategory.Latin);
-
-            foreach (var fi in lib.Filters.Values) {
-                Assert.True(fi.Filter.MinRating.HasValue && (fi.Filter.MinRating.Value == minRating)
-                            && fi.Filter.MaxRating.HasValue && (fi.Filter.MaxRating.Value == maxRating));
-                Assert.All(fi.Tracks, (t) => {
-                    Assert.NotNull(t.Rating);
-                    Assert.InRange<uint>(t.Rating.RawRating, minRating, maxRating);
-                });
-            }
-        }
     }
 }

@@ -14,8 +14,11 @@ namespace DanceDj.Mvvm.Model
                     var fi = new System.IO.FileInfo(value);
                     if (fi.Exists) {
                         var library = new LibraryFilter(MusicLibrary.Lib.Library.FromJsonFile(fi.FullName));
-                        library?.AddFilter(new TrackDanceFilter() { Name = "All Tracks" });
-                        library?.AddFilter(new TrackDanceFilter(Dances.PasoDoble) { Name = "Paso Doble", });
+                        library?.AddFilter(new TrackDanceFilter(Dances.Waltz) { Name = "Waltz" });
+                        library?.AddFilter(new TrackDanceFilter(Dances.Tango) { Name = "Tango", });
+                        library?.AddFilter(new TrackDanceFilter(Dances.Foxtrot) { Name = "Foxtrot", });
+                        library?.AddFilter(new TrackDanceFilter(Dances.Quickstep) { Name = "Quickstep", });
+                        library?.AddFilter(new TrackDanceFilter(Dances.VienneseWaltz) { Name = "Viennese", });
                         Library = library;
                         _source = fi.FullName;
                     }

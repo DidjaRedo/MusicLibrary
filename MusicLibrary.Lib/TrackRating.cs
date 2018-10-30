@@ -37,12 +37,20 @@ namespace MusicLibrary.Lib
             return Math.Round(RawRatingToPercent(raw) * 10.0) / 2.0;
         }
 
+        public static double? RawRatingToFiveStar(uint? raw) {
+            return (raw.HasValue ? (double?)Math.Round(RawRatingToPercent(raw.Value) * 10.0) / 2.0 : null);
+        }
+
         public static uint PercentRatingToRaw(double percent) {
             return (uint)Math.Round(255.0 * percent);
         }
 
         public static uint FiveStarRatingToRaw(double fiveStarRating) {
             return PercentRatingToRaw(fiveStarRating * 0.2);
+        }
+
+        public static uint? FiveStarRatingToRaw(double? fiveStarRating) {
+            return (fiveStarRating.HasValue ? (uint?)PercentRatingToRaw(fiveStarRating.Value * 0.2) : null);
         }
 
         public override bool Equals(object obj) {
