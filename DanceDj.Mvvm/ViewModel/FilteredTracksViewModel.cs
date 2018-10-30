@@ -13,8 +13,8 @@ namespace DanceDj.Mvvm.ViewModel
     {
         public FilteredTracksViewModel(LibraryFilter.FilterInfo fi) {
             FilterInfo = fi;
-            Filter = new FilterViewModel(fi.Effective);
-            var trackVMs = fi.Tracks.Select<ITrack, TrackViewModel>((t) => new TrackViewModel(t));
+            Filter = new FilterViewModel(fi.Filter);
+            var trackVMs = fi.Tracks.Select<ITrack, TrackViewModel>((t) => TrackViewModel.GetOrAdd(t));
             InnerTracks = new ObservableCollection<TrackViewModel>(trackVMs);
             Tracks = new ReadOnlyObservableCollection<TrackViewModel>(InnerTracks);
 
@@ -27,7 +27,7 @@ namespace DanceDj.Mvvm.ViewModel
         }
 
         private void RefreshTracks() {
-            var trackVMs = FilterInfo.Tracks.Select<ITrack, TrackViewModel>((t) => new TrackViewModel(t));
+            var trackVMs = FilterInfo.Tracks.Select<ITrack, TrackViewModel>((t) => TrackViewModel.GetOrAdd(t));
             InnerTracks = new ObservableCollection<TrackViewModel>(trackVMs);
             Tracks = new ReadOnlyObservableCollection<TrackViewModel>(InnerTracks);
             RaisePropertyChanged("Tracks");

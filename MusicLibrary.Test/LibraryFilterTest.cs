@@ -30,9 +30,9 @@ namespace MusicLibrary.Test
             var lib = new LibraryFilter(SampleData.GetTestLibrary(), defaultFilter);
             lib.AddDanceFiltersByCategory(Dance.AllCategories);
             foreach (var fi in lib.Filters.Values) {
-                foreach (var dance in fi.Effective.Dances) {
+                foreach (var dance in fi.Filter.Dances) {
                     var edi = SampleData.ExpectedDanceInfo[dance];
-                    foreach (var category in Dance.EnumerateCategories(fi.Effective.Categories)) {
+                    foreach (var category in Dance.EnumerateCategories(fi.Filter.Categories)) {
                         var expected = edi.GetTotalForCategory(category);
                         Assert.Equal(expected, fi.Tracks.Count);
                     }
@@ -53,8 +53,8 @@ namespace MusicLibrary.Test
             lib.AddDanceFiltersByCategory(DanceCategory.Standard, DanceCategory.Latin);
 
             foreach (var fi in lib.Filters.Values) {
-                Assert.True(fi.Effective.MinRating.HasValue && (fi.Effective.MinRating.Value == minRating)
-                            && fi.Effective.MaxRating.HasValue && (fi.Effective.MaxRating.Value == maxRating));
+                Assert.True(fi.Filter.MinRating.HasValue && (fi.Filter.MinRating.Value == minRating)
+                            && fi.Filter.MaxRating.HasValue && (fi.Filter.MaxRating.Value == maxRating));
                 Assert.All(fi.Tracks, (t) => {
                     Assert.NotNull(t.Rating);
                     Assert.InRange<uint>(t.Rating.RawRating, minRating, maxRating);

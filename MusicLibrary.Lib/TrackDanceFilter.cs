@@ -119,7 +119,7 @@ namespace MusicLibrary.Lib
             return Matches(track) != null;
         }
 
-        public IEnumerable<ITrack> Filter(IEnumerable<ITrack> all) {
+        public IEnumerable<ITrack> Apply(IEnumerable<ITrack> all) {
             return all.Where((t) => IsMatch(t));
         }
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.ComponentModel;
 
 using Newtonsoft.Json;
 
@@ -17,19 +18,42 @@ namespace MusicLibrary.Lib
 
     public enum DanceReviewStatus
     {
+        [Description("Not Reviewed")]
         NotReviewed = 0,
+
+        [Description("Needs Review")]
         NeedsReview = 1,
-        Reviewed = 2
+
+        [Description("Reviewed")]
+        Reviewed = 2,
+
+        [Description("Rejected")]
+        Rejected = 3
     }
 
     [Flags]
     public enum DanceReviewStatusFlags
     {
+        [Description("None")]
         None = 0,
+
+        [Description("Not Reviewed")]
         NotReviewed = (1 << DanceReviewStatus.NotReviewed),
+
+        [Description("Needs Review")]
         NeedsReview = (1 << DanceReviewStatus.NeedsReview),
+
+        [Description("Reviewed")]
         Reviewed = (1 << DanceReviewStatus.Reviewed),
-        Any = NotReviewed | NeedsReview | Reviewed
+
+        [Description("Rejected")]
+        Rejected = (1 << DanceReviewStatus.Rejected),
+
+        [Description("Any Not Rejected")]
+        AnyNotRejected = NotReviewed | NeedsReview | Reviewed,
+
+        [Description("Any")]
+        Any = AnyNotRejected | Rejected
     }
 
     public class TrackDanceInfo {

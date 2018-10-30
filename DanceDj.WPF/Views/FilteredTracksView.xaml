@@ -11,16 +11,19 @@
              MinWidth="250" MaxWidth="350"
              VerticalAlignment="Top">
     <Grid>
-        <StackPanel Orientation="Vertical">
-            <TextBox Text="{Binding NameAndCount,Mode=OneWay}"/>
-            <local:FilterView DataContext="{Binding Filter}"/>
-            <ListView ItemsSource="{Binding Tracks}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <local:TrackView/>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBox Text="{Binding NameAndCount,Mode=OneWay}" Grid.Row="0"/>
+        <local:FilterView DataContext="{Binding Filter}" Grid.Row="1"/>
+        <ListView ItemsSource="{Binding Tracks}" Grid.Row="2">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <local:TrackView/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </UserControl>

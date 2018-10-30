@@ -15,9 +15,11 @@ namespace DanceDj.Mvvm.ViewModel
         public LibraryViewModel(LibraryFilter library) {
             Library = library;
             var filterVMs = library.Filters.Values.Select<LibraryFilter.FilterInfo, FilteredTracksViewModel>((fi) => new FilteredTracksViewModel(fi));
+            Default = new FilteredTracksViewModel(library.Default);
             Filters = new ObservableCollection<FilteredTracksViewModel>(filterVMs);
         }
 
+        public FilteredTracksViewModel Default { get; }
         public ObservableCollection<FilteredTracksViewModel> Filters { get; }
     }
 }

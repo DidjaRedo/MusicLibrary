@@ -20,33 +20,32 @@
     </Window.Resources>
 
     <Grid x:Name="LayoutRoot">
-        <StackPanel Orientation="Vertical">
-            <StackPanel Orientation="Horizontal">
-                <Label VerticalAlignment="Center">Source:</Label>
-                <TextBlock Text="{Binding Source}" VerticalAlignment="Center"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label VerticalAlignment="Center">Found:</Label>
-                <TextBlock Text="{Binding Found}" VerticalAlignment="Center"/>
-            </StackPanel>
-            <ListView ItemsSource="{Binding Library.Filters}">
-                <ListView.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top"></StackPanel>
-                    </ItemsPanelTemplate>
-                </ListView.ItemsPanel>
-                <ListView.ItemContainerStyle>
-                    <Style TargetType="ListViewItem">
-                        <Setter Property="VerticalContentAlignment" Value="Top"/>
-                    </Style>
-                </ListView.ItemContainerStyle>
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <my:FilteredTracksView/>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <Label VerticalAlignment="Center">Source:</Label>
+            <TextBlock Text="{Binding Source}" VerticalAlignment="Center"/>
         </StackPanel>
-
+        <my:FilterView DataContext="{Binding Library.DefaultFilter}" Grid.Row="1"/>
+        <ListView ItemsSource="{Binding Library.Filters}" ScrollViewer.VerticalScrollBarVisibility="Disabled" Grid.Row="2" >
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top"></StackPanel>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="VerticalContentAlignment" Value="Top"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <my:FilteredTracksView/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Window>

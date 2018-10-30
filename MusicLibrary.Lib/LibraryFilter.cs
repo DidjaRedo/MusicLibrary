@@ -10,15 +10,29 @@ namespace MusicLibrary.Lib
     public class LibraryFilter
     {
         public Library Library { get; }
-        public TrackDanceFilter Default { get; }
 
-        protected Dictionary<string, FilterInfo> _Filters = new Dictionary<string, FilterInfo>();
+        public FilterInfo Default { get; }
+
+        protected Dictionary<string, FilterInfo> _filters = new Dictionary<string, FilterInfo>();
         public IReadOnlyDictionary<string, FilterInfo> Filters;
+
+        public IReadOnlyList<ITrack> AllTracks => Library.Tracks;
 
         public LibraryFilter(Library library, TrackDanceFilter defaultFilter = null) {
             Library = library;
-            Default = defaultFilter ?? new TrackDanceFilter();
-            Filters = new ReadOnlyDictionary<string, FilterInfo>(_Filters);
+
+            Default = new FilterInfo(this, defaultFilter ?? new TrackDanceFilter(), true);
+            Filters = new ReadOnlyDictionary<string, FilterInfo>(_filters);
+        }
+
+        public bool Refresh() {
+            if (Default.Refresh()) {
+                foreach (var fi in _filters.Values) {
+                    fi.Refresh();
+                }
+                return true;
+            }
+            return false;
         }
 
         public FilterInfo AddFilter(TrackDanceFilter filter, string name = null) {
@@ -26,11 +40,11 @@ namespace MusicLibrary.Lib
             if (string.IsNullOrEmpty(name)) {
                 throw new ApplicationException("Filter name must be specified.");
             }
-            else if (_Filters.ContainsKey(name)) {
+            else if (_filters.ContainsKey(name)) {
                 throw new ApplicationException($"Filter {name} already defined.");
             }
-            var fi = new FilterInfo(Library, filter, Default);
-            _Filters[name] = fi;
+            var fi = new FilterInfo(this, filter);
+            _filters[name] = fi;
             return fi;
         }
 
@@ -63,26 +77,39 @@ namespace MusicLibrary.Lib
 
         public class FilterInfo
         {
-            public FilterInfo(Library library, TrackDanceFilter configured, TrackDanceFilter defaultFilter) {
+            public FilterInfo(LibraryFilter library, TrackDanceFilter filter, bool isDefault = false) {
                 Library = library;
-                Configured = configured;
-                Effective = TrackDanceFilter.Merge(defaultFilter, configured);
-                Tracks.AddRange(Effective.Filter(library.Tracks));
+                IsDefault = isDefault;
+                Filter = filter;
+                Tracks.AddRange(Filter.Apply(LibraryTracks));
             }
 
-            public void Refresh() {
-                Tracks.Clear();
-                Tracks.AddRange(Effective.Filter(Library.Tracks));
+            public bool Refresh() {
+                var newTracks = Filter.Apply(LibraryTracks);
+                if (!newTracks.SequenceEqual(Tracks)) {
+                    Tracks.Clear();
+                    Tracks.AddRange(Filter.Apply(LibraryTracks));
+                    return true;
+                }
+                return false;
             }
 
-            protected Library Library { get; }
-            public string Name => Configured.Name;
-            public TrackDanceFilter Configured { get; }
-            public TrackDanceFilter Effective { get; set; }
+            protected LibraryFilter Library { get; }
+            protected IEnumerable<ITrack> LibraryTracks => (IsDefault ? Library.AllTracks : Library.Default.Tracks);
+
+            public string Name => Filter.Name;
+            public TrackDanceFilter Filter { get; }
+            public bool IsDefault { get; }
             public List<ITrack> Tracks { get; } = new List<ITrack>();
 
+            private string _description;
+            public string Description {
+                get => _description ?? ToString();
+                set => _description = value;
+            }
+
             public override string ToString() {
-                return Effective.ToString();
+                return Filter.ToString();
             }
         }
     }

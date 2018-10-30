@@ -18,7 +18,7 @@ namespace MusicLibrary.Test
             var results = new Dictionary<Dance,DanceTestResult>();
 
             foreach (var dance in Dances.All) {
-                var dtr = new DanceTestResult() { TotalTracks = new TrackDanceFilter(dance).Filter(library.Tracks).Count() };
+                var dtr = new DanceTestResult() { TotalTracks = new TrackDanceFilter(dance).Apply(library.Tracks).Count() };
 
                 var categories = dance.EnumerateCategories().ToList();
                 categories.AddRangeUnique(new DanceCategory[] { DanceCategory.Competition, DanceCategory.Social });
@@ -26,7 +26,7 @@ namespace MusicLibrary.Test
                 foreach (var cat in categories) {
                     var mask = (DanceCategories)(1 << (int)cat);
                     var filter = new TrackDanceFilter(dance) { Categories = mask };
-                    var tracks = filter.Filter(library.Tracks);
+                    var tracks = filter.Apply(library.Tracks);
 
                     dtr.SetTotalForCategory(cat, tracks.Count());
 
@@ -48,11 +48,11 @@ namespace MusicLibrary.Test
         public void ShouldRespectFlagToIncludeTracksWithNoDances() {
             var library = SampleData.GetTestLibrary();
             var filter = new TrackDanceFilter() { Options = DanceFilterFlags.IncludeTracksWithNoDances };
-            var tracks = filter.Filter(library.Tracks);
+            var tracks = filter.Apply(library.Tracks);
             var totalTracks = tracks.Count();
 
             filter = new TrackDanceFilter();
-            tracks = filter.Filter(library.Tracks);
+            tracks = filter.Apply(library.Tracks);
             var tracksWithDances = tracks.Count();
             Assert.Equal(SampleData.NumTracksWithoutDances, totalTracks - tracksWithDances);
         }
@@ -65,7 +65,7 @@ namespace MusicLibrary.Test
                     MinRating = TrackRating.FiveStarRatingToRaw(rating),
                     MaxRating = TrackRating.FiveStarRatingToRaw(5.0)
                 };
-                var tracks = filter.Filter(library.Tracks);
+                var tracks = filter.Apply(library.Tracks);
                 Assert.Equal(SampleData.ExpectedTracksByRating[rating], tracks.Count());
                 foreach (var track in tracks) {
                     Assert.NotNull(track.Rating);
@@ -83,7 +83,7 @@ namespace MusicLibrary.Test
                     ReviewStatus = TrackDanceInfo.ToStatusFlags(status)
                 };
                 var tmp = library.Tracks.Where((t) => t.Dances.Dances.Any((d) => d.Status == status));
-                var tracks = filter.Filter(tmp);
+                var tracks = filter.Apply(tmp);
                 // var tracks = filter.Filter(library.Tracks);
                 Assert.Equal(SampleData.ExpectedTracksByReviewStatus[status], tracks.Count());
             }
