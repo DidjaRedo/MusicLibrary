@@ -27,6 +27,8 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <TextBox Text="Dances:" Grid.Row="0" Grid.Column="0"/>
                 <WrapPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
@@ -44,26 +46,34 @@
                 <CheckBox IsChecked="{Binding IncludeTracksWithNoDances}" Grid.Row="1" Grid.Column="1">
                     Include Tracks With No Dances
                 </CheckBox>
-                <TextBox Text="Difficulty:" Grid.Row="2" Grid.Column="0"/>
+                <TextBox Text="Categories:" Grid.Row="2" Grid.Column="0"/>
                 <ComboBox HorizontalAlignment="Center" VerticalAlignment="Center"
                             Grid.Row="2" Grid.Column="1"
                             SelectedValuePath="Value" DisplayMemberPath="Description"
-                            ItemsSource="{Binding Path=Difficulty, Converter={cvt:EnumToCollectionConverter}, Mode=OneTime}"
-                            SelectedValue="{Binding Path=Difficulty}"/>
-                <TextBox Text="Review Status:" Grid.Row="3" Grid.Column="0"/>
-                <ComboBox HorizontalAlignment="Center" VerticalAlignment="Center"
-                            Grid.Row="3" Grid.Column="3"
-                            SelectedValuePath="Value" DisplayMemberPath="Description"
-                            ItemsSource="{Binding Path=ReviewStatus, Converter={cvt:EnumToCollectionConverter}, Mode=OneTime}"
-                            SelectedValue="{Binding Path=ReviewStatus}"/>
-                <TextBox Text="Categories:" Grid.Row="4" Grid.Column="0"/>
+                            ItemsSource="{Binding Path=Categories, Converter={cvt:EnumToCollectionConverter}, Mode=OneTime}"
+                            SelectedValue="{Binding Path=Categories}"/>
+                <WrapPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="1">
+                    <ComboBox
+                        SelectedIndex="0"
+                        ItemsSource="{Binding CategoryList, Mode=OneWay}"/>
+                    <ComboBox
+                        SelectedIndex="0"
+                        ItemsSource="{Binding EligibleCategoryList, Mode=OneWay}"/>
+                </WrapPanel>
+                <TextBox Text="Difficulty:" Grid.Row="4" Grid.Column="0"/>
                 <ComboBox HorizontalAlignment="Center" VerticalAlignment="Center"
                             Grid.Row="4" Grid.Column="1"
                             SelectedValuePath="Value" DisplayMemberPath="Description"
-                            ItemsSource="{Binding Path=Categories, Converter={cvt:EnumToCollectionConverter}, Mode=OneTime}"
-                            SelectedValue="{Binding Path=Categories}"/>
-                <TextBox Text="Ratings:" Grid.Row="5" Grid.Column="0"/>
-                <StackPanel Orientation="Horizontal" Grid.Row="5" Grid.Column="1">
+                            ItemsSource="{Binding Path=Difficulty, Converter={cvt:EnumToCollectionConverter}, Mode=OneTime}"
+                            SelectedValue="{Binding Path=Difficulty}"/>
+                <TextBox Text="Review Status:" Grid.Row="5" Grid.Column="0"/>
+                <ComboBox HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Grid.Row="5" Grid.Column="3"
+                            SelectedValuePath="Value" DisplayMemberPath="Description"
+                            ItemsSource="{Binding Path=ReviewStatus, Converter={cvt:EnumToCollectionConverter}, Mode=OneTime}"
+                            SelectedValue="{Binding Path=ReviewStatus}"/>
+                <TextBox Text="Ratings:" Grid.Row="6" Grid.Column="0"/>
+                <StackPanel Orientation="Horizontal" Grid.Row="6" Grid.Column="1">
                     <TextBox Text="Min:"/>
                     <ComboBox HorizontalAlignment="Center" VerticalAlignment="Center"
                               SelectedValuePath="Value" DisplayMemberPath="Key"
@@ -77,17 +87,17 @@
                               SelectedValue="{Binding Path=MaxRatingFiveStars}">
                     </ComboBox>
                 </StackPanel>
-                <CheckBox IsChecked="{Binding IncludeTracksWithNoRating}" Grid.Row="6" Grid.Column="1">
+                <CheckBox IsChecked="{Binding IncludeTracksWithNoRating}" Grid.Row="7" Grid.Column="1">
                     Include Tracks With No Rating
                 </CheckBox>
-                <TextBox Text="BPM:" Grid.Row="7" Grid.Column="0"/>
-                <StackPanel Orientation="Horizontal" Grid.Row="7" Grid.Column="1">
+                <TextBox Text="BPM:" Grid.Row="8" Grid.Column="0"/>
+                <StackPanel Orientation="Horizontal" Grid.Row="8" Grid.Column="1">
                     <TextBox Text="Min:"/>
                     <Slider Minimum="0" Maximum="240" Value="{Binding MinBpm}"/>
                     <TextBox Text="Max:"/>
                     <Slider Minimum="0" Maximum="240" Value="{Binding MaxBpm}"/>
                 </StackPanel>
-                <CheckBox IsChecked="{Binding IncludeTracksWithNoBpm}" Grid.Row="8" Grid.Column="1">
+                <CheckBox IsChecked="{Binding IncludeTracksWithNoBpm}" Grid.Row="9" Grid.Column="1">
                     Include Tracks With No BPM
                 </CheckBox>
             </Grid>

@@ -35,6 +35,10 @@ namespace DanceDj.Mvvm.ViewModel
                 case "MaxRating":
                     RaisePropertyChanged("ValidFiveStarMinRatings");
                     break;
+                case "Categories":
+                    _categoryList = null;
+                    RefreshCategories();
+                    break;
             }
         }
 
@@ -45,11 +49,55 @@ namespace DanceDj.Mvvm.ViewModel
 
         public DanceDifficulty Difficulty { get => Filter.Difficulty; set => Filter.Difficulty = value; }
         public DanceReviewStatusFlags ReviewStatus { get => Filter.ReviewStatus; set => Filter.ReviewStatus = value; }
+
+        #region Categories
+
         public DanceCategories Categories { get => Filter.Categories; set => Filter.Categories = value; }
 
-        public bool IncludeTracksWithNoDances { get => Filter.IncludeTracksWithNoDances; set => Filter.IncludeTracksWithNoDances = value; }
+        private DanceCategory[] _categoryList;
+        public DanceCategory[] CategoryList {
+            get => _categoryList ?? (_categoryList = Dance.EnumerateCategories(Categories).ToArray());
+        }
+
+        private DanceCategories GetPossibleCategories() {
+            var possible = DanceCategories.None;
+            foreach (var dance in IncludedDances) {
+                possible |= dance.CategoriesMask;
+            }
+            return possible;
+        }
+
+        private DanceCategories GetEligibleCategories() {
+            return GetPossibleCategories() & ~Categories;
+        }
+
+        private DanceCategories? _eligibleCategories = DanceCategories.None;
+        public DanceCategories EligibleCategories {
+            get => (_eligibleCategories.HasValue ? _eligibleCategories : (_eligibleCategories = GetEligibleCategories())).Value;
+        }
+
+        private DanceCategory[] _eligibleCategoryList;
+        public DanceCategory[] EligibleCategoryList {
+            get => _eligibleCategoryList ?? (_eligibleCategoryList = Dance.EnumerateCategories(EligibleCategories).ToArray());
+        }
+
+        private void RefreshCategories() {
+            _categoryList = null;
+            RaisePropertyChanged("CategoryList");
+            var eligible = GetEligibleCategories();
+            if (!_eligibleCategories.HasValue || (eligible != _eligibleCategories.Value)) {
+                _eligibleCategories = eligible;
+                _eligibleCategoryList = null;
+                RaisePropertyChanged("EligibleCategories");
+                RaisePropertyChanged("EligibleCategoryList");
+            }
+        }
+
+        #endregion
 
         #region Included Dances
+
+        public bool IncludeTracksWithNoDances { get => Filter.IncludeTracksWithNoDances; set => Filter.IncludeTracksWithNoDances = value; }
 
         private ObservableCollection<DanceViewModel> _includedDances;
         private DanceViewModel _selectedIncludedDance;
@@ -72,6 +120,7 @@ namespace DanceDj.Mvvm.ViewModel
             _includedDances.Remove(dance);
             SelectedIncludedDance = (IncludedDances.Count > 0 ? IncludedDances[0] : null);
             SelectedExcludedDance = SelectedExcludedDance ?? dance;
+            RefreshCategories();
         }
 
         private bool _CanRemoveDance(DanceViewModel dance) {
@@ -103,6 +152,7 @@ namespace DanceDj.Mvvm.ViewModel
             _excludedDances.Remove(dance);
             SelectedExcludedDance = (ExcludedDances.Count > 0 ? ExcludedDances[0] : null);
             SelectedIncludedDance = SelectedIncludedDance ?? dance;
+            RefreshCategories();
         }
 
         private bool _CanAddDance(DanceViewModel dance) {
