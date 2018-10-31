@@ -45,15 +45,16 @@ namespace MusicLibrary.Test
         }
 
         [Fact]
-        public void ShouldRespectFlagToIncludeTracksWithNoDances() {
+        public void ShouldRespectFlagToExcludeTracksWithNoDances() {
             var library = SampleData.GetTestLibrary();
-            var filter = new TrackDanceFilter() { Options = DanceFilterFlags.IncludeTracksWithNoDances };
-            var tracks = filter.Apply(library.Tracks);
-            var totalTracks = tracks.Count();
 
-            filter = new TrackDanceFilter();
-            tracks = filter.Apply(library.Tracks);
+            var filter = new TrackDanceFilter() { IncludeTracksWithNoDances = false };
+            var tracks = filter.Apply(library.Tracks);
             var tracksWithDances = tracks.Count();
+
+            filter = new TrackDanceFilter() { IncludeTracksWithNoDances = true };
+            tracks = filter.Apply(library.Tracks);
+            var totalTracks = tracks.Count();
             Assert.Equal(SampleData.NumTracksWithoutDances, totalTracks - tracksWithDances);
         }
 
@@ -63,7 +64,8 @@ namespace MusicLibrary.Test
             foreach (var rating in SampleData.ExpectedTracksByRating.Keys) {
                 var filter = new TrackDanceFilter() {
                     MinRating = TrackRating.FiveStarRatingToRaw(rating),
-                    MaxRating = TrackRating.FiveStarRatingToRaw(5.0)
+                    MaxRating = TrackRating.FiveStarRatingToRaw(5.0),
+                    IncludeTracksWithNoRating = false
                 };
                 var tracks = filter.Apply(library.Tracks);
                 Assert.Equal(SampleData.ExpectedTracksByRating[rating], tracks.Count());

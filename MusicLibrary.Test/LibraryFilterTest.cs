@@ -25,7 +25,7 @@ namespace MusicLibrary.Test
             var defaultFilter = new TrackDanceFilter() {
                 Categories = DanceCategories.None,
                 ReviewStatus = DanceReviewStatusFlags.Any,
-                Difficulty = DanceDifficulty.Any,
+                Difficulty = DanceDifficulty.Any
             };
             var lib = new LibraryFilter(SampleData.GetTestLibrary(), defaultFilter);
             lib.AddDanceFiltersByCategory(Dance.AllCategories);

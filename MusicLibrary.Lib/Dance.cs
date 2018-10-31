@@ -35,12 +35,15 @@ namespace MusicLibrary.Lib
     public class Dance {
         public string Name { get; }
         public string[] AllNames { get; }
+        public string Abbreviation { get; }
         public DanceCategories Categories { get; } = DanceCategories.None;
-        public TempoRange? GetTempo(DanceCategory category) {
+        public ICollection<TempoRange> TempoRanges => _tempos.Values;
+
+        public TempoRange GetTempo(DanceCategory category) {
             return _tempos[category];
         }
 
-        private readonly Dictionary<DanceCategory, TempoRange?> _tempos = new Dictionary<DanceCategory, TempoRange?>();
+        private readonly Dictionary<DanceCategory, TempoRange> _tempos = new Dictionary<DanceCategory, TempoRange>();
 
         public Dance(string[] names, IEnumerable<TempoRange> tempos) {
             if ((names == null) || (names.Length < 1)) {
@@ -49,6 +52,8 @@ namespace MusicLibrary.Lib
 
             Name = names[0];
             AllNames = names;
+            Abbreviation = names.First((n) => n.Length == 3) ?? Name.Substring(0, 3).ToUpperInvariant();
+
             foreach (var tempo in tempos) {
                 var flag = (DanceCategories)(1 << (int)tempo.Category);
                 if ((Categories & flag) != 0) {
@@ -84,7 +89,7 @@ namespace MusicLibrary.Lib
             return Name;
         }
 
-        public struct TempoRange {
+        public class TempoRange {
             public DanceCategory Category;
             public int MinBpm { get; set; }
             public int MaxBpm { get; set; }

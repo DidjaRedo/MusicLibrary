@@ -8,6 +8,11 @@ namespace MusicLibrary.Lib
     [JsonObject(MemberSerialization.OptIn)]
     public class TrackRating
     {
+        public const uint MinRawRating = 0;
+        public const uint MaxRawRating = 255;
+        public const double MinFiveStarRating = 0.0;
+        public const double MaxFiveStarRating = 5.0;
+
         [JsonConstructor]
         public TrackRating(string rater, uint rating, ulong playCount) {
             Rater = rater;
@@ -30,7 +35,7 @@ namespace MusicLibrary.Lib
         public Dance Dance { get; }
 
         public static double RawRatingToPercent(uint raw) {
-            return Math.Round(((double)raw / (double)255), 2);
+            return Math.Round(((double)raw / (double)MaxRawRating), 2);
         }
 
         public static double RawRatingToFiveStar(uint raw) {

@@ -14,6 +14,7 @@ namespace MusicLibrary.Lib
             Tracks.AddRange(Filter.Apply(LibraryTracks));
 
             Filter.PropertyChanged += (s, e) => Refresh();
+            Filter.Dances.CollectionChanged += (s, e) => Refresh();
             if (!IsDefault) {
                 Library.Default.PropertyChanged += FilterOrTrackChangeHandler;
             }
