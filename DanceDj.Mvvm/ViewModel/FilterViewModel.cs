@@ -16,14 +16,7 @@ namespace DanceDj.Mvvm.ViewModel
             Filter = filter;
             filter.PropertyChanged += Filter_PropertyChanged;
 
-            var danceVms = filter.Dances.Select<Dance, DanceViewModel>((d) => DanceViewModel.GetOrAdd(d));
-            _includedDances = new ObservableCollection<DanceViewModel>(danceVms);
-            IncludedDances = new ReadOnlyObservableCollection<DanceViewModel>(_includedDances);
-            SelectedIncludedDance = (IncludedDances.Count > 0) ? IncludedDances[0] : null;
-
-            _excludedDances = new ObservableCollection<DanceViewModel>(DanceViewModel.ComputeMissingDances(_includedDances));
-            ExcludedDances = new ReadOnlyObservableCollection<DanceViewModel>(_excludedDances);
-            SelectedExcludedDance = (ExcludedDances.Count > 0) ? ExcludedDances[0] : null;
+            Dances = new FilterDancesViewModel(filter);
         }
 
         private void Filter_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e) {
@@ -61,7 +54,7 @@ namespace DanceDj.Mvvm.ViewModel
 
         private DanceCategories GetPossibleCategories() {
             var possible = DanceCategories.None;
-            foreach (var dance in IncludedDances) {
+            foreach (var dance in Dances.Included) {
                 possible |= dance.CategoriesMask;
             }
             return possible;
@@ -95,70 +88,37 @@ namespace DanceDj.Mvvm.ViewModel
 
         #endregion
 
-        #region Included Dances
+        #region Dances
 
-        public bool IncludeTracksWithNoDances { get => Filter.IncludeTracksWithNoDances; set => Filter.IncludeTracksWithNoDances = value; }
-
-        private ObservableCollection<DanceViewModel> _includedDances;
-        private DanceViewModel _selectedIncludedDance;
-  
-        public ReadOnlyObservableCollection<DanceViewModel> IncludedDances { get; }
-        public DanceViewModel SelectedIncludedDance { get => _selectedIncludedDance; set => Set("SelectedIncludedDance", ref _selectedIncludedDance, value); }
-
-        private RelayCommand<DanceViewModel> _removeDanceCommand;
-        public RelayCommand<DanceViewModel> RemoveDanceCommand {
-            get => _removeDanceCommand ?? (_removeDanceCommand = new RelayCommand<DanceViewModel>(_RemoveDance, _CanRemoveDance));
-        }
-
-        private void _RemoveDance(DanceViewModel dance) {
-            dance = dance ?? SelectedIncludedDance;
-            if (!_CanRemoveDance(dance)) {
-                throw new ApplicationException($"Cannot remove {dance.Name} from {Name} filter.");
+        internal class FilterDancesViewModel : Utils.IncludeExcludeViewModelBase<DanceViewModel> {
+            public FilterDancesViewModel(TrackDanceFilter filter) : base(DanceViewModel.GetAllDances(), filter.Dances.ToViewModel()) {
+                Filter = filter;
+                Filter.Dances.CollectionChanged += (o,e) => Update();
+                filter.PropertyChanged += FilterPropertyChanged;
             }
-            Filter.Dances.Remove(dance.Dance);
-            _excludedDances.Add(dance);
-            _includedDances.Remove(dance);
-            SelectedIncludedDance = (IncludedDances.Count > 0 ? IncludedDances[0] : null);
-            SelectedExcludedDance = SelectedExcludedDance ?? dance;
-            RefreshCategories();
-        }
 
-        private bool _CanRemoveDance(DanceViewModel dance) {
-            dance = dance ?? SelectedIncludedDance;
-            return (IncludedDances.Count > 0) && ((dance != null) && IncludedDances.Contains(dance));
-        }
-
-        #endregion
-
-        #region Excluded Dances
-
-        private ObservableCollection<DanceViewModel> _excludedDances;
-        private DanceViewModel _selectedExcludedDance;
-        public ReadOnlyObservableCollection<DanceViewModel> ExcludedDances { get; }
-        public DanceViewModel SelectedExcludedDance { get => _selectedExcludedDance; set => Set("SelectedExcludedDance", ref _selectedExcludedDance, value); }
-
-        private RelayCommand<DanceViewModel> _addDanceCommand;
-        public RelayCommand<DanceViewModel> AddDanceCommand {
-            get => _addDanceCommand ?? (_addDanceCommand = new RelayCommand<DanceViewModel>(_AddDance, _CanAddDance));
-        }
-
-        private void _AddDance(DanceViewModel dance) {
-            dance = dance ?? SelectedExcludedDance;
-            if (!_CanAddDance(dance)) {
-                throw new ApplicationException($"Cannot add {dance.Name} to {Name} filter.");
+            private void Update() {
+                UpdateIncluded(Filter.Dances.ToViewModel());
             }
-            Filter.Dances.Add(dance.Dance);
-            _includedDances.Add(dance);
-            _excludedDances.Remove(dance);
-            SelectedExcludedDance = (ExcludedDances.Count > 0 ? ExcludedDances[0] : null);
-            SelectedIncludedDance = SelectedIncludedDance ?? dance;
-            RefreshCategories();
+
+            private void FilterPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e) {
+                if (e.PropertyName == "Dances") {
+                    Update();
+                }
+            }
+
+            protected override void InnerAdd(DanceViewModel item) {
+                Filter.Dances.Add(item.Dance);
+            }
+
+            protected override void InnerRemove(DanceViewModel item) {
+                Filter.Dances.Remove(item.Dance);
+            }
+
+            private TrackDanceFilter Filter { get; }
         }
 
-        private bool _CanAddDance(DanceViewModel dance) {
-            dance = dance ?? SelectedExcludedDance;
-            return (ExcludedDances.Count > 0) && ((dance == null) || ExcludedDances.Contains(dance));
-        }
+        public Utils.IIncludeExcludeViewModelBase<DanceViewModel> Dances { get; }
 
         #endregion
 

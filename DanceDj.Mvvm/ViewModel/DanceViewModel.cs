@@ -39,6 +39,16 @@ namespace DanceDj.Mvvm.ViewModel
             return AllDances.Values.Where((d) => !dances.Contains(d));
         }
 
+        public static IEnumerable<DanceViewModel> GetAllDances() {
+            return AllDances.Values.AsEnumerable();
+        }
+
         private static Dictionary<Dance, DanceViewModel> AllDances = new Dictionary<Dance, DanceViewModel>();
+    }
+
+    public static class DanceExtensions {
+        public static IEnumerable<DanceViewModel> ToViewModel(this IEnumerable<Dance> dances) {
+            return dances.Select<Dance, DanceViewModel>((d) => DanceViewModel.GetOrAdd(d));
+        }
     }
 }

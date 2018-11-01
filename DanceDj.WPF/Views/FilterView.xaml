@@ -31,17 +31,17 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <TextBox Text="Dances:" Grid.Row="0" Grid.Column="0"/>
-                <WrapPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                <WrapPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1" DataContext="{Binding Dances}">
                     <ComboBox 
                         DisplayMemberPath="Name"
-                        SelectedValue="{Binding SelectedIncludedDance}"
-                        ItemsSource="{Binding IncludedDances, Mode=OneWay}"/>
-                    <Button Command="{Binding RemoveDanceCommand}" CommandParameter="{Binding SelectedIncludedDance}">-</Button>
+                        SelectedValue="{Binding SelectedIncluded}"
+                        ItemsSource="{Binding Included, Mode=OneWay}"/>
+                    <Button Command="{Binding RemoveItemCommand}" CommandParameter="{Binding SelectedIncluded}">-</Button>
                     <ComboBox 
                         DisplayMemberPath="Name"
-                        SelectedValue="{Binding SelectedExcludedDance}"
-                        ItemsSource="{Binding ExcludedDances, Mode=OneWay}"/>
-                    <Button Command="{Binding AddDanceCommand}" CommandParameter="{Binding SelectedExcludedDance}">+</Button>
+                        SelectedValue="{Binding SelectedExcluded}"
+                        ItemsSource="{Binding Excluded, Mode=OneWay}"/>
+                    <Button Command="{Binding AddItemCommand}" CommandParameter="{Binding SelectedExcluded}">+</Button>
                 </WrapPanel>
                 <CheckBox IsChecked="{Binding IncludeTracksWithNoDances}" Grid.Row="1" Grid.Column="1">
                     Include Tracks With No Dances
