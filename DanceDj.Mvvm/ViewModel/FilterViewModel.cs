@@ -17,6 +17,7 @@ namespace DanceDj.Mvvm.ViewModel
             filter.PropertyChanged += Filter_PropertyChanged;
 
             Dances = new FilterDancesViewModel(filter);
+            Cats = new FilterCategoriesViewModel(filter);
         }
 
         private void Filter_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e) {
@@ -44,6 +45,50 @@ namespace DanceDj.Mvvm.ViewModel
         public DanceReviewStatusFlags ReviewStatus { get => Filter.ReviewStatus; set => Filter.ReviewStatus = value; }
 
         #region Categories
+
+        internal class FilterCategoriesViewModel : Utils.IncludeExcludeViewModelBase<DanceCategory> {
+            public FilterCategoriesViewModel(TrackDanceFilter filter)
+                : base(GetCategoriesForDances(filter), Dance.EnumerateCategories(filter.Categories)) {
+                Filter = filter;
+                Filter.PropertyChanged += FilterPropertyChangedHandler;
+                Filter.Dances.CollectionChanged += (o, e) => UpdateAllowed(GetCategoriesForDances(Filter));
+            }
+
+            private void FilterPropertyChangedHandler(object sender, System.ComponentModel.PropertyChangedEventArgs e) {
+                switch (e.PropertyName) {
+                    case "Categories":
+                        UpdateIncluded(Dance.EnumerateCategories(Filter.Categories));
+                        break;
+                    case "Dances":
+                        UpdateAllowed(GetCategoriesForDances(Filter));
+                        break;
+                }
+            }
+
+            protected TrackDanceFilter Filter { get; }
+
+            protected override void InnerAdd(DanceCategory category) {
+                Filter.Categories |= Dance.ToCategoriesMask(category);
+            }
+
+            protected override void InnerRemove(DanceCategory category) {
+                Filter.Categories &= ~Dance.ToCategoriesMask(category);
+            }
+
+            protected static IEnumerable<DanceCategory> GetCategoriesForDances(TrackDanceFilter filter) {
+                var possible = (filter.Dances.Count > 0 ? DanceCategories.None : DanceCategories.Any);
+                foreach (var dance in filter.Dances) {
+                    possible |= dance.Categories;
+                }
+                return Dance.EnumerateCategories(possible);
+            }
+        }
+
+        public Utils.IIncludeExcludeViewModelBase<DanceCategory> Cats { get; }
+
+        #endregion
+
+        #region Olde Categories
 
         public DanceCategories Categories { get => Filter.Categories; set => Filter.Categories = value; }
 

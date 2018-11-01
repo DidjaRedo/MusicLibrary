@@ -52,13 +52,19 @@
                             SelectedValuePath="Value" DisplayMemberPath="Description"
                             ItemsSource="{Binding Path=Categories, Converter={cvt:EnumToCollectionConverter}, Mode=OneTime}"
                             SelectedValue="{Binding Path=Categories}"/>
-                <WrapPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="1">
-                    <ComboBox
-                        SelectedIndex="0"
-                        ItemsSource="{Binding CategoryList, Mode=OneWay}"/>
-                    <ComboBox
-                        SelectedIndex="0"
-                        ItemsSource="{Binding EligibleCategoryList, Mode=OneWay}"/>
+                <WrapPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="1" DataContext="{Binding Cats}">
+                    <ComboBox 
+                        SelectedValue="{Binding SelectedIncluded}"
+                        ItemsSource="{Binding Included, Mode=OneWay}"/>
+                    <Button Command="{Binding RemoveItemCommand}" 
+                            CommandParameter="{Binding SelectedIncluded}"
+                            IsEnabled="{Binding RemoveEnabled, Mode=OneWay}">-</Button>
+                    <ComboBox 
+                        SelectedValue="{Binding SelectedExcluded}"
+                        ItemsSource="{Binding Excluded, Mode=OneWay}"/>
+                    <Button Command="{Binding AddItemCommand}"
+                            CommandParameter="{Binding SelectedExcluded}"
+                            IsEnabled="{Binding AddEnabled, Mode=OneWay}">+</Button>
                 </WrapPanel>
                 <TextBox Text="Difficulty:" Grid.Row="4" Grid.Column="0"/>
                 <ComboBox HorizontalAlignment="Center" VerticalAlignment="Center"

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 
 using System.Linq;
@@ -27,7 +28,9 @@ namespace MusicLibrary.Lib
         Rhythm = 1 << DanceCategory.Rhythm,
         Swing = 1 << DanceCategory.Swing,
         Social = 1 << DanceCategory.Social,
+        [Description("American Style")]
         AmericanStyle = (Smooth | Rhythm),
+        [Description("International Style")]
         InternationalStyle = (Standard | Latin),
         Any = AmericanStyle | InternationalStyle | Swing | Social
     };
