@@ -17,7 +17,7 @@ namespace DanceDj.Mvvm.ViewModel
             filter.PropertyChanged += Filter_PropertyChanged;
 
             Dances = new FilterDancesViewModel(filter);
-            Cats = new FilterCategoriesViewModel(filter);
+            Categories = new FilterCategoriesViewModel(filter);
         }
 
         private void Filter_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e) {
@@ -28,10 +28,6 @@ namespace DanceDj.Mvvm.ViewModel
                     break;
                 case "MaxRating":
                     RaisePropertyChanged("ValidFiveStarMinRatings");
-                    break;
-                case "Categories":
-                    _categoryList = null;
-                    RefreshCategories();
                     break;
             }
         }
@@ -84,52 +80,8 @@ namespace DanceDj.Mvvm.ViewModel
             }
         }
 
-        public Utils.IIncludeExcludeViewModelBase<DanceCategory> Cats { get; }
-
-        #endregion
-
-        #region Olde Categories
-
-        public DanceCategories Categories { get => Filter.Categories; set => Filter.Categories = value; }
-
-        private DanceCategory[] _categoryList;
-        public DanceCategory[] CategoryList {
-            get => _categoryList ?? (_categoryList = Dance.EnumerateCategories(Categories).ToArray());
-        }
-
-        private DanceCategories GetPossibleCategories() {
-            var possible = DanceCategories.None;
-            foreach (var dance in Dances.Included) {
-                possible |= dance.CategoriesMask;
-            }
-            return possible;
-        }
-
-        private DanceCategories GetEligibleCategories() {
-            return GetPossibleCategories() & ~Categories;
-        }
-
-        private DanceCategories? _eligibleCategories = DanceCategories.None;
-        public DanceCategories EligibleCategories {
-            get => (_eligibleCategories.HasValue ? _eligibleCategories : (_eligibleCategories = GetEligibleCategories())).Value;
-        }
-
-        private DanceCategory[] _eligibleCategoryList;
-        public DanceCategory[] EligibleCategoryList {
-            get => _eligibleCategoryList ?? (_eligibleCategoryList = Dance.EnumerateCategories(EligibleCategories).ToArray());
-        }
-
-        private void RefreshCategories() {
-            _categoryList = null;
-            RaisePropertyChanged("CategoryList");
-            var eligible = GetEligibleCategories();
-            if (!_eligibleCategories.HasValue || (eligible != _eligibleCategories.Value)) {
-                _eligibleCategories = eligible;
-                _eligibleCategoryList = null;
-                RaisePropertyChanged("EligibleCategories");
-                RaisePropertyChanged("EligibleCategoryList");
-            }
-        }
+        public Utils.IIncludeExcludeViewModelBase<DanceCategory> Categories { get; }
+        public DanceCategories CategoriesMask { get => Filter.Categories; set => Filter.Categories = value; }
 
         #endregion
 

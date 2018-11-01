@@ -50,9 +50,9 @@
                 <ComboBox HorizontalAlignment="Center" VerticalAlignment="Center"
                             Grid.Row="2" Grid.Column="1"
                             SelectedValuePath="Value" DisplayMemberPath="Description"
-                            ItemsSource="{Binding Path=Categories, Converter={cvt:EnumToCollectionConverter}, Mode=OneTime}"
-                            SelectedValue="{Binding Path=Categories}"/>
-                <WrapPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="1" DataContext="{Binding Cats}">
+                            ItemsSource="{Binding Path=CategoriesMask, Converter={cvt:EnumToCollectionConverter}, Mode=OneTime}"
+                            SelectedValue="{Binding Path=CategoriesMask}"/>
+                <WrapPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="1" DataContext="{Binding Categories}">
                     <ComboBox 
                         SelectedValue="{Binding SelectedIncluded}"
                         ItemsSource="{Binding Included, Mode=OneWay}"/>
