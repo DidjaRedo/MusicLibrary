@@ -1,0 +1,112 @@
+[
+  {
+    "Tracks": [
+      {
+        "Title": "BallroomAndDanceGenreNoGroupingNoReview",
+        "Genres": [
+          "Ballroom",
+          "Foxtrot",
+          "Standard"
+        ],
+        "Ratings": [
+          {
+            "Rater": "no@email",
+            "rating": 128,
+            "PlayCount": 0
+          }
+        ]
+      },
+      {
+        "Title": "GroupingButNoBallroomGenre",
+        "Genres": [
+          "Vocal",
+          "Standard"
+        ],
+        "Grouping": "Foxtrot",
+        "Ratings": [
+          {
+            "Rater": "no@email",
+            "rating": 128,
+            "PlayCount": 0
+          }
+        ]
+      }
+    ],
+    "Results": [
+      {
+        "DanceName": "Foxtrot",
+        "Categories": "Standard",
+        "Difficulty": "Any",
+        "Status": "Reviewed",
+        "RawRating": 128
+      }
+    ]
+  },
+  {
+    "Tracks": [
+      {
+        "Title": "GroupingWithNoUsableGenreYieldsSocial",
+        "Genres": [
+          "Vocal"
+        ],
+        "Grouping": "Foxtrot",
+        "Ratings": [
+          {
+            "Rater": "no@email",
+            "rating": 128,
+            "PlayCount": 0
+          }
+        ]
+      }
+    ],
+    "Results": [
+      {
+        "DanceName": "Foxtrot",
+        "Categories": "Social",
+        "Difficulty": "Any",
+        "Status": "NeedsReview",
+        "RawRating": 128
+      }
+    ]
+  },
+  {
+    "Tracks": [
+      {
+        "Title": "ShouldRespectNeedsReviewTags",
+        "Genres": [
+          "Ballroom",
+          "Waltz",
+          "Standard",
+          "Smooth"
+        ],
+        "Grouping": "Waltz",
+        "Comments": {
+          "Songs-DB_Custom3": "Smooth"
+        },
+        "Ratings": [
+          {
+            "Rater": "no@email",
+            "rating": 128,
+            "PlayCount": 0
+          }
+        ]
+      }
+    ],
+    "Results": [
+      {
+        "DanceName": "Waltz",
+        "Categories": "Standard",
+        "Difficulty": "Any",
+        "Status": "Reviewed",
+        "RawRating": 128
+      },
+      {
+        "DanceName": "Waltz",
+        "Categories": "Smooth",
+        "Difficulty": "Any",
+        "Status": "NeedsReview",
+        "RawRating": 128
+      }
+    ]
+  }
+]

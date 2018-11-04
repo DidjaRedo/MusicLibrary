@@ -1,51 +1,62 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
+
+using System.Linq;
 
 namespace MusicLibrary.Lib
 {
-    public class Dance
+    public enum DanceCategory
     {
-        public enum DanceCategory
-        {
-            Standard = 0,
-            Latin = 1,
-            Smooth = 2,
-            Rhythm = 3,
-            Swing = 4,
-            Social = 5,
-            Competition = 6
-        }
+        Standard = 0,
+        Latin = 1,
+        Smooth = 2,
+        Rhythm = 3,
+        Swing = 4,
+        Social = 5,
+        Competition = 6
+    }
 
-        [Flags]
-        public enum DanceCategories
-        {
-            None = 0,
-            Standard = 1 << DanceCategory.Standard,
-            Latin = 1 << DanceCategory.Latin,
-            Smooth = 1 << DanceCategory.Smooth,
-            Rhythm = 1 << DanceCategory.Rhythm,
-            Swing = 1 << DanceCategory.Swing,
-            Social = 1 << DanceCategory.Social,
-            Competition = 1 << DanceCategory.Competition
-        };
+    [Flags]
+    public enum DanceCategories
+    {
+        None = 0,
+        Standard = 1 << DanceCategory.Standard,
+        Latin = 1 << DanceCategory.Latin,
+        Smooth = 1 << DanceCategory.Smooth,
+        Rhythm = 1 << DanceCategory.Rhythm,
+        Swing = 1 << DanceCategory.Swing,
+        Social = 1 << DanceCategory.Social,
+        [Description("American Style")]
+        AmericanStyle = (Smooth | Rhythm),
+        [Description("International Style")]
+        InternationalStyle = (Standard | Latin),
+        Any = AmericanStyle | InternationalStyle | Swing | Social
+    };
 
+    public class Dance {
         public string Name { get; }
         public string[] AllNames { get; }
+        public string Abbreviation { get; }
         public DanceCategories Categories { get; } = DanceCategories.None;
-        public TempoRange? GetTempo(DanceCategory category) {
+        public ICollection<TempoRange> TempoRanges => _tempos.Values;
+
+        public TempoRange GetTempo(DanceCategory category) {
             return _tempos[category];
         }
 
-        private Dictionary<DanceCategory, TempoRange?> _tempos = new Dictionary<DanceCategory, TempoRange?>();
+        private readonly Dictionary<DanceCategory, TempoRange> _tempos = new Dictionary<DanceCategory, TempoRange>();
 
         public Dance(string[] names, IEnumerable<TempoRange> tempos) {
             if ((names == null) || (names.Length < 1)) {
-                throw new ApplicationException("Dance constructer needs at least one name");
+                throw new ApplicationException("Dance constructor needs at least one name");
             }
 
             Name = names[0];
             AllNames = names;
+            Abbreviation = names.First((n) => n.Length == 3) ?? Name.Substring(0, 3).ToUpperInvariant();
+
             foreach (var tempo in tempos) {
                 var flag = (DanceCategories)(1 << (int)tempo.Category);
                 if ((Categories & flag) != 0) {
@@ -60,11 +71,28 @@ namespace MusicLibrary.Lib
 
         }
 
+        public static readonly DanceCategory[] AllCategories = new DanceCategory[] {
+            DanceCategory.Standard, DanceCategory.Latin, DanceCategory.Smooth, DanceCategory.Rhythm,
+            DanceCategory.Swing, DanceCategory.Social, DanceCategory.Competition
+        };
+
+        public static IEnumerable<DanceCategory> EnumerateCategories(DanceCategories categories) {
+            return AllCategories.Where((c) => (categories & ((DanceCategories)(1 << (int)c))) != 0);
+        }
+
+        public IEnumerable<DanceCategory> EnumerateCategories() {
+            return EnumerateCategories(Categories);
+        }
+
+        public static DanceCategories ToCategoriesMask(DanceCategory category) {
+            return (DanceCategories)(1 << (int)category);
+        }
+
         public override string ToString() {
             return Name;
         }
 
-        public struct TempoRange {
+        public class TempoRange {
             public DanceCategory Category;
             public int MinBpm { get; set; }
             public int MaxBpm { get; set; }
