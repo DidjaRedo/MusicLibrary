@@ -153,9 +153,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DanceDj.Mvvm\DanceDj.Mvvm.csproj">
-      <Project>{7bebb9c2-23bf-4e42-94f5-39c86a84e433}</Project>
-      <Name>DanceDj.Mvvm</Name>
+    <ProjectReference Include="..\DanceDj.Core\DanceDj.Core.csproj">
+      <Project>{c0e7c1d6-7a5b-4f2c-a01c-df3bd26abc4b}</Project>
+      <Name>DanceDj.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

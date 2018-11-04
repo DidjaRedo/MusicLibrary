@@ -1,7 +1,8 @@
-﻿<Application x:Class="DanceDj.WPF.App"
+﻿
+    <Application x:Class="DanceDj.WPF.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:vm="clr-namespace:DanceDj.Mvvm.ViewModel;assembly=DanceDj.Mvvm"
+             xmlns:vm="clr-namespace:DanceDj.Mvvm.ViewModel;assembly=DanceDj.Core"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 			 xmlns:ignore="http://www.galasoft.ch/ignore"

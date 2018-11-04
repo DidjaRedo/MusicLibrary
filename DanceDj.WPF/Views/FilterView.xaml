@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:DanceDj.WPF.Views"
              xmlns:cvt="clr-namespace:DanceDj.WPF.Converters"
              xmlns:my="clr-namespace:DanceDj.WPF"
-             xmlns:vm="clr-namespace:DanceDj.Mvvm.ViewModel;assembly=DanceDj.Mvvm"
+             xmlns:vm="clr-namespace:DanceDj.Mvvm.ViewModel;assembly=DanceDj.Core"
              d:DataContext="{d:DesignInstance vm:FilterViewModel}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="450">
