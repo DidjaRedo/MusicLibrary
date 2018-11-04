@@ -30,7 +30,7 @@ namespace MusicLibrary.Lib
         [JsonIgnore]
         public TrackRating Rating => (Ratings.Count > 0) ? Ratings[0] : null;
         public List<TrackRating> Ratings { get; }
-        public DateTimeOffset LastPlayed { get; set; }
+        public DateTimeOffset? LastPlayed { get; set; }
   
         [JsonIgnore]
         public MediaMonkeyTags MediaMonkey { get; }

@@ -22,6 +22,8 @@ namespace MusicLibrary.Lib
         protected bool _includeTracksWithNoRating = true;
         protected bool _includeTracksWithNoBpm = true;
         protected bool _includeTracksWithNoDances = false;
+        protected DateTimeOffset? _lastPlayedBefore;
+        protected DateTimeOffset? _lastPlayedAfter;
         protected string _description;
 
         public string Name { get => _name; set => Set(ref _name, value, "Name"); }
@@ -51,6 +53,8 @@ namespace MusicLibrary.Lib
         public bool IncludeTracksWithNoRating { get => _includeTracksWithNoRating; set => Set(ref _includeTracksWithNoRating, value, "IncludeTracksWithNoRating"); }
         public bool IncludeTracksWithNoBpm { get => _includeTracksWithNoBpm; set => Set(ref _includeTracksWithNoBpm, value, "IncludeTracksWithNoBpm"); }
         public bool IncludeTracksWithNoDances { get => _includeTracksWithNoDances; set => Set(ref _includeTracksWithNoDances, value, "IncludeTracksWithNoDances"); }
+        public DateTimeOffset? LastPlayedBefore { get => _lastPlayedBefore; set => Set(ref _lastPlayedBefore, value, "LastPlayedBefore"); }
+        public DateTimeOffset? LastPlayedAfter { get => _lastPlayedAfter; set => Set(ref _lastPlayedAfter, value, "LastPlayedAfter"); }
 
         public TrackDanceFilter(IEnumerable<Dance> dances) {
             if (dances != null) {
@@ -96,10 +100,23 @@ namespace MusicLibrary.Lib
 
         public List<TrackDanceInfo> Matches(ITrack track) {
             bool matches = true;
-            if ((track.BeatsPerMinute != 0) || IncludeTracksWithNoBpm) {
+            if (track.BeatsPerMinute != 0) {
                 matches = matches && (track.BeatsPerMinute >= MinBpm);
                 matches = matches && (track.BeatsPerMinute <= MaxBpm);
             }
+            else {
+                matches = matches && IncludeTracksWithNoBpm;
+            }
+
+            if (track.LastPlayed != null) {
+                matches = matches && ((LastPlayedBefore == null) || (track.LastPlayed < LastPlayedBefore));
+                matches = matches && ((LastPlayedAfter == null) || (track.LastPlayed > LastPlayedAfter));
+            }
+            else {
+                // never played always matches LastPlayedBefore and never matches LastPlayedAfter
+                matches = matches && (LastPlayedAfter == null);
+            }
+
             return matches ? MatchingDances(track) : null;
         }
 

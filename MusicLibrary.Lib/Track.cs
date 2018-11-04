@@ -19,7 +19,7 @@ namespace MusicLibrary.Lib
 
         public string Path { get; }
         public List<TrackRating> Ratings { get; } = new List<TrackRating>();
-        public DateTimeOffset LastPlayed { get; set; }
+        public DateTimeOffset? LastPlayed { get; set; }
 
         [JsonConstructor]
         public Track(string path, uint trackNumber, string title, string[] artistNames, string[] albumArtistNames, string albumTitle, uint beatsPerMinute, Dictionary<string, string> comments, string[] genres, string grouping, List<TrackRating> ratings) {
