@@ -7,7 +7,7 @@ using System.Linq;
 using MusicLibrary.Lib;
 using GalaSoft.MvvmLight;
 
-namespace DanceDj.Mvvm.ViewModel
+namespace DanceDj.ViewModel
 {
     public class FilterGroupViewModel : ViewModelBase
     {

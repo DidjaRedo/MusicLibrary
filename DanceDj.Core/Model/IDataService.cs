@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DanceDj.Mvvm.Model
+namespace DanceDj.Model
 {
     public interface IDataService
     {

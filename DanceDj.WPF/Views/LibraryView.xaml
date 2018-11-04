@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:my="clr-namespace:DanceDj.WPF.Views"
-             xmlns:vm="clr-namespace:DanceDj.Mvvm.ViewModel;assembly=DanceDj.Core"
+             xmlns:vm="clr-namespace:DanceDj.ViewModel;assembly=DanceDj.Core"
              d:DataContext="{d:DesignInstance vm:LibraryViewModel}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">

@@ -8,7 +8,7 @@ using System.Globalization;
 using System.Windows.Markup;
 using System.Windows.Data;
 
-using DanceDj.Mvvm.Utils;
+using DanceDj.Utils;
 
 namespace DanceDj.WPF.Converters
 {

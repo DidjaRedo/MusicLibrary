@@ -5,7 +5,7 @@ using System.Linq;
 
 using System.ComponentModel;
 
-namespace DanceDj.Mvvm.Utils
+namespace DanceDj.Utils
 {
     public static class EnumHelper
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DanceDj.Mvvm.Model
+namespace DanceDj.Model
 {
     public class DataService : IDataService
     {

@@ -5,7 +5,7 @@ using System.Linq;
 
 using MusicLibrary.Lib;
 
-namespace DanceDj.Mvvm.ViewModel
+namespace DanceDj.ViewModel
 {
     public class DanceViewModel {
         protected DanceViewModel(Dance dance) {

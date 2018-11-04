@@ -11,9 +11,9 @@
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
-using DanceDj.Mvvm.Model;
+using DanceDj.Model;
 
-namespace DanceDj.Mvvm.ViewModel
+namespace DanceDj.ViewModel
 {
     /// <summary>
     /// This class contains static references to all the view models in the

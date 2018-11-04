@@ -8,7 +8,7 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using MusicLibrary.Lib;
 
-namespace DanceDj.Mvvm.ViewModel
+namespace DanceDj.ViewModel
 {
     public class FilterViewModel : ViewModelBase
     {

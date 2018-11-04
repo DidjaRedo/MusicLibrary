@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-using DanceDj.Mvvm.ViewModel;
+using DanceDj.ViewModel;
 
 namespace DanceDj.WPF
 {

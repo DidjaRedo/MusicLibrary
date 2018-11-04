@@ -1,7 +1,7 @@
 ﻿using GalaSoft.MvvmLight;
-using DanceDj.Mvvm.Model;
+using DanceDj.Model;
 
-namespace DanceDj.Mvvm.ViewModel
+namespace DanceDj.ViewModel
 {
     /// <summary>
     /// This class contains properties that the main View can data bind to.

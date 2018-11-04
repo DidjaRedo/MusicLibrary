@@ -1,7 +1,7 @@
 ﻿using System;
-using DanceDj.Mvvm.Model;
+using DanceDj.Model;
 
-namespace DanceDj.Mvvm.Design
+namespace DanceDj.Design
 {
     public class DesignDataService : IDataService
     {

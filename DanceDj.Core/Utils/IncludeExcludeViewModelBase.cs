@@ -7,7 +7,7 @@ using System.Linq;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 
-namespace DanceDj.Mvvm.Utils
+namespace DanceDj.Utils
 {
     public delegate void ItemAddedDelegate<T>(T item);
     public delegate void ItemRemovedDelegate<T>(T item);

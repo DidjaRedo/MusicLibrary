@@ -6,7 +6,7 @@ using System.Text;
 using GalaSoft.MvvmLight;
 using MusicLibrary.Lib;
 
-namespace DanceDj.Mvvm.ViewModel
+namespace DanceDj.ViewModel
 {
     public class TrackViewModel : ViewModelBase
     {

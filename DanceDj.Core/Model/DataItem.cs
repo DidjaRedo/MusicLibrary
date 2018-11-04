@@ -1,7 +1,7 @@
 ﻿using System;
 using MusicLibrary.Lib;
 
-namespace DanceDj.Mvvm.Model
+namespace DanceDj.Model
 {
     public class DataItem
     {
