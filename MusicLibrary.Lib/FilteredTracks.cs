@@ -13,10 +13,22 @@ namespace MusicLibrary.Lib
             Filter = filter;
             Tracks.AddRange(Filter.Apply(LibraryTracks));
 
-            Filter.PropertyChanged += (s, e) => Refresh();
+            Filter.PropertyChanged += FilterPropertyChangeHandler;
             Filter.Dances.CollectionChanged += (s, e) => Refresh();
             if (!IsDefault) {
                 Library.Default.PropertyChanged += FilterOrTrackChangeHandler;
+            }
+        }
+
+        private void FilterPropertyChangeHandler(object sender, System.ComponentModel.PropertyChangedEventArgs e) {
+            switch (e.PropertyName) {
+                case "Name":
+                case "FilterGroup":
+                    RaisePropertyChanged(e.PropertyName);
+                    break;
+                default:
+                    Refresh();
+                    break;
             }
         }
 
@@ -38,7 +50,8 @@ namespace MusicLibrary.Lib
         protected LibraryFilter Library { get; }
         protected IEnumerable<ITrack> LibraryTracks => (IsDefault ? Library.AllTracks : Library.Default.Tracks);
 
-        public string Name => Filter.Name;
+        public string Name { get => Filter.Name; set => Filter.Name = value; }
+        public string FilterGroup { get => Filter.FilterGroup; set => Filter.FilterGroup = value; }
         public TrackDanceFilter Filter { get; }
         public bool IsDefault { get; }
         public List<ITrack> Tracks { get; } = new List<ITrack>();

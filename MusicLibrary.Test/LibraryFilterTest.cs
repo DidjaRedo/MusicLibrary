@@ -14,7 +14,8 @@ namespace MusicLibrary.Test
         public void ShouldInitializeDancesByCategory() {
             var lib = new LibraryFilter(SampleData.GetTestLibrary());
             lib.AddDanceFiltersByCategory(DanceCategory.Standard, DanceCategory.Latin);
-            Assert.Equal(lib.Filters.Keys, new string[] {
+            var names = lib.AllFilters.Select<FilteredTracks, string>((ft) => ft.Name);
+            Assert.Equal(names, new string[] {
                 "Waltz-Standard", "Tango-Standard", "Foxtrot-Standard", "Quickstep-Standard", "Viennese Waltz-Standard",
                 "Samba-Latin", "Cha-Cha-Latin", "Rumba-Latin", "Paso Doble-Latin", "Jive-Latin"
             });
@@ -29,7 +30,7 @@ namespace MusicLibrary.Test
             };
             var lib = new LibraryFilter(SampleData.GetTestLibrary(), defaultFilter);
             lib.AddDanceFiltersByCategory(Dance.AllCategories);
-            foreach (var fi in lib.Filters.Values) {
+            foreach (var fi in lib.AllFilters) {
                 foreach (var dance in fi.Filter.Dances) {
                     var edi = SampleData.ExpectedDanceInfo[dance];
                     foreach (var category in Dance.EnumerateCategories(fi.Filter.Categories)) {

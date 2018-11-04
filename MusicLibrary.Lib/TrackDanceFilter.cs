@@ -12,6 +12,7 @@ namespace MusicLibrary.Lib
         public const int MaxAllowedBpm = 240;
 
         protected string _name;
+        protected string _filterGroup;
         protected DanceCategories _categories = DanceCategories.None;
         protected int _minBpm = 0;
         protected int _maxBpm = MaxAllowedBpm;
@@ -27,6 +28,7 @@ namespace MusicLibrary.Lib
         protected string _description;
 
         public string Name { get => _name; set => Set(ref _name, value, "Name"); }
+        public string FilterGroup { get => _filterGroup; set => Set(ref _filterGroup, value, "FilterGroup"); }
         public string Description { get => _description ?? ToString(); set => Set(ref _description, value, "Description"); }
 
         public ObservableCollection<Dance> Dances { get; } = new ObservableCollection<Dance>();

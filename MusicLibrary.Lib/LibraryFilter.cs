@@ -14,21 +14,23 @@ namespace MusicLibrary.Lib
 
         public FilteredTracks Default { get; }
 
-        protected Dictionary<string, FilteredTracks> _filters = new Dictionary<string, FilteredTracks>();
-        public IReadOnlyDictionary<string, FilteredTracks> Filters;
+        protected ObservableCollection<FilterGroup> _filterGroups = new ObservableCollection<FilterGroup>();
+        public ReadOnlyObservableCollection<FilterGroup> FilterGroups;
+
+        protected FilterGroup _allFilters = new FilterGroup("Default", true);
+        public ReadOnlyObservableCollection<FilteredTracks> AllFilters => _allFilters.All;
 
         public IReadOnlyList<ITrack> AllTracks => Library.Tracks;
 
         public LibraryFilter(Library library, TrackDanceFilter defaultFilter = null) {
             Library = library;
-
             Default = new FilteredTracks(this, defaultFilter ?? new TrackDanceFilter(), true);
-            Filters = new ReadOnlyDictionary<string, FilteredTracks>(_filters);
+            FilterGroups = new ReadOnlyObservableCollection<FilterGroup>(_filterGroups);
         }
 
         public bool Refresh() {
             if (Default.Refresh()) {
-                foreach (var fi in _filters.Values) {
+                foreach (var fi in _allFilters.All) {
                     fi.Refresh();
                 }
                 return true;
@@ -36,17 +38,22 @@ namespace MusicLibrary.Lib
             return false;
         }
 
-        public FilteredTracks AddFilter(TrackDanceFilter filter, string name = null) {
-            name = name ?? filter.Name;
-            if (string.IsNullOrEmpty(name)) {
+        public FilteredTracks AddFilter(TrackDanceFilter filter) {
+            if (string.IsNullOrEmpty(filter.Name)) {
                 throw new ApplicationException("Filter name must be specified.");
             }
-            else if (_filters.ContainsKey(name)) {
-                throw new ApplicationException($"Filter {name} already defined.");
-            }
+
             var fi = new FilteredTracks(this, filter);
-            _filters[name] = fi;
-            RaisePropertyChanged("Filters");
+
+            _allFilters.Add(fi);
+            if (!String.IsNullOrEmpty(fi.FilterGroup)) {
+                var fg = _filterGroups.SingleOrDefault((g) => g.Name.Equals(fi.FilterGroup, StringComparison.InvariantCultureIgnoreCase));
+                if (fg == null) {
+                    fg = new FilterGroup(fi.FilterGroup);
+                    _filterGroups.Add(fg);
+                }
+                fg.Add(fi);
+            }
             return fi;
         }
 
@@ -70,6 +77,7 @@ namespace MusicLibrary.Lib
                     if (effective != DanceCategories.None) {
                         AddFilter(new TrackDanceFilter(dance) {
                             Name = $"{dance.Name}-{mask.ToString()}",
+                            FilterGroup = category.ToString(),
                             Categories = effective
                         });
                     }
