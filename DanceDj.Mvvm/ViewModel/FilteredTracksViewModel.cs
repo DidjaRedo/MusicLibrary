@@ -17,6 +17,7 @@ namespace DanceDj.Mvvm.ViewModel
             var trackVMs = fi.Tracks.Select<ITrack, TrackViewModel>((t) => TrackViewModel.GetOrAdd(t));
             InnerTracks = new ObservableCollection<TrackViewModel>(trackVMs);
             Tracks = new ReadOnlyObservableCollection<TrackViewModel>(InnerTracks);
+            SelectedTrack = (InnerTracks.Count > 0 ? InnerTracks[0] : null);
 
             fi.PropertyChanged += Fi_PropertyChanged;
         }
@@ -32,6 +33,10 @@ namespace DanceDj.Mvvm.ViewModel
             Tracks = new ReadOnlyObservableCollection<TrackViewModel>(InnerTracks);
             RaisePropertyChanged("Tracks");
 
+            if ((_selectedTrack == null) || (!InnerTracks.Contains(_selectedTrack))) {
+                SelectedTrack = (InnerTracks.Count > 0 ? InnerTracks[0] : null);
+            }
+
             if (InnerTracks.Count != count) {
                 RaisePropertyChanged("NameAndCount");
             }
@@ -46,5 +51,8 @@ namespace DanceDj.Mvvm.ViewModel
 
         private ObservableCollection<TrackViewModel> InnerTracks { get; set;  }
         public ReadOnlyObservableCollection<TrackViewModel> Tracks { get; private set; }
+
+        protected TrackViewModel _selectedTrack;
+        public TrackViewModel SelectedTrack { get => _selectedTrack; set => Set("SelectedTrack", ref _selectedTrack, value); }
     }
 }
