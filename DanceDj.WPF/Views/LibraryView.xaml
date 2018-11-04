@@ -20,23 +20,18 @@
         <Expander ExpandDirection="Right" Header="Defaults" Grid.Column="0" Grid.Row="0">
             <my:FilteredTracksView DataContext="{Binding Default}"/>
         </Expander>
-        <ListView ItemsSource="{Binding Filters}" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Disabled" Grid.Row="0" Grid.Column="1">
-            <ListView.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top"></StackPanel>
-                </ItemsPanelTemplate>
-            </ListView.ItemsPanel>
-            <ListView.ItemContainerStyle>
-                <Style TargetType="ListViewItem">
-                    <Setter Property="VerticalContentAlignment" Value="Top"/>
-                </Style>
-            </ListView.ItemContainerStyle>
-            <ListView.ItemTemplate>
+        <TabControl ItemsSource="{Binding FilterGroups}" Grid.Row="0" Grid.Column="1">
+            <TabControl.ItemTemplate>
                 <DataTemplate>
-                    <my:FilteredTracksView/>
+                    <TextBlock Text="{Binding Name}"/>
                 </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            </TabControl.ItemTemplate>
+            <TabControl.ContentTemplate>
+                <DataTemplate>
+                    <my:FilterGroupView/>
+                </DataTemplate>
+            </TabControl.ContentTemplate>
+        </TabControl>
         <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="2">
             <Button>Add</Button>
         </StackPanel>

@@ -116,6 +116,7 @@ namespace DanceDj.Mvvm.ViewModel
         }
 
         public Utils.IIncludeExcludeViewModelBase<DanceViewModel> Dances { get; }
+        public bool IncludeTracksWithNoDances { get => Filter.IncludeTracksWithNoDances; set => Filter.IncludeTracksWithNoDances = value; }
 
         #endregion
 

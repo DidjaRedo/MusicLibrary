@@ -72,6 +72,9 @@
     <Compile Include="Views\FilteredTracksView.xaml.cs">
       <DependentUpon>FilteredTracksView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\FilterGroupView.xaml.cs">
+      <DependentUpon>FilterGroupView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\FilterView.xaml.cs">
       <DependentUpon>FilterView.xaml</DependentUpon>
     </Compile>
@@ -98,6 +101,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\FilteredTracksView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FilterGroupView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

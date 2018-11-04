@@ -12,7 +12,7 @@ namespace MusicLibrary.Lib
     {
         public Library Library { get; }
 
-        public FilteredTracks Default { get; }
+        public FilteredTracks DefaultFilter { get; }
 
         protected ObservableCollection<FilterGroup> _filterGroups = new ObservableCollection<FilterGroup>();
         public ReadOnlyObservableCollection<FilterGroup> FilterGroups;
@@ -24,12 +24,12 @@ namespace MusicLibrary.Lib
 
         public LibraryFilter(Library library, TrackDanceFilter defaultFilter = null) {
             Library = library;
-            Default = new FilteredTracks(this, defaultFilter ?? new TrackDanceFilter(), true);
+            DefaultFilter = new FilteredTracks(this, defaultFilter ?? new TrackDanceFilter(), true);
             FilterGroups = new ReadOnlyObservableCollection<FilterGroup>(_filterGroups);
         }
 
         public bool Refresh() {
-            if (Default.Refresh()) {
+            if (DefaultFilter.Refresh()) {
                 foreach (var fi in _allFilters.All) {
                     fi.Refresh();
                 }

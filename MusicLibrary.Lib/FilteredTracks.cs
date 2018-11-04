@@ -16,7 +16,7 @@ namespace MusicLibrary.Lib
             Filter.PropertyChanged += FilterPropertyChangeHandler;
             Filter.Dances.CollectionChanged += (s, e) => Refresh();
             if (!IsDefault) {
-                Library.Default.PropertyChanged += FilterOrTrackChangeHandler;
+                Library.DefaultFilter.PropertyChanged += FilterOrTrackChangeHandler;
             }
         }
 
@@ -48,7 +48,7 @@ namespace MusicLibrary.Lib
         }
 
         protected LibraryFilter Library { get; }
-        protected IEnumerable<ITrack> LibraryTracks => (IsDefault ? Library.AllTracks : Library.Default.Tracks);
+        protected IEnumerable<ITrack> LibraryTracks => (IsDefault ? Library.AllTracks : Library.DefaultFilter.Tracks);
 
         public string Name { get => Filter.Name; set => Filter.Name = value; }
         public string FilterGroup { get => Filter.FilterGroup; set => Filter.FilterGroup = value; }

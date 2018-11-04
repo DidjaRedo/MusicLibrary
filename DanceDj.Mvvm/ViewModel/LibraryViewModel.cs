@@ -14,7 +14,7 @@ namespace DanceDj.Mvvm.ViewModel
         private LibraryFilter Library { get; }
         public LibraryViewModel(LibraryFilter library) {
             Library = library;
-            Default = new FilteredTracksViewModel(library.Default);
+            Default = new FilteredTracksViewModel(library.DefaultFilter);
 
             var groupVMs = library.FilterGroups.Select<FilterGroup, FilterGroupViewModel>((fi) => new FilterGroupViewModel(fi));
             FilterGroups = new ObservableCollection<FilterGroupViewModel>(groupVMs);
