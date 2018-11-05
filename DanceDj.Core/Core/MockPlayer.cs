@@ -9,6 +9,18 @@ using GalaSoft.MvvmLight;
 
 namespace DanceDj.Core
 {
+    public class PlayerStoppingEventArgs : EventArgs
+    {
+        public PlayerStoppingEventArgs() : base() {
+
+        }
+
+        public bool Cancel { get; set; } = false;
+        public ITrack NextTrack { get; set; } = null;
+    }
+
+    public delegate void PlayerStoppingHandler(object player, PlayerStoppingEventArgs e);
+
     public class MockPlayer : ViewModelBase
     {
         protected PlayerTimes _playerTimes;
@@ -20,6 +32,8 @@ namespace DanceDj.Core
         protected Utils.ITimer _timer = new Utils.SystemTimer(1000) { AutoReset = true, Enabled = false };
 
         public PlayerState PlayerState { get => _playerState; protected set => Set("PlayerState", ref _playerState, value); }
+        public event PlayerStoppingHandler PlayerStopping;
+
         public int FadeDuration { get => _fadeDuration; protected set => Set("FadeDuration", ref _fadeDuration, value); }
         public double ConfiguredVolume {
             get => _configuredVolume;
@@ -55,7 +69,7 @@ namespace DanceDj.Core
         public ITrack Play(ITrack track) {
             NowPlaying = track;
             UpdatePlayerTimes((p) => new PlayerTimes(track, FadeDuration));
-            StartMockPlayer();
+            StartTimer();
             return NowPlaying;
         }
 
@@ -66,20 +80,27 @@ namespace DanceDj.Core
                 case PlayerState.Error:
                 case PlayerState.Paused:
                 case PlayerState.Stopped:
-                    if (NowPlaying != null) {
-                        StartMockPlayer();
-                    }
+                    StartTimer();
                     break;
             }
             return NowPlaying;
         }
 
+        public void Seek(int position) {
+            if ((NowPlaying != null) && (position >= 0) && (position < NowPlaying.DurationInSeconds)) {
+                UpdatePlayerTimes((t) => t?.Seek(position));
+            }
+        }
+
         public void Stop() {
-            StopMockPlayer();
+            Timer.Stop();
+            UpdatePlayerTimes((t) => t?.Reset());
+            PlayerState = PlayerState.Stopped;
         }
 
         public void Pause() {
-            PauseMockPlayer();
+            Timer.Stop();
+            PlayerState = ((NowPlaying != null) && IsAtEnd ? PlayerState.Stopped : PlayerState.Paused);
         }
 
         public void StartFade() {
@@ -92,6 +113,13 @@ namespace DanceDj.Core
             if (PlayerTimes != null) {
                 UpdatePlayerTimes((t) => t?.Reset());
             }
+        }
+
+        protected bool RaisePlayerStopping(out ITrack nextTrack) {
+            var e = new PlayerStoppingEventArgs();
+            PlayerStopping?.Invoke(this, e);
+            nextTrack = e.NextTrack;
+            return !e.Cancel;
         }
 
         public PlayerTimes PlayerTimes { get => _playerTimes; }
@@ -115,22 +143,11 @@ namespace DanceDj.Core
             }
         }
 
-        protected void StartMockPlayer() {
+        protected void StartTimer() {
             if (NowPlaying != null) {
                 PlayerState = PlayerState.Playing;
                 Timer.Start();
             }
-        }
-
-        protected void PauseMockPlayer() {
-            Timer.Stop();
-            PlayerState = ((NowPlaying != null) && (PlayerTimes.ElapsedTimeInSeconds < PlayerTimes.TotalTimeInSeconds) ? PlayerState.Paused : PlayerState.Stopped);
-        }
-
-        protected void StopMockPlayer() {
-            Timer.Stop();
-            UpdatePlayerTimes((t) =>t?.Reset());
-            PlayerState = PlayerState.Stopped;
         }
 
         private void Timer_Elapsed(object sender, EventArgs e) {
@@ -138,11 +155,22 @@ namespace DanceDj.Core
                 double previousFader = PlayerTimes?.FaderVolume ?? 1.0;
                 var newTimes = UpdatePlayerTimes((t) => t?.Tick());
                 if (newTimes != null) {
-                    if (newTimes.RemainingTimeInSeconds < 1) {
-                        PauseMockPlayer();
-                    }
                     if (newTimes.FaderVolume != previousFader) {
                         RaisePropertyChanged("EffectiveVolume");
+                    }
+                    if (newTimes.RemainingTimeInSeconds < 1) {
+                        ITrack nextTrack;
+                        if (RaisePlayerStopping(out nextTrack)) {
+                            Pause();
+                        }
+                        else if (nextTrack == null) {
+                            nextTrack = NowPlaying;
+                        }
+
+                        if (nextTrack != null) {
+                            NowPlaying = nextTrack;
+                            UpdatePlayerTimes((t) => new PlayerTimes(nextTrack, FadeDuration));
+                        }
                     }
                 }
             }

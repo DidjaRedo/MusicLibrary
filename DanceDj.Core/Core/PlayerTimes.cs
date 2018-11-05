@@ -42,6 +42,17 @@ namespace DanceDj.Core
             return this;
         }
 
+        public PlayerTimes Seek(int position) {
+            if ((position >= 0) && (position < TotalTimeInSeconds)) {
+                return new PlayerTimes(Track) {
+                    ElapsedTimeInSeconds = position,
+                    RemainingTimeInSeconds = TotalTimeInSeconds - position,
+                    FadeOutTimeInSeconds = FadeOutTimeInSeconds
+                };
+            }
+            return this;
+        }
+
         public PlayerTimes Reset() {
             return new PlayerTimes(Track, FadeOutTimeInSeconds);
         }

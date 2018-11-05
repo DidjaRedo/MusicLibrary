@@ -13,7 +13,7 @@ namespace DanceDj.Test
     {
         public TestPlayer() {
             Library = SampleData.GetTestLibrary();
-            TestTrack = Library.Tracks[0];
+            TestTrack = GetNextTrack();
             Timer = new DanceDj.Utils.MockTimer(1000) { AutoReset = true, Enabled = true };
             Player = new MockPlayer() { Timer = Timer };
             Changes = new List<string>();
@@ -21,6 +21,8 @@ namespace DanceDj.Test
             Player.PropertyChanged += (s, e) => {
                 Changes.Add(e.PropertyName);
             };
+
+
         }
 
         public Library Library { get; protected set; }
@@ -28,6 +30,11 @@ namespace DanceDj.Test
         public DanceDj.Utils.MockTimer Timer { get; protected set; }
         public MockPlayer Player { get; protected set; }
         public List<string> Changes { get; protected set; }
+
+        protected int TracksUsed = 0;
+        public ITrack GetNextTrack() {
+            return Library.Tracks[TracksUsed++ % Library.Tracks.Count];
+        }
 
         public void AssertChanges(params string[] expected) {
             Assert.Equal(expected, Changes);

@@ -73,7 +73,7 @@ namespace DanceDj.Test
 
             test.Changes.Clear();
             test.Timer.Tick();
-            Assert.Equal(new List<string>(new string[] { "PlayerTimes", "IsAtEnd", "PlayerState", "EffectiveVolume" }), test.Changes);
+            Assert.Equal(new List<string>(new string[] { "PlayerTimes", "IsAtEnd", "EffectiveVolume", "PlayerState" }), test.Changes);
             Assert.Equal(PlayerState.Stopped, player.PlayerState);
         }
 
@@ -172,8 +172,84 @@ namespace DanceDj.Test
 
             test.Changes.Clear();
             test.Timer.Tick();
-            test.AssertChanges("PlayerTimes", "PlayerState", "EffectiveVolume");
+            test.AssertChanges("PlayerTimes", "EffectiveVolume", "PlayerState");
             Assert.Equal(PlayerState.Paused, test.Player.PlayerState);
+        }
+
+        [Fact]
+        public void ShouldRaisePlayerStopping() {
+            var test = new TestPlayer();
+            var player = test.Player;
+            bool isStoppingCalled = false;
+
+            player.PlayerStopping += (o, e) => isStoppingCalled = true;
+
+            player.Play(test.TestTrack);
+            test.Timer.Tick();
+
+            player.Seek(test.TestTrack.DurationInSeconds - 1);
+
+            Assert.False(isStoppingCalled);
+            test.Changes.Clear();
+            test.Timer.Tick();
+            Assert.Equal(new List<string>(new string[] { "PlayerTimes", "IsAtEnd", "EffectiveVolume", "PlayerState" }), test.Changes);
+            Assert.Equal(PlayerState.Stopped, player.PlayerState);
+            Assert.True(isStoppingCalled);
+        }
+
+        [Fact]
+        public void ShouldAllowPlayerStoppingHandlerToSupplyNext() {
+            var test = new TestPlayer();
+            var player = test.Player;
+            bool isStoppingCalled = false;
+            ITrack nextTrack = null;
+
+            player.PlayerStopping += (o, e) => {
+                isStoppingCalled = true;
+                nextTrack = test.GetNextTrack();
+                e.NextTrack = nextTrack;
+            };
+
+            player.Play(test.TestTrack);
+            test.Timer.Tick();
+
+            player.Seek(test.TestTrack.DurationInSeconds - 1);
+
+            Assert.False(isStoppingCalled);
+            test.Changes.Clear();
+            test.Timer.Tick();
+            Assert.True(isStoppingCalled);
+            test.AssertChanges("PlayerTimes", "IsAtEnd", "EffectiveVolume", "PlayerState", "NowPlaying", "PlayerTimes", "IsAtStart", "IsAtEnd");
+            Assert.Equal(PlayerState.Stopped, player.PlayerState);
+            Assert.Equal(nextTrack, player.NowPlaying);
+        }
+
+        [Fact]
+        public void ShouldAllowPlayerStoppingHandlerToCancel() {
+            var test = new TestPlayer();
+            var player = test.Player;
+            bool isStoppingCalled = false;
+            ITrack nextTrack = null;
+
+            player.PlayerStopping += (o, e) => {
+                isStoppingCalled = true;
+                nextTrack = test.GetNextTrack();
+                e.Cancel = true;
+                e.NextTrack = nextTrack;
+            };
+
+            player.Play(test.TestTrack);
+            test.Timer.Tick();
+
+            player.Seek(test.TestTrack.DurationInSeconds - 1);
+
+            Assert.False(isStoppingCalled);
+            test.Changes.Clear();
+            test.Timer.Tick();
+            Assert.True(isStoppingCalled);
+            test.AssertChanges("PlayerTimes", "IsAtEnd", "EffectiveVolume", "NowPlaying", "PlayerTimes", "IsAtStart", "IsAtEnd");
+            Assert.Equal(PlayerState.Playing, player.PlayerState);
+            Assert.Equal(nextTrack, player.NowPlaying);
         }
     }
 }
