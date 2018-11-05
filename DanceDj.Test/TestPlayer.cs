@@ -33,10 +33,10 @@ namespace DanceDj.Test
             Assert.Equal(expected, Changes);
         }
 
-        public void AssertIsAsExpectedWhilePlaying(int expectedElapsed, params string[] expectedChanges) {
+        public void AssertIsAsExpected(PlayerState expectedState, int expectedElapsed, params string[] expectedChanges) {
             Assert.Equal(expectedChanges, Changes);
             Assert.Equal(TestTrack, Player.NowPlaying);
-            Assert.Equal(PlayerState.Playing, Player.PlayerState);
+            Assert.Equal(expectedState, Player.PlayerState);
             Assert.Equal(TestTrack.DurationInSeconds, Player.PlayerTimes.TotalTimeInSeconds);
             Assert.Equal(TestTrack.DurationInSeconds - expectedElapsed, Player.PlayerTimes.RemainingTimeInSeconds);
             Assert.Equal(expectedElapsed, Player.PlayerTimes.ElapsedTimeInSeconds);

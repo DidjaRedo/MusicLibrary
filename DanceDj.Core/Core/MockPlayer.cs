@@ -52,13 +52,14 @@ namespace DanceDj.Core
             }
         }
 
-        public void Play(ITrack track) {
+        public ITrack Play(ITrack track) {
             NowPlaying = track;
             UpdatePlayerTimes((p) => new PlayerTimes(track, FadeDuration));
             StartMockPlayer();
+            return NowPlaying;
         }
 
-        public void Play() {
+        public ITrack Play() {
             switch (PlayerState) {
                 case PlayerState.Playing:
                     break;
@@ -70,6 +71,7 @@ namespace DanceDj.Core
                     }
                     break;
             }
+            return NowPlaying;
         }
 
         public void Stop() {
@@ -93,12 +95,22 @@ namespace DanceDj.Core
         }
 
         public PlayerTimes PlayerTimes { get => _playerTimes; }
+        public bool IsAtStart { get => (PlayerTimes != null) && (PlayerTimes.ElapsedTimeInSeconds == 0);  }
+        public bool IsAtEnd { get => (PlayerTimes != null) && (PlayerTimes.ElapsedTimeInSeconds == PlayerTimes.TotalTimeInSeconds);  }
 
         private object PlayerTimesLock = new object();
         private delegate PlayerTimes PlayerTimesUpdateDelegate(PlayerTimes current);
         private PlayerTimes UpdatePlayerTimes(PlayerTimesUpdateDelegate update) {
             lock (PlayerTimesLock) {
+                bool start = IsAtStart;
+                bool end = IsAtEnd;
                 Set("PlayerTimes", ref _playerTimes, update(_playerTimes));
+                if (start != IsAtStart) {
+                    RaisePropertyChanged("IsAtStart");
+                }
+                if (end != IsAtEnd) {
+                    RaisePropertyChanged("IsAtEnd");
+                }
                 return _playerTimes;
             }
         }
@@ -118,7 +130,7 @@ namespace DanceDj.Core
         protected void StopMockPlayer() {
             Timer.Stop();
             UpdatePlayerTimes((t) =>t?.Reset());
-            PlayerState = (NowPlaying != null) ? PlayerState.Paused : PlayerState.Stopped;
+            PlayerState = PlayerState.Stopped;
         }
 
         private void Timer_Elapsed(object sender, EventArgs e) {
