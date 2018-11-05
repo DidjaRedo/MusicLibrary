@@ -30,6 +30,7 @@ namespace MusicLibrary.Lib
         [JsonIgnore]
         public TrackRating Rating => (Ratings.Count > 0) ? Ratings[0] : null;
         public List<TrackRating> Ratings { get; }
+        public int DurationInSeconds { get; }
         public DateTimeOffset? LastPlayed { get; set; }
   
         [JsonIgnore]
@@ -49,6 +50,7 @@ namespace MusicLibrary.Lib
                 Path = path.Remove(0, root.Length + 1);
             }
             Tag = track.Tag;
+            DurationInSeconds = (int)track.Properties.Duration.TotalSeconds;
 
             Genres = TrimStrings(Tag.Genres);
 

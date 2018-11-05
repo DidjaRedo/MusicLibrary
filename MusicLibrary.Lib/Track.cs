@@ -19,15 +19,17 @@ namespace MusicLibrary.Lib
 
         public string Path { get; }
         public List<TrackRating> Ratings { get; } = new List<TrackRating>();
+        public int DurationInSeconds { get; }
         public DateTimeOffset? LastPlayed { get; set; }
 
         [JsonConstructor]
-        public Track(string path, uint trackNumber, string title, string[] artistNames, string[] albumArtistNames, string albumTitle, uint beatsPerMinute, Dictionary<string, string> comments, string[] genres, string grouping, List<TrackRating> ratings) {
+        public Track(string path, uint trackNumber, string title, string[] artistNames, string[] albumArtistNames, string albumTitle, int durationInSeconds, uint beatsPerMinute, Dictionary<string, string> comments, string[] genres, string grouping, List<TrackRating> ratings) {
             TrackNumber = trackNumber;
             Title = title;
             ArtistNames = artistNames;
             AlbumTitle = albumTitle;
             AlbumArtistNames = albumArtistNames;
+            DurationInSeconds = durationInSeconds;
             BeatsPerMinute = beatsPerMinute;
             Comments = comments ?? new Dictionary<string, string>();
             Genres = genres ?? new string[0];

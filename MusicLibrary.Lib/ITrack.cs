@@ -21,6 +21,7 @@ namespace MusicLibrary.Lib
         string Title { get; }
         uint TrackNumber { get; }
 
+        int DurationInSeconds { get; }
         System.DateTimeOffset? LastPlayed { get; set; }
 
         TrackDances Dances { get; }
