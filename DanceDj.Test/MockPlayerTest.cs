@@ -20,15 +20,7 @@ namespace DanceDj.Test
 
             player.Play(test.TestTrack);
 
-            var expected = new List<String>(new string[] { "NowPlaying", "PlayerTimes", "PlayerState" });
-            Assert.Equal(expected, test.Changes);
-            Assert.Equal(test.TestTrack, player.NowPlaying);
-            Assert.Equal(PlayerState.Playing, player.PlayerState);
-            Assert.Equal(test.TestTrack.DurationInSeconds, player.PlayerTimes.TotalTimeInSeconds);
-            Assert.Equal(test.TestTrack.DurationInSeconds, player.PlayerTimes.RemainingTimeInSeconds);
-            Assert.Equal(0, player.PlayerTimes.ElapsedTimeInSeconds);
-            Assert.Equal(player.FadeDuration, player.PlayerTimes.FadeOutTimeInSeconds);
-            Assert.Equal(1.0, player.PlayerTimes.FaderVolume);
+            test.AssertIsAsExpectedWhilePlaying(0, "NowPlaying", "PlayerTimes", "PlayerState");
         }
 
         [Fact]
@@ -42,16 +34,45 @@ namespace DanceDj.Test
             player.Play(test.TestTrack);
             test.Changes.Clear();
             test.Timer.Tick();
+            test.AssertIsAsExpectedWhilePlaying(1, "PlayerTimes");
+        }
 
-            var expected = new List<String>(new string[] { "PlayerTimes" });
-            Assert.Equal(expected, test.Changes);
-            Assert.Equal(test.TestTrack, player.NowPlaying);
-            Assert.Equal(PlayerState.Playing, player.PlayerState);
-            Assert.Equal(test.TestTrack.DurationInSeconds, player.PlayerTimes.TotalTimeInSeconds);
-            Assert.Equal(test.TestTrack.DurationInSeconds - 1, player.PlayerTimes.RemainingTimeInSeconds);
-            Assert.Equal(1, player.PlayerTimes.ElapsedTimeInSeconds);
-            Assert.Equal(player.FadeDuration, player.PlayerTimes.FadeOutTimeInSeconds);
-            Assert.Equal(1.0, player.PlayerTimes.FaderVolume);
+        [Fact]
+        public void ShouldPlayEntireSongAndFadeToStop() {
+            var test = new TestPlayer();
+            var player = test.Player;
+
+            Assert.Equal(PlayerState.Stopped, player.PlayerState);
+            Assert.Null(player.NowPlaying);
+
+            player.Play(test.TestTrack);
+
+            var normalChanges = new string[] { "PlayerTimes" };
+            var faderChanges = new string[] { "PlayerTimes", "EffectiveVolume" };
+            var fadePoint = (test.TestTrack.DurationInSeconds - player.FadeDuration);
+            double lastVolume = 1.0;
+            for (int i = 0; i < test.TestTrack.DurationInSeconds-1; i++) {
+                test.Changes.Clear();
+                test.Timer.Tick();
+                var expectedElapsed = i + 1;
+                var fading = (i >= fadePoint);
+                var expectedChanges = (fading ? faderChanges : normalChanges);
+
+                test.AssertIsAsExpectedWhilePlaying(expectedElapsed, expectedChanges);
+
+                if (fading) {
+                    Assert.True(player.PlayerTimes.FaderVolume < lastVolume);
+                }
+                else {
+                    Assert.Equal(1.0, player.PlayerTimes.FaderVolume);
+                }
+                lastVolume = player.PlayerTimes.FaderVolume;
+            }
+
+            test.Changes.Clear();
+            test.Timer.Tick();
+            Assert.Equal(new List<string>(new string[] { "PlayerTimes", "PlayerState", "EffectiveVolume" }), test.Changes);
+            Assert.Equal(PlayerState.Stopped, player.PlayerState);
         }
     }
 }

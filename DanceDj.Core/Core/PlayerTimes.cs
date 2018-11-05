@@ -25,7 +25,7 @@ namespace DanceDj.Core
         public double FaderVolume {
             get {
                 if (RemainingTimeInSeconds < FadeOutTimeInSeconds) {
-                    return ((double)FadeOutTimeInSeconds) / ((double)RemainingTimeInSeconds);
+                    return ((double)RemainingTimeInSeconds) / ((double)FadeOutTimeInSeconds);
                 }
                 return 1.0;
             }
