@@ -17,14 +17,23 @@ namespace DanceDj.Core
             FadeOutTimeInSeconds = fade;
         }
 
+        private PlayerTimes() {}
+
+        public static readonly PlayerTimes Default = new PlayerTimes() {
+            Track = null,
+            ElapsedTimeInSeconds = 0,
+            RemainingTimeInSeconds = 0,
+            FadeOutTimeInSeconds = 0
+        };
+
         public ITrack Track { get; protected set; }
-        public int TotalTimeInSeconds => Track.DurationInSeconds;
+        public int TotalTimeInSeconds => Track?.DurationInSeconds ?? 0;
         public int ElapsedTimeInSeconds { get; protected set; }
         public int RemainingTimeInSeconds { get; protected set; }
         public int FadeOutTimeInSeconds { get; protected set; }
         public double FaderVolume {
             get {
-                if (RemainingTimeInSeconds < FadeOutTimeInSeconds) {
+                if ((FadeOutTimeInSeconds > 0) && (RemainingTimeInSeconds < FadeOutTimeInSeconds)) {
                     return ((double)RemainingTimeInSeconds) / ((double)FadeOutTimeInSeconds);
                 }
                 return 1.0;

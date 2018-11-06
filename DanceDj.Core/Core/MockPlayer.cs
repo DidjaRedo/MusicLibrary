@@ -9,9 +9,9 @@ using GalaSoft.MvvmLight;
 
 namespace DanceDj.Core
 {
-    public class PlayerStoppingEventArgs : EventArgs
+    public class PlaybackStoppingEventArgs : EventArgs
     {
-        public PlayerStoppingEventArgs() : base() {
+        public PlaybackStoppingEventArgs() : base() {
 
         }
 
@@ -19,7 +19,7 @@ namespace DanceDj.Core
         public ITrack NextTrack { get; set; } = null;
     }
 
-    public delegate void PlayerStoppingHandler(object player, PlayerStoppingEventArgs e);
+    public delegate void PlaybackStoppingHandler(object player, PlaybackStoppingEventArgs e);
 
     public class MockPlayer : ViewModelBase
     {
@@ -32,7 +32,7 @@ namespace DanceDj.Core
         protected Utils.ITimer _timer = new Utils.SystemTimer(1000) { AutoReset = true, Enabled = false };
 
         public PlayerState PlayerState { get => _playerState; protected set => Set("PlayerState", ref _playerState, value); }
-        public event PlayerStoppingHandler PlayerStopping;
+        public event PlaybackStoppingHandler PlaybackStopping;
 
         public int FadeDuration { get => _fadeDuration; protected set => Set("FadeDuration", ref _fadeDuration, value); }
         public double ConfiguredVolume {
@@ -68,8 +68,13 @@ namespace DanceDj.Core
 
         public ITrack Play(ITrack track) {
             NowPlaying = track;
-            UpdatePlayerTimes((p) => new PlayerTimes(track, FadeDuration));
-            StartTimer();
+            if (track != null) {
+                UpdatePlayerTimes((p) => new PlayerTimes(track, FadeDuration));
+                StartTimer();
+            }
+            else {
+                UpdatePlayerTimes((p) => PlayerTimes.Default);
+            }
             return NowPlaying;
         }
 
@@ -115,9 +120,9 @@ namespace DanceDj.Core
             }
         }
 
-        protected bool RaisePlayerStopping(out ITrack nextTrack) {
-            var e = new PlayerStoppingEventArgs();
-            PlayerStopping?.Invoke(this, e);
+        protected bool RaisePlaybackStopping(out ITrack nextTrack) {
+            var e = new PlaybackStoppingEventArgs();
+            PlaybackStopping?.Invoke(this, e);
             nextTrack = e.NextTrack;
             return !e.Cancel;
         }
@@ -160,7 +165,7 @@ namespace DanceDj.Core
                     }
                     if (newTimes.RemainingTimeInSeconds < 1) {
                         ITrack nextTrack;
-                        if (RaisePlayerStopping(out nextTrack)) {
+                        if (RaisePlaybackStopping(out nextTrack)) {
                             Pause();
                         }
                         else if (nextTrack == null) {

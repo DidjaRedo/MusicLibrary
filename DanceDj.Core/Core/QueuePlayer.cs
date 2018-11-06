@@ -25,6 +25,7 @@ namespace DanceDj.Core
             LastPlayed = new ReadOnlyObservableCollection<ITrack>(_lastPlayed);
             InnerPlayer = new MockPlayer();
             InnerPlayer.PropertyChanged += InnerPlayerPropertyChanged;
+            InnerPlayer.PlaybackStopping += InnerPlayerPlaybackStopping;
         }
 
         protected PlayerTimes _playerTimes;
@@ -44,8 +45,6 @@ namespace DanceDj.Core
                 case "PlayerTimes":
                 case "ConfiguredVolume":
                 case "EffectiveVolume":
-                    RaisePropertyChanged(e.PropertyName);
-                    break;
                 case "PlayerState":
                     RaisePropertyChanged(e.PropertyName);
                     break;
@@ -58,6 +57,79 @@ namespace DanceDj.Core
         public double ConfiguredVolume { get => InnerPlayer.ConfiguredVolume; set => InnerPlayer.ConfiguredVolume = value; }
         public double EffectiveVolume => InnerPlayer.EffectiveVolume;
         public bool AutoCue { get => _autoCue; set => Set("AutoCue", ref _autoCue, value); }
+
+        public ITrack Play() {
+            if (NowPlaying == null) {
+                var next = PopNextTrack();
+                return InnerPlayer.Play(next);
+            }
+            return InnerPlayer.Play();
+        }
+
+        public void Pause() {
+            InnerPlayer.Pause();
+        }
+
+        public void Stop() {
+            InnerPlayer.Stop();
+        }
+
+        public void StartFade() {
+            InnerPlayer.StartFade();
+        }
+
+        public ITrack GoForward() {
+            if (NowPlaying != null) {
+                InnerPlayer.Pause();
+                NowPlayingDone();
+            }
+            return InnerPlayer.Play(PopNextTrack());
+        }
+
+        public ITrack GoBack() {
+            if (PlayerTimes.ElapsedTimeInSeconds != 0) {
+                if (AutoCue) {
+                    InnerPlayer.Pause();
+                }
+                InnerPlayer.Seek(0);
+                return NowPlaying;
+            }
+
+            return InnerPlayer.Play(PopLastTrack());
+        }
+
+        private void InnerPlayerPlaybackStopping(object player, PlaybackStoppingEventArgs e) {
+            NowPlayingDone();
+            var next = PopNextTrack();
+            if (next != null) {
+                e.Cancel = !AutoCue;
+                e.NextTrack = next;
+            }
+        }
+
+        private void NowPlayingDone() {
+            if (NowPlaying != null) {
+                _lastPlayed.Insert(0, NowPlaying);
+            }
+        }
+
+        private ITrack PopNextTrack() {
+            if (_queue.Count > 0) {
+                var next = _queue[0];
+                _queue.RemoveAt(0);
+                return next;
+            }
+            return null;
+        }
+
+        private ITrack PopLastTrack() {
+            if (_lastPlayed.Count > 0) {
+                var next = _lastPlayed[0];
+                _lastPlayed.RemoveAt(0);
+                return next;
+            }
+            return null;
+        }
 
         #endregion
 

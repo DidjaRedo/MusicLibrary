@@ -177,12 +177,12 @@ namespace DanceDj.Test
         }
 
         [Fact]
-        public void ShouldRaisePlayerStopping() {
+        public void ShouldRaisePlaybackStopping() {
             var test = new TestPlayer();
             var player = test.Player;
             bool isStoppingCalled = false;
 
-            player.PlayerStopping += (o, e) => isStoppingCalled = true;
+            player.PlaybackStopping += (o, e) => isStoppingCalled = true;
 
             player.Play(test.TestTrack);
             test.Timer.Tick();
@@ -204,7 +204,7 @@ namespace DanceDj.Test
             bool isStoppingCalled = false;
             ITrack nextTrack = null;
 
-            player.PlayerStopping += (o, e) => {
+            player.PlaybackStopping += (o, e) => {
                 isStoppingCalled = true;
                 nextTrack = test.GetNextTrack();
                 e.NextTrack = nextTrack;
@@ -231,7 +231,7 @@ namespace DanceDj.Test
             bool isStoppingCalled = false;
             ITrack nextTrack = null;
 
-            player.PlayerStopping += (o, e) => {
+            player.PlaybackStopping += (o, e) => {
                 isStoppingCalled = true;
                 nextTrack = test.GetNextTrack();
                 e.Cancel = true;
