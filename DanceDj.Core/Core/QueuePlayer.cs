@@ -19,20 +19,20 @@ namespace DanceDj.Core
     };
 
     public class QueuePlayer : ViewModelBase {
-        public QueuePlayer(LibraryFilter library) {
-            Library = library;
+        public QueuePlayer(MockPlayer player) {
             Queue = new ReadOnlyObservableCollection<ITrack>(_queue);
             LastPlayed = new ReadOnlyObservableCollection<ITrack>(_lastPlayed);
-            InnerPlayer = new MockPlayer();
+            InnerPlayer = player;
             InnerPlayer.PropertyChanged += InnerPlayerPropertyChanged;
             InnerPlayer.PlaybackStopping += InnerPlayerPlaybackStopping;
+        }
+
+        public QueuePlayer() : this(new MockPlayer()) {
         }
 
         protected PlayerTimes _playerTimes;
         protected ObservableCollection<ITrack> _lastPlayed = new ObservableCollection<ITrack>();
         protected ObservableCollection<ITrack> _queue = new ObservableCollection<ITrack>();
-
-        public LibraryFilter Library { get; }
 
         #region Player
 
@@ -137,8 +137,10 @@ namespace DanceDj.Core
         public ReadOnlyObservableCollection<ITrack> Queue { get; }
         public ReadOnlyObservableCollection<ITrack> LastPlayed { get; }
 
-        public void Add(ITrack track) {
-            _queue.Add(track);
+        public void Add(params ITrack[] tracks) {
+            foreach (var track in tracks) {
+                _queue.Add(track);
+            }
         }
 
         public bool Remove(ITrack track, int? index) {

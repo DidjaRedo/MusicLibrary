@@ -12,7 +12,9 @@ namespace DanceDj.Test
     public class TestPlayer
     {
         public TestPlayer() {
-            Library = SampleData.GetTestLibrary();
+            var library = SampleData.GetTestLibrary();
+
+            Filter = new LibraryFilter(library);
             TestTrack = GetNextTrack();
             Timer = new DanceDj.Utils.MockTimer(1000) { AutoReset = true, Enabled = true };
             Player = new MockPlayer() { Timer = Timer };
@@ -21,11 +23,10 @@ namespace DanceDj.Test
             Player.PropertyChanged += (s, e) => {
                 Changes.Add(e.PropertyName);
             };
-
-
         }
 
-        public Library Library { get; protected set; }
+        public Library Library => Filter.Library;
+        public LibraryFilter Filter { get; protected set; }
         public ITrack TestTrack { get; set; }
         public DanceDj.Utils.MockTimer Timer { get; protected set; }
         public MockPlayer Player { get; protected set; }
@@ -34,6 +35,13 @@ namespace DanceDj.Test
         protected int TracksUsed = 0;
         public ITrack GetNextTrack() {
             return Library.Tracks[TracksUsed++ % Library.Tracks.Count];
+        }
+
+        public IEnumerable<ITrack> GetNextTracks(int num) {
+            for (int i = 0; i < num; i++) {
+                yield return GetNextTrack();
+            }
+            yield break;
         }
 
         public void AssertChanges(params string[] expected) {
