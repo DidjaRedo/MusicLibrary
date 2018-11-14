@@ -45,6 +45,8 @@ namespace DanceDj.ViewModel
             set { Set(ref _library, value); }
         }
 
+        public QueuePlayerViewModel Player { get; protected set; }
+
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
@@ -62,6 +64,7 @@ namespace DanceDj.ViewModel
                     if (Found) {
                         Library = new LibraryViewModel(item.Library);
                     }
+                    Player = new QueuePlayerViewModel(new Core.QueuePlayer());
                 });
         }
 

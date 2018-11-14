@@ -9,6 +9,7 @@ using DanceDj.Core;
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using System.Collections.Specialized;
 
 namespace DanceDj.ViewModel
 {
@@ -19,6 +20,16 @@ namespace DanceDj.ViewModel
             UpdateQueue();
             UpdateLastPlayed();
             InnerPlayer.PropertyChanged += InnerPlayerPropertyChanged;
+            ((INotifyCollectionChanged)InnerPlayer.Queue).CollectionChanged += QueueChanged;
+            ((INotifyCollectionChanged)InnerPlayer.LastPlayed).CollectionChanged += LastPlayedChanged;
+        }
+
+        private void LastPlayedChanged(object sender, NotifyCollectionChangedEventArgs e) {
+            UpdateLastPlayed();
+        }
+
+        private void QueueChanged(object sender, NotifyCollectionChangedEventArgs e) {
+            UpdateQueue();
         }
 
         private void InnerPlayerPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e) {
@@ -76,6 +87,14 @@ namespace DanceDj.ViewModel
         protected RelayCommand _fadeCommand;
         protected RelayCommand _goForwardCommand;
         protected RelayCommand _goBackCommand;
+        protected RelayCommand<TrackViewModel> _addTrackCommand;
+
+        public RelayCommand<TrackViewModel> AddTrackCommand => _addTrackCommand ??
+                    (_addTrackCommand = new RelayCommand<TrackViewModel>(
+                        (t) => InnerPlayer.Add(t.Track),
+                        (t) => true
+                        ));
+        public bool AddTrackEnabled(TrackViewModel track) => track != null;
 
         public RelayCommand PlayCommand {
             get => _playCommand ??
@@ -86,10 +105,14 @@ namespace DanceDj.ViewModel
 
         public bool PlayEnabled {
             get {
+#if notyet
                 if (InnerPlayer.PlayerState == PlayerState.Playing) {
                     return false;
                 }
                 return (InnerPlayer.NowPlaying != null) || (InnerPlayer.Queue.Count > 0);
+#else
+                return true;
+#endif
             }
         }
 

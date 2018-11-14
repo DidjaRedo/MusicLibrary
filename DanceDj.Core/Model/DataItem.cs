@@ -30,7 +30,6 @@ namespace DanceDj.Model
             }
         }
 
-        public QueuePlayer Player { get; } = new QueuePlayer();
         public LibraryFilter Library { get; private set; } = null;
 
         public DataItem(string source) {

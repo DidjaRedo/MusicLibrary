@@ -31,12 +31,21 @@
             <Label VerticalAlignment="Center">Source:</Label>
             <TextBlock Text="{Binding Source}" VerticalAlignment="Center"/>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
-            <StackPanel Orientation="Vertical">
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="0">
                 <my:TrackView DataContext="{Binding Library.SelectedTrack,Mode=OneWay}"/>
+                <Button Command="{Binding Player.AddTrackCommand}"
+                            CommandParameter="{Binding Library.SelectedTrack}">Add</Button>
                 <my:QueuePlayerView DataContext="{Binding Player}"/>
             </StackPanel>
-            <my:LibraryView DataContext="{Binding Library}"/>
-        </StackPanel>
+            <my:LibraryView DataContext="{Binding Library}" Grid.Row="0" Grid.Column="1"/>
+        </Grid>
     </Grid>
 </Window>

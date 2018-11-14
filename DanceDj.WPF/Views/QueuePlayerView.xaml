@@ -21,7 +21,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <TextBox Text="{Binding NowPlaying.Title}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5"/>
+            <TextBox Text="{Binding NowPlaying.Title,Mode=OneWay}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5"/>
             <Button Grid.Row="1" Grid.Column="0" 
                     Command="{Binding GoBackCommand}"
                     IsEnabled="{Binding GoBackEnabled, Mode=OneWay}">&lt;-</Button>
