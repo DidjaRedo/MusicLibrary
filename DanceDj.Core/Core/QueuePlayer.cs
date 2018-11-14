@@ -58,6 +58,14 @@ namespace DanceDj.Core
         public double EffectiveVolume => InnerPlayer.EffectiveVolume;
         public bool AutoCue { get => _autoCue; set => Set("AutoCue", ref _autoCue, value); }
 
+        public ITrack Play(ITrack track) {
+            if (NowPlaying != null) {
+                InnerPlayer.Pause();
+                NowPlayingDone();
+            }
+            return InnerPlayer.Play(track);
+        }
+
         public ITrack Play() {
             if (NowPlaying == null) {
                 var next = PopNextTrack();

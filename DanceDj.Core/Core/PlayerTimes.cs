@@ -10,7 +10,7 @@ namespace DanceDj.Core
         public PlayerTimes(ITrack track) : this(track, 0) {
         }
 
-        public PlayerTimes (ITrack track, int fade) {
+        public PlayerTimes(ITrack track, int fade) {
             Track = track;
             ElapsedTimeInSeconds = 0;
             RemainingTimeInSeconds = track.DurationInSeconds;
