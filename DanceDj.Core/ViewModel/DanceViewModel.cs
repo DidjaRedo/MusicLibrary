@@ -4,10 +4,11 @@ using System.Text;
 using System.Linq;
 
 using MusicLibrary.Lib;
+using GalaSoft.MvvmLight;
 
 namespace DanceDj.ViewModel
 {
-    public class DanceViewModel {
+    public class DanceViewModel : ViewModelBase {
         protected DanceViewModel(Dance dance) {
             Dance = dance;
             Categories = dance.EnumerateCategories().ToArray();
