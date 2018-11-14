@@ -4,7 +4,7 @@ using System.Text;
 
 using MusicLibrary.Lib;
 
-namespace DanceDj.Test
+namespace DanceDj.Test.Helpers
 {
     class SampleData
     {

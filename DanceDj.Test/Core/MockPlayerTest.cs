@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Xunit;
 
 using MusicLibrary.Lib;
 using DanceDj.Core;
+
+using Xunit;
+using DanceDj.Test.Helpers;
 
 namespace DanceDj.Test.Core
 {

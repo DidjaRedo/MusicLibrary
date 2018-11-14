@@ -7,7 +7,7 @@ using DanceDj.Core;
 
 using Xunit;
 
-namespace DanceDj.Test
+namespace DanceDj.Test.Helpers
 {
     public class TestPlayer
     {

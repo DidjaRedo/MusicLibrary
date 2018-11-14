@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
-using Xunit;
 using DanceDj.Core;
+
+using Xunit;
+using DanceDj.Test.Helpers;
 
 namespace DanceDj.Test.Core
 {
