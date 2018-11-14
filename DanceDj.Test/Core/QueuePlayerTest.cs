@@ -6,7 +6,7 @@ using System.Linq;
 using Xunit;
 using DanceDj.Core;
 
-namespace DanceDj.Test
+namespace DanceDj.Test.Core
 {
     public class QueuePlayerTest
     {

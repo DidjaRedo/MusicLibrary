@@ -6,7 +6,7 @@ using Xunit;
 using MusicLibrary.Lib;
 using DanceDj.Core;
 
-namespace DanceDj.Test
+namespace DanceDj.Test.Core
 {
     public class MockPlayerTest
     {
