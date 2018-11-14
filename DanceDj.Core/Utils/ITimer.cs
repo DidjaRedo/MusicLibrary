@@ -21,7 +21,12 @@ namespace DanceDj.Utils
     {
         public SystemTimer(double duration) {
             Timer = new Timer(duration);
-            Timer.Elapsed += (s, e) => Elapsed?.Invoke(s, e);
+            //Timer.Elapsed += (s, e) => Elapsed?.Invoke(s, e);
+            Timer.Elapsed += InnerElapsed;
+        }
+
+        protected void InnerElapsed(object s, EventArgs e) {
+            Elapsed?.Invoke(s, e);
         }
 
         public Timer Timer { get; }

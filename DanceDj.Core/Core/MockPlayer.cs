@@ -29,7 +29,11 @@ namespace DanceDj.Core
         protected int _fadeDuration = 10;
         protected ITrack _nowPlaying;
         protected object _timerLock = new object();
-        protected Utils.ITimer _timer = new Utils.SystemTimer(1000) { AutoReset = true, Enabled = false };
+        protected Utils.ITimer _timer;
+
+        public MockPlayer() {
+            Timer = new Utils.SystemTimer(1000) { AutoReset = true, Enabled = false };
+        }
 
         public PlayerState PlayerState { get => _playerState; protected set => Set("PlayerState", ref _playerState, value); }
         public event PlaybackStoppingHandler PlaybackStopping;
@@ -58,8 +62,8 @@ namespace DanceDj.Core
                             }
                             _timer.Elapsed -= Timer_Elapsed;
                         }
-                        value.Elapsed += Timer_Elapsed;
                         _timer = value;
+                        _timer.Elapsed += Timer_Elapsed;
                         RaisePropertyChanged("Timer");
                     }
                 }
