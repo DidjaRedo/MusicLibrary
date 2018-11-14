@@ -24,10 +24,19 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal" Grid.Row="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="0">
             <Label VerticalAlignment="Center">Source:</Label>
             <TextBlock Text="{Binding Source}" VerticalAlignment="Center"/>
         </StackPanel>
-        <my:LibraryView DataContext="{Binding Library}" Grid.Row="1"/>
+        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
+            <StackPanel Orientation="Vertical">
+                <my:TrackView DataContext="{Binding Library.SelectedTrack,Mode=OneWay}"/>
+                <my:QueuePlayerView DataContext="{Binding Player}"/>
+            </StackPanel>
+            <my:LibraryView DataContext="{Binding Library}"/>
+        </StackPanel>
     </Grid>
 </Window>

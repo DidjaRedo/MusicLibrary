@@ -8,34 +8,31 @@
              d:DataContext="{d:DesignInstance vm:LibraryViewModel}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="Auto"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <my:TrackView DataContext="{Binding SelectedTrack}" Grid.Column="0" Grid.Row="0"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TabControl ItemsSource="{Binding FilterGroups}" SelectedItem="{Binding SelectedFilterGroup}" Grid.Column="0" Grid.Row="0">
+                <TabControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}"/>
+                    </DataTemplate>
+                </TabControl.ItemTemplate>
+                <TabControl.ContentTemplate>
+                    <DataTemplate>
+                        <my:FilterGroupView/>
+                    </DataTemplate>
+                </TabControl.ContentTemplate>
+            </TabControl>
         <Expander ExpandDirection="Right" Header="Defaults" Grid.Column="1" Grid.Row="0">
-            <my:FilteredTracksView DataContext="{Binding Default}"/>
-        </Expander>
-        <TabControl ItemsSource="{Binding FilterGroups}" SelectedItem="{Binding SelectedFilterGroup}" Grid.Column="2" Grid.Row="0">
-            <TabControl.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding Name}"/>
-                </DataTemplate>
-            </TabControl.ItemTemplate>
-            <TabControl.ContentTemplate>
-                <DataTemplate>
-                    <my:FilterGroupView/>
-                </DataTemplate>
-            </TabControl.ContentTemplate>
-        </TabControl>
-        <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="3">
-            <Button>Add</Button>
-        </StackPanel>
-    </Grid>
+                <StackPanel Orientation="Vertical">
+                    <Button>Add</Button>
+                    <my:FilteredTracksView DataContext="{Binding Default}"/>
+                </StackPanel>
+            </Expander>
+        </Grid>
 </UserControl>

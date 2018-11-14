@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Text;
 
 using GalaSoft.MvvmLight;
@@ -39,5 +40,13 @@ namespace DanceDj.ViewModel
 
         private static Dictionary<ITrack, TrackViewModel> _allTracks = new Dictionary<ITrack, TrackViewModel>();
         public static IReadOnlyDictionary<ITrack,TrackViewModel> AllTracks { get; private set; }
+
+    }
+
+    public static class TrackViewModelExtensions
+    {
+        public static IEnumerable<TrackViewModel> ToViewModel(this IEnumerable<ITrack> tracks) {
+            return tracks.Select<ITrack, TrackViewModel>((t) => TrackViewModel.GetOrAdd(t));
+        }
     }
 }

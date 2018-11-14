@@ -1,5 +1,6 @@
 ﻿using System;
 using MusicLibrary.Lib;
+using DanceDj.Core;
 
 namespace DanceDj.Model
 {
@@ -29,6 +30,7 @@ namespace DanceDj.Model
             }
         }
 
+        public QueuePlayer Player { get; } = new QueuePlayer();
         public LibraryFilter Library { get; private set; } = null;
 
         public DataItem(string source) {
