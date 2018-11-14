@@ -95,7 +95,9 @@ namespace DanceDj.Core
                 return NowPlaying;
             }
 
-            return InnerPlayer.Play(PopLastTrack());
+            var last = PopLastTrack();
+            _queue.Insert(0, NowPlaying);
+            return InnerPlayer.Play(last);
         }
 
         private void InnerPlayerPlaybackStopping(object player, PlaybackStoppingEventArgs e) {

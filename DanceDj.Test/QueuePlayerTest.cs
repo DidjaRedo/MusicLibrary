@@ -76,5 +76,88 @@ namespace DanceDj.Test
             Assert.Equal(tracks[0], queue.NowPlaying);
             Assert.Collection(queue.Queue, (t) => Assert.Equal(tracks[1], t), (t) => Assert.Equal(tracks[2], t));
         }
+
+        [Fact]
+        public void ShouldPlayThroughToTheNextTrack() {
+            var player = new TestPlayer();
+            var queue = new QueuePlayer(player.Player);
+
+            var tracks = player.GetNextTracks(3).ToArray();
+            queue.Add(tracks);
+            queue.Play();
+            Assert.Empty(queue.LastPlayed);
+            Assert.Equal(tracks[0], queue.NowPlaying);
+            Assert.Collection(queue.Queue, (t) => Assert.Equal(tracks[1], t), (t) => Assert.Equal(tracks[2], t));
+
+            player.Player.Seek(player.Player.NowPlaying.DurationInSeconds - 1);
+            player.Timer.Tick();
+            Assert.Collection(queue.LastPlayed, (t) => Assert.Equal(tracks[0], t));
+            Assert.Equal(tracks[1], queue.NowPlaying);
+            Assert.Collection(queue.Queue, (t) => Assert.Equal(tracks[2], t));
+        }
+
+        [Fact]
+        public void ShouldMoveATrackUp() {
+            var player = new TestPlayer();
+            var queue = new QueuePlayer(player.Player);
+
+            var tracks = player.GetNextTracks(5).ToArray();
+            queue.Add(tracks);
+            queue.MoveUp(tracks[4], 4);
+            Assert.Collection(queue.Queue,
+                (t) => Assert.Equal(tracks[0], t),
+                (t) => Assert.Equal(tracks[1], t),
+                (t) => Assert.Equal(tracks[2], t),
+                (t) => Assert.Equal(tracks[4], t),
+                (t) => Assert.Equal(tracks[3], t));
+        }
+
+        [Fact]
+        public void ShouldNotMoveTheFirstTrackUp() {
+            var player = new TestPlayer();
+            var queue = new QueuePlayer(player.Player);
+
+            var tracks = player.GetNextTracks(5).ToArray();
+            queue.Add(tracks);
+            queue.MoveUp(tracks[0], 0);
+            Assert.Collection(queue.Queue,
+                (t) => Assert.Equal(tracks[0], t),
+                (t) => Assert.Equal(tracks[1], t),
+                (t) => Assert.Equal(tracks[2], t),
+                (t) => Assert.Equal(tracks[3], t),
+                (t) => Assert.Equal(tracks[4], t));
+        }
+
+        [Fact]
+        public void ShouldMoveATrackDown() {
+            var player = new TestPlayer();
+            var queue = new QueuePlayer(player.Player);
+
+            var tracks = player.GetNextTracks(5).ToArray();
+            queue.Add(tracks);
+            queue.MoveDown(tracks[1], 1);
+            Assert.Collection(queue.Queue,
+                (t) => Assert.Equal(tracks[0], t),
+                (t) => Assert.Equal(tracks[2], t),
+                (t) => Assert.Equal(tracks[1], t),
+                (t) => Assert.Equal(tracks[3], t),
+                (t) => Assert.Equal(tracks[4], t));
+        }
+
+        [Fact]
+        public void ShouldNotMoveTheLastTrackDown() {
+            var player = new TestPlayer();
+            var queue = new QueuePlayer(player.Player);
+
+            var tracks = player.GetNextTracks(5).ToArray();
+            queue.Add(tracks);
+            queue.MoveDown(tracks[4], 4);
+            Assert.Collection(queue.Queue,
+                (t) => Assert.Equal(tracks[0], t),
+                (t) => Assert.Equal(tracks[1], t),
+                (t) => Assert.Equal(tracks[2], t),
+                (t) => Assert.Equal(tracks[3], t),
+                (t) => Assert.Equal(tracks[4], t));
+        }
     }
 }
